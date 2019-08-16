@@ -1,0 +1,33 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 20
+skinparam maxmessagesize 60
+skinparam sequenceParticipant underline
+
+actor Usuario as U
+participant "Movil" as M
+participant "Ticketing" as T
+database "BBDD" as D
+
+T -> M: Email con link [NumeroUnico]
+
+U -> M: Click link
+M -> T: Envia NumeroUnico
+return Formulario con datos pre-rellenos
+
+U -> M: Rellena formulario
+
+U -> M: Click boton OK
+
+M -> T: Get Credential[Nombre+Apellido+NumeroUnico]
+
+T -> D: Consulta NumeroUnico
+return Email, TicketID, Nombre-Apellido
+
+T -> T: Verifica Nombre-Apellido
+T -> T: Crea la Credencial
+
+T -> M: [Credencial]
+
+
+@enduml
