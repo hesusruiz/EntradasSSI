@@ -1,0 +1,39 @@
+<!--
+<div id="userSettings">
+    <div class="outterOval"></div>
+    <div class="innerOval"></div>
+    <label class="name">{{userName}}</label>
+    <span class="outerUserCircle"></span>
+    <img class="innerUserCircle" [src]="userImagePath">
+    <span class="editPhoto">
+        <img src="assets/svg/edit.svg" />
+    </span>
+</div>
+-->
+
+<ion-content fullscreen class="centered" >
+    <ion-list>
+        <ion-card>
+            <ion-item>
+                <ion-avatar>
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+            </ion-item>
+            <ion-item>
+                <ion-label>Nombre</ion-label>
+                <ion-note slot="end">{{userName}}</ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-label>Email</ion-label>
+                <ion-note slot="end">{{userName}}</ion-note>
+                <ion-icon slot="end" name="information-circle"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <ion-label>Nationality</ion-label>
+                <ion-note slot="end">{{userName}}</ion-note>
+                <ion-icon slot="end" name="information-circle"></ion-icon>
+            </ion-item>
+        </ion-card>
+    </ion-list>
+</ion-content>
+
