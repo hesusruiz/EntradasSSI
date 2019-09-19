@@ -1,7 +1,0 @@
-{
-  "name": "alastriaApp",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
