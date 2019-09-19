@@ -4,6 +4,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { ContructionsPage } from '../contructions/contructions';
 import { SessionSecuredStorageService } from '../../services/securedStorage.service';
 import { HomePage } from '../home/home';
+import {RegisterPrivacyConditionsPage} from "../register/register-hub/register-privacy-conditions/register-privacy-conditions";
 
 @IonicPage()
 @Component({
@@ -14,7 +15,8 @@ import { HomePage } from '../home/home';
 export class Login {
     @Input() data: any;
     @Input() events: any;
-    //export PATH=$PATH:/home/agomez/.gradle/wrapper/dists/gradle-5.1.1-all/97z1ksx6lirer3kbvdnh7jtjg/gradle-5.1.1/bin
+
+    privacidad="RegisterPrivacyConditionsPage";
 
     user: string;
     pass: string;
@@ -36,44 +38,44 @@ export class Login {
     }
 
     /*TODO: NO SE LLAMA NUNCA, cambiar de sitio */
-    scanBarcode() {
-        if (this.isCamera) {
-
-        }
-        this.isCamera = true;
-        let options = {
-            prompt: "Situe el código Qr en el interior del rectángulo.",
-            formats: "QR_CODE"
-        }
-
-        /* Comprobamos si el usuario esta registrado */
-        this.sessionSecuredStorageService.isRegistered()
-            .then(
-                (result) => {
-                    /* Comprobar si el usuario coincide */
-                    this.navCtrl.setRoot(HomePage);
-                }
-            )
-            .catch(
-                (error) => {
-                    /* TODO Cambiar esto para la version final */
-                    if (error === "cordova_not_available") {
-                        this.navCtrl.setRoot(HomePage);
-                    }
-
-                    console.log(error)
-                }
-            );
-
-        this.barcodeScanner.scan(options).then(barcodeData => {
-            this.onEvent("onLogin");
-        }).catch(err => {
-            if (err === "cordova_not_available") {
-                this.onEvent("onLogin");
-            }
-        });
-
-    }
+    // scanBarcode() {
+    //     if (this.isCamera) {
+    //
+    //     }
+    //     this.isCamera = true;
+    //     let options = {
+    //         prompt: "Situe el código Qr en el interior del rectángulo.",
+    //         formats: "QR_CODE"
+    //     }
+    //
+    //     /* Comprobamos si el usuario esta registrado */
+    //     this.sessionSecuredStorageService.isRegistered()
+    //         .then(
+    //             (result) => {
+    //                 /* Comprobar si el usuario coincide */
+    //                 this.navCtrl.setRoot(HomePage);
+    //             }
+    //         )
+    //         .catch(
+    //             (error) => {
+    //                 /* TODO Cambiar esto para la version final */
+    //                 if (error === "cordova_not_available") {
+    //                     this.navCtrl.setRoot(HomePage);
+    //                 }
+    //
+    //                 console.log(error)
+    //             }
+    //         );
+    //
+    //     this.barcodeScanner.scan(options).then(barcodeData => {
+    //         this.onEvent("onLogin");
+    //     }).catch(err => {
+    //         if (err === "cordova_not_available") {
+    //             this.onEvent("onLogin");
+    //         }
+    //     });
+    //
+    // }
 
     onEvent = (event: string): void => {
         if (event == "onLogin" && !this.validate()) {
@@ -105,6 +107,11 @@ export class Login {
 
         modal.present();
         console.log('Navigating to page: ' + text);
+    }
+
+    goToRegister(){
+        this.navCtrl.push(RegisterPrivacyConditionsPage);
+        console.log("Ok");
     }
 
 }

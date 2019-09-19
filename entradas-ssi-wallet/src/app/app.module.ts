@@ -30,7 +30,8 @@ import { ConfirmAccess } from '../pages/confirm-access/confirm-access';
 import { HttpClientModule } from "@angular/common/http"
 import { TokenService } from '../services/token-service';
 import { ToastService } from '../services/toast-service';
-
+import {RegisterPrivacyConditionsPage} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions";
+import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.module";
 @NgModule({
     declarations: [
         MyApp,
@@ -43,7 +44,7 @@ import { ToastService } from '../services/toast-service';
         WalkthroughPage,
         ConfirmLogin,
         WalkthroughPage,
-        ConfirmAccess
+        ConfirmAccess,
     ],
     imports: [
         BrowserModule,
@@ -53,6 +54,7 @@ import { ToastService } from '../services/toast-service';
         }
         ),
         RegisterFormModule,
+        RegisterPrivacyConditionsPageModule,
         TabsPageModule,
         NgxQRCodeModule,
         ContructionsPageModule,
@@ -75,7 +77,8 @@ import { ToastService } from '../services/toast-service';
         WalkthroughPage,
         ConfirmAccess,
         WalkthroughPage,
-        ConfirmLogin
+        ConfirmLogin,
+
     ],
     providers: [
         StatusBar,

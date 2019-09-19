@@ -4,7 +4,8 @@ import { RegisterForm } from './register-form';
 
 @NgModule({
     declarations: [
-        RegisterForm
+        RegisterForm,
+
     ],
     imports: [
         IonicPageModule.forChild(RegisterForm),

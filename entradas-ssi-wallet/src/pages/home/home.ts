@@ -4,6 +4,7 @@ import { TabsPage } from '../tabsPage/tabsPage';
 import { SessionSecuredStorageService } from '../../services/securedStorage.service';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 import { WalkthroughPage } from '../walkthrough/walkthrough';
+import {RegisterPrivacyConditionsPage} from "../register/register-hub/register-privacy-conditions/register-privacy-conditions";
 
 @Component({
     selector: 'page-home',
@@ -108,7 +109,7 @@ export class HomePage implements OnInit {
     }
 
     onRegister(params: any) {
-        this.navCtrl.setRoot(WalkthroughPage);
+        this.navCtrl.setRoot(RegisterPrivacyConditionsPage);
     }
 
     setLoginParams() {
