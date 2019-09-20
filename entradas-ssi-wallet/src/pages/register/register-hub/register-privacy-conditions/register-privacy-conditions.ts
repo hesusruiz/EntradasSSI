@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {RegisterForm} from "../register-form/register-form";
+import {RegisterPwdPage} from "../register-pwd/register-pwd";
 
 @IonicPage()
 @Component({
@@ -18,8 +19,8 @@ export class RegisterPrivacyConditionsPage {
     console.log('ionViewDidLoad RegisterPrivacyConditionsPage');
   }
 
-  goToRegisterForm(){
-      this.navCtrl.push(RegisterForm);
+  NavigateToRegisterForm(){
+      this.navCtrl.push(RegisterPwdPage);
   }
 
   notifyChecked(){

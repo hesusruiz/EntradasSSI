@@ -3,6 +3,7 @@ import { IonicPage, NavController, App } from 'ionic-angular';
 import { ToastService } from '../../../services/toast-service';
 import { TabsService } from '../../../services/tabs-service';
 import { MyApp } from '../../../app/app.component';
+import {UserProfilePage} from "../../user-profile/user-profile";
 
 @IonicPage()
 @Component({
@@ -51,5 +52,9 @@ export class Options {
     goToRoot() {
         //this.navCtrl.setRoot(HomePage);
         this.app.getRootNav().setRoot(MyApp);
+    }
+
+    navigateToUserProfile(){
+        this.navCtrl.push(UserProfilePage);
     }
 }

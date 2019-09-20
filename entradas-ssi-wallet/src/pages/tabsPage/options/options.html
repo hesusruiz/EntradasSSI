@@ -21,6 +21,9 @@
                         <button ion-button defoult-button item-right (click)="item.callback(this)" *ngIf="item.button">
                             {{item.buttonLabel}}
                         </button>
+                        <button ion-button defoult-button item-right (click)="navigateToUserProfile()">
+                           Ver perfil
+                        </button>
                     </ion-item>
                 </ion-list>
             </ion-col>

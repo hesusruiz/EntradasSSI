@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {NavController, ModalController, AlertController} from 'ionic-angular';
+import {NavController, ModalController, AlertController, NavParams} from 'ionic-angular';
 import {HomePage} from '../../../home/home';
 import {TermsConditionsPage} from '../../../terms-conditions/terms-conditions';
 import {SessionSecuredStorageService} from '../../../../services/securedStorage.service';
@@ -14,18 +14,19 @@ export class RegisterForm {
 
     @Input() events: any;
 
-   // public username: string;
+    // public username: string;
 
     //els meus
     public name: string;
     public surnames: string;
     public email: string;
     public password: string;
-    public password_correct: string;
+    public ticketId: string;
+    // public password_correct: string;
 
     private isEmailValid: boolean = true;
-  //  private isUsernameValid: boolean = true;
-    private isPasswordValid: boolean = true;
+    //  private isUsernameValid: boolean = true;
+    // private isPasswordValid: boolean = true;
 
     private regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -33,15 +34,19 @@ export class RegisterForm {
                 public modalCtrl: ModalController,
                 public sessionSecuredStorageService: SessionSecuredStorageService,
                 public identitySecuredStorageService: IdentitySecuredStorageService,
-                public alertCtrl: AlertController, private scanner: BarcodeScanner) {
+                public alertCtrl: AlertController, private scanner: BarcodeScanner, public navParams: NavParams) {
+
+        this.password = navParams.get('pwd');
+
 
         this.events = {
             onRegister: () => {
-                let modal = this.modalCtrl.create(TermsConditionsPage);
-                modal.present();
-                modal.onDidDismiss((res) => {
-                    /* Guardo en el secureStorage */
-                    if (res.accept === 'true') {
+                // let modal = this.modalCtrl.create(TermsConditionsPage);
+                // console.log(this.password);
+                // modal.present();
+                // modal.onDidDismiss((res) => {
+                //     /* Guardo en el secureStorage */
+                //     if (res.accept === 'true') {
                         this.sessionSecuredStorageService.register(this.name + " " + this.surnames, this.password)
                             .then(
                                 () => {
@@ -61,15 +66,16 @@ export class RegisterForm {
                                 }
                             );
                     }
-                });
-            },
-            onSkip: () => {
-                this.navCtrl.setRoot(HomePage);
-            },
-            onBack: () => {
-                this.navCtrl.setRoot(HomePage);
-            }
-        }
+        //         });
+        //     }
+        //     ,
+        //     onSkip: () => {
+        //         this.navCtrl.setRoot(HomePage);
+        //     },
+        //     onBack: () => {
+        //         this.navCtrl.setRoot(HomePage);
+        //     }
+         }
     }
 
     showAlert(title: string, message: string) {
@@ -82,7 +88,9 @@ export class RegisterForm {
     }
 
     onEvent = (event: string): void => {
-        if (event == "onRegister" && !this.validate()) {
+        if (event == "onRegister"
+        && !this.validate()
+        ) {
             return;
         }
         if (this.events[event]) {
@@ -98,11 +106,12 @@ export class RegisterForm {
     openScanner() {
         this.scanner.scan().then(barcodeData => {
 
-            let dataQR:User=JSON.parse(barcodeData.text);
+            let dataQR: User = JSON.parse(barcodeData.text);
 
-            this.name=dataQR.name;
-            this.surnames=dataQR.surname;
-            this.email=dataQR.email;
+            this.name = dataQR.name;
+            this.surnames = dataQR.surname;
+            this.email = dataQR.email;
+            this.ticketId= dataQR.ticketId;
 
         }).catch(err => {
             console.log('Error', err);
@@ -112,33 +121,35 @@ export class RegisterForm {
     validate(): boolean {
         this.isEmailValid = true;
         //this.isUsernameValid = true;
-        this.isPasswordValid = true;
-
-        // if (!this.username || this.username.length == 0) {
-        //     this.isUsernameValid = false;
+        // this.isPasswordValid = true;
+        //
+        // // if (!this.username || this.username.length == 0) {
+        // //     this.isUsernameValid = false;
+        // // }
+        //
+        // if (!this.password || this.password.length == 0) {
+        //     this.isPasswordValid = false;
         // }
-
-        if (!this.password || this.password.length == 0) {
-            this.isPasswordValid = false;
-        }
-
-        if (!this.password || this.password.length == 0) {
-            this.isPasswordValid = false;
-        }
+        //
+        // if (!this.password || this.password.length == 0) {
+        //     this.isPasswordValid = false;
+        // }
 
         this.isEmailValid = this.regex.test(this.email);
 
-        return this.isEmailValid &&
-            this.isPasswordValid ;
+        return this.isEmailValid ;
+            // this.isPasswordValid ;
             // &&
             // this.isUsernameValid;
     }
 }
 
-interface User{
+interface User {
 
-    name:string;
-    surname:string;
+    name: string;
+    surname: string;
     email: string;
+    ticketId: string;
+
 
 }

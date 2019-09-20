@@ -32,6 +32,8 @@ import { TokenService } from '../services/token-service';
 import { ToastService } from '../services/toast-service';
 import {RegisterPrivacyConditionsPage} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions";
 import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.module";
+import {RegisterPwdPageModule} from "../pages/register/register-hub/register-pwd/register-pwd.module";
+import {UserProfilePage} from "../pages/user-profile/user-profile";
 @NgModule({
     declarations: [
         MyApp,
@@ -45,6 +47,7 @@ import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hu
         ConfirmLogin,
         WalkthroughPage,
         ConfirmAccess,
+        UserProfilePage
     ],
     imports: [
         BrowserModule,
@@ -55,6 +58,7 @@ import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hu
         ),
         RegisterFormModule,
         RegisterPrivacyConditionsPageModule,
+        RegisterPwdPageModule,
         TabsPageModule,
         NgxQRCodeModule,
         ContructionsPageModule,
@@ -78,6 +82,7 @@ import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hu
         ConfirmAccess,
         WalkthroughPage,
         ConfirmLogin,
+        UserProfilePage
 
     ],
     providers: [
