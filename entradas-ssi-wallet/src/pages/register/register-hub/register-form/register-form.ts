@@ -47,10 +47,11 @@ export class RegisterForm {
                 // modal.onDidDismiss((res) => {
                 //     /* Guardo en el secureStorage */
                 //     if (res.accept === 'true') {
-                        this.sessionSecuredStorageService.register(this.name + " " + this.surnames, this.password)
+                        this.sessionSecuredStorageService.register(this.name + " " + this.surnames, this.password, this.email)
                             .then(
                                 () => {
                                     console.log('Información guardada correctamente en el secureStorage');
+                                    // this.credentialRequestService.getCredentials("did:alastria:quorum", "redt",this.ticketId,this.name);
                                     this.identitySecuredStorageService.getKeys().then((result) => {
                                         console.log("holo" + result);
                                     });
@@ -150,6 +151,5 @@ interface User {
     surname: string;
     email: string;
     ticketId: string;
-
 
 }

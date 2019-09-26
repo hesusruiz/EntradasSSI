@@ -1,1 +1,45 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+    <ion-content padding>
+        <ion-list class="login-menu">
+            <button ion-item >
+                <a item-start>
+                    <ion-icon name="arrow-up"></ion-icon>
+                </a>
+                Aumentar nivel de acreditación
+            </button>
+            <button ion-item (click)="pushPage(userProfile)" menuClose>
+                <a item-start>
+                    <ion-icon name="checkbox-outline"></ion-icon>
+                </a>
+                Credenciales disponibles
+s            </button>
+            <button ion-item (click)="openURL('http://www.google.com')">
+                <a item-start>
+                    <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>
+                </a>
+                Información de interés
+            </button>
+            <button ion-item>
+                <a item-start>
+                    <ion-icon name="bonfire"></ion-icon>
+                </a>
+                Reportar un problema
+            </button>
+            <button ion-item>
+                <a item-start>
+                    <ion-icon name="lock"></ion-icon>
+                </a>
+                Aviso legal
+            </button>
+            <button ion-item>
+                <a item-start>
+                    <ion-icon name="log-out"></ion-icon>
+                </a>
+                Cerrar Sesión
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>

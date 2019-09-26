@@ -1,0 +1,52 @@
+<ion-menu [content]="content">
+    <ion-content>
+        <ion-list class="login-menu">
+            <button ion-item (click)="openPage('changeUser')">
+                <div item-start><
+                    <ion-icon name="arrow-up"></ion-icon>
+                </div>
+                Aumentar nivel de acreditación
+            </button>
+            <button ion-item (click)="openPage('infoPage')">
+                <div item-start>
+                    <ion-icon name="checkbox-outline"></ion-icon>
+                </div>
+                Credenciales disponibles
+            </button>
+            <button ion-item (click)="openPage('reportProblem')">
+                <div item-start>
+                    <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>
+                </div>
+                Información de interés
+            </button>
+            <button ion-item (click)="openPage('legal')">
+                <div item-start>
+                    <ion-icon name="bonfire"></ion-icon>
+                </div>
+                Reportar un problema
+            </button>
+            <button ion-item (click)="openPage('legal')">
+                <div item-start>
+                    <ion-icon name="lock"></ion-icon>
+                </div>
+                Aviso legal
+            </button>
+            <button ion-item (click)="openPage('legal')">
+                <div item-start>
+                    <ion-icon name="log-out"></ion-icon>
+                </div>
+                Cerrar Sesión
+            </button>
+        </ion-list>
+        <label class="version-info">Versión in2 1.0</label>
+    </ion-content>
+</ion-menu>
+<ion-nav class="main" id="nav" #content [root]="Login">
+</ion-nav>
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle clear icon-start>
+            <img class="menu" name='menu' src="assets/svg/hamburguer-menu.svg">
+        </button>
+    </ion-navbar>
+</ion-header>

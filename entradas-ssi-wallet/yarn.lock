@@ -124,6 +124,11 @@
   resolved "https://registry.yarnpkg.com/@ionic-native/google-analytics/-/google-analytics-4.4.2.tgz#5c2021cc08c412e4c088c4657a7e125396f3d526"
   integrity sha512-xNXdGcYhM3supUevAqDmiqWSQ3WOhNboPOUWu+N+afXdPQyf4lbBhhTTGUdLnBexW90+JqoO+5bjrR4NwFhTHQ==
 
+"@ionic-native/in-app-browser@^4.20.0":
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/in-app-browser/-/in-app-browser-4.20.0.tgz#7b0d2b24a315bc1326b114d82f210cfcb2862b1c"
+  integrity sha512-y04sEK2ssb0ipeZTB3HPjVpGTYJUkPupjrAPx9hvbzWB0g1CHRWcsnQHezxItGz/jCQzUAKOjxQZ23oy8Qf4Bg==
+
 "@ionic-native/secure-storage@4.10.1":
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/@ionic-native/secure-storage/-/secure-storage-4.10.1.tgz#fbac4c282b70345ffe1a4363afd9218f944a862e"
@@ -1191,6 +1196,11 @@ cordova-plugin-google-analytics@1.8.6:
   version "1.8.6"
   resolved "https://registry.yarnpkg.com/cordova-plugin-google-analytics/-/cordova-plugin-google-analytics-1.8.6.tgz#7886bd7ac9264e4dec7355ebed64d939b274731a"
   integrity sha512-shg8e3ris1MzmhC8roraScc2GEcfe7sVlbKkvrO3wZUAlYr31sf+4wxZr/VQB6tEcPsmTAkoNjGr1zMwoYjMeg==
+
+cordova-plugin-inappbrowser@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-3.1.0.tgz#61520b8de3eb75b37842d2340f5d90a84a073747"
+  integrity sha512-YqrZfYgbGTS20SFID0mrRxud312VH072QVlFonCAkPgtGg1Svy7lELOCNFd+KU7t4mVtZeTEjZPEeefvjaetwQ==
 
 cordova-plugin-ionic-webview@2.2.0:
   version "2.2.0"

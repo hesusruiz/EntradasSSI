@@ -1,64 +1,42 @@
-<ion-menu [content]="content">
-    <ion-header>
-    </ion-header>
-    <ion-content>
-        <ion-list class="login-menu">
-            <button ion-item (click)="openPage('changeUser')">
-                <div item-start><img src="assets/svg/user.svg" /></div>Cambiar de usuario
-            </button>
-            <button ion-item (click)="openPage('infoPage')">
-                <div item-start><img src="assets/svg/bullhorn.svg" /></div>Información de interés
-            </button>
-            <button ion-item (click)="openPage('reportProblem')">
-                <div item-start><img src="assets/svg/flame.svg" /></div>Reportar Problema
-            </button>
-            <button ion-item (click)="openPage('legal')">
-                <div item-start><img src="assets/svg/info.svg" /></div>Aviso Legal
-            </button>
-        </ion-list>
-        <label class="version-info">Versión AlastriaID 1.1</label>
-    </ion-content>
-</ion-menu>
-
-<ion-nav class="main" id="nav" #content [root]="Login">
-</ion-nav>
-
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle clear icon-start>
-            <img class="menu" name='menu' src="assets/svg/hamburguer-menu.svg">
-        </button>
+    <ion-navbar transparent>
+        <ion-buttons>
+            <button ion-button icon-only menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
 
 <!-- Themes Login + logo 1 -->
-<ion-content ion-fixed class="mainContent" style="z-index: 1;" *ngIf="data">
+<ion-content ion-fixed class="mainContent" style="z-index: 1;" *ngIf="data" main>
     <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%; align-items: center">
         <ion-grid *ngIf="data != null">
             <ion-row style="display: flex; flex-direction: column; align-items: center;">
                 <ion-col style="margin-top: 25px;">
-                    <h1>ENTRADAS SSI</h1>
-                    <br />
+                    <h1 style="color: #1F2126">ENTRADAS SSI</h1>
+                    <br/>
                 </ion-col>
                 <!-- Login -->
                 <ion-list>
 
                     <!-- User -->
-                    <div style="margin-top:35px; display: flex; align-items: flex-end" *ngIf="!data.isRegistered; else login">
-<!--                        <img class="iconLogin" src="assets/images/logo/user.png" />-->
-<!--                        <ion-item style="background-color: transparent;">-->
-<!--                            <ion-label floating class="grey">User</ion-label>-->
-<!--                            <ion-input class="menu" type="text" [(ngModel)]="user"></ion-input>-->
-<!--                        </ion-item>-->
+                    <div style="margin-top:35px; display: flex; align-items: flex-end"
+                         *ngIf="!data.isRegistered; else login">
+                        <!--                        <img class="iconLogin" src="assets/images/logo/user.png" />-->
+                        <!--                        <ion-item style="background-color: transparent;">-->
+                        <!--                            <ion-label floating class="grey">User</ion-label>-->
+                        <!--                            <ion-input class="menu" type="text" [(ngModel)]="user"></ion-input>-->
+                        <!--                        </ion-item>-->
                     </div>
                     <ng-template #login>
-                        <ion-label floating class="nameUser">Hola {{ data.userRegister }}, bienvenid@</ion-label>
+                        <ion-label style="color: #1F2126" floating class="nameUser">Hola {{ data.userRegister }}, bienvenid@</ion-label>
                     </ng-template>
 
 
                     <!-- Password -->
                     <div style="display: flex; align-items: flex-end">
-                        <img class="iconLogin" src="assets/images/logo/pass.png" />
+                        <img class="iconLogin" src="assets/images/logo/pass.png"/>
                         <ion-item style="background-color: transparent;">
                             <ion-label floating class="grey">Password</ion-label>
                             <ion-input class="menu" type="password" [(ngModel)]="pass"></ion-input>
@@ -69,12 +47,13 @@
 
                 <!-- Boton Login Alastria -->
                 <ion-col style="width: 100%; margin-top: 50px;">
-                    <button ion-button block class="btnLogin" (click)="onEvent('onLogin')">{{data.loginalastria}}</button>
+                    <button ion-button block class="btnLogin"
+                            (click)="onEvent('onLogin')">{{data.loginalastria}}</button>
                 </ion-col>
                 <ion-col>
-                    <div class="grey" style="padding-top: 5px">
-                        ¿Aún no tienes cuenta? <a class="menu" (click)="onEvent('onRegister')"> {{data.newAccount}}
-                        </a>
+                    <div class="grey" style="padding-top: 5px; color: #1F2126">
+                        ¿Aún no tienes cuenta? <a class="menu" (click)="onEvent('onRegister')" style="color: #1F2126"> {{data.newAccount}}
+                    </a>
                     </div>
                 </ion-col>
             </ion-row>

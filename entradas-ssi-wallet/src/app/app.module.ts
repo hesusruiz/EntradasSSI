@@ -34,6 +34,9 @@ import {RegisterPrivacyConditionsPage} from "../pages/register/register-hub/regi
 import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.module";
 import {RegisterPwdPageModule} from "../pages/register/register-hub/register-pwd/register-pwd.module";
 import {UserProfilePage} from "../pages/user-profile/user-profile";
+import {SideBarComponent} from "../components/side-bar/side-bar";
+import {InAppBrowser} from "@ionic-native/in-app-browser";
+
 @NgModule({
     declarations: [
         MyApp,
@@ -47,14 +50,15 @@ import {UserProfilePage} from "../pages/user-profile/user-profile";
         ConfirmLogin,
         WalkthroughPage,
         ConfirmAccess,
-        UserProfilePage
+        UserProfilePage,
+        SideBarComponent
     ],
     imports: [
         BrowserModule,
         IonicModule.forRoot(MyApp, {
-            backButtonText: 'Tu AlastriaID',
-            backButtonIcon: 'ios-arrow-back'
-        }
+                backButtonText: 'Tu AlastriaID',
+                backButtonIcon: 'ios-arrow-back'
+            }
         ),
         RegisterFormModule,
         RegisterPrivacyConditionsPageModule,
@@ -85,6 +89,9 @@ import {UserProfilePage} from "../pages/user-profile/user-profile";
         UserProfilePage
 
     ],
+    exports: [
+        SideBarComponent
+    ],
     providers: [
         StatusBar,
         SplashScreen,
@@ -95,9 +102,10 @@ import {UserProfilePage} from "../pages/user-profile/user-profile";
         SessionSecuredStorageService,
         IdentitySecuredStorageService,
         Activities,
-        { provide: ErrorHandler, useClass: IonicErrorHandler },
+        {provide: ErrorHandler, useClass: IonicErrorHandler},
         ToastService,
-        TokenService
+        TokenService,
+        InAppBrowser
     ]
 })
 export class AppModule { }

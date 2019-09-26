@@ -7,8 +7,10 @@
                 <!--Form Title-->
                 <h1 ion-text register-title padding-bottom color="registerTitle">Crea tu AlastriaId</h1>
                 <!---Input field username-->
-                <ion-item>
-                    <button ion-button="" (click)="openScanner()">Abrir camera</button>
+                <ion-item style="text-align: center" no-lines>
+                    <button ion-button="" (click)="openScanner()">
+                        <ion-icon slot="icon-only" name="qr-scanner"></ion-icon>
+                    </button>
                 </ion-item>
                 <!--                <ion-item>-->
                 <!--                    <ion-label stacked>Usuario</ion-label>-->

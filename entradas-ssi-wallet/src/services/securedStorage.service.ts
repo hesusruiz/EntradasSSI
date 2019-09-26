@@ -222,6 +222,22 @@ export class SessionSecuredStorageService {
         );
     }
 
+    getEmail(): Promise<any> {
+        return this.securedStorageObject.keys().then(
+            (str) => {
+                if (str.length > 0 && str.indexOf('email') > -1) {
+                    return this.securedStorageObject.get('email');
+                } else {
+                    return null;
+                }
+            },
+        ).catch(
+            (error) => {
+                console.log('Falla al comprobar las keys', error);
+            }
+        );
+    }
+
     async checkPassword(username: string, password: string) {
         const usernameSto = await this.securedStorageObject.get('username');
         const passwordSto = await this.securedStorageObject.get('password');
@@ -229,7 +245,7 @@ export class SessionSecuredStorageService {
         return username === usernameSto && password === passwordSto;
     }
 
-    register(username: string, password: any): Promise<any> {
+    register(username: string, password: any, email: string): Promise<any> {
         return new Promise(
             (resolve, reject) => {
                 this.getUsername().then(
@@ -243,7 +259,13 @@ export class SessionSecuredStorageService {
                                 (result) => {
                                     this.securedStorageObject.set('password', password).then(
                                         (result) => {
-                                            resolve();
+                                            //  resolve();
+
+                                            this.securedStorageObject.set('email', email).then(
+                                                (result) => {
+                                                    resolve();
+                                                }
+                                            )
                                         })
                                     // ).catch(
                                     //     (error) => {
@@ -251,6 +273,7 @@ export class SessionSecuredStorageService {
                                     //     }
                                     // );
                                 })
+
                             // ).catch(
                             //     (error) => {
                             //         reject();
