@@ -8,6 +8,8 @@ import { ConfirmLogin } from '../../confirmLogin/confirmLogin';
 import { Index } from '../index';
 import { TokenService } from '../../../services/token-service';
 import { ConfirmAccess } from '../../confirm-access/confirm-access';
+import {ProfilePage} from "../../profile/profile";
+import {UserProfilePage} from "../user-profile/user-profile";
 
 @IonicPage()
 @Component({
@@ -44,19 +46,19 @@ export class Camera {
     }
     
     this.barcodeScanner.scan(options).then(barcodeData => {
-      console.log('QR data', barcodeData.text);
-      let alastriaToken = barcodeData.text;
-      let secret = "your-256-bit-secret";
-
-      let verifiedJWT = this.tokenSrv.verifyToken(alastriaToken, secret);
-
-      let tokenType = this.tokenSrv.getTokenType(verifiedJWT);
-
-      this.launchProtocol(tokenType, verifiedJWT, secret);
+      // console.log('QR data', barcodeData.text);
+      // let alastriaToken = barcodeData.text;
+      // let secret = "your-256-bit-secret";
+      //
+      // let verifiedJWT = this.tokenSrv.verifyToken(alastriaToken, secret);
+      //
+      // let tokenType = this.tokenSrv.getTokenType(verifiedJWT);
+      //
+      // this.launchProtocol(tokenType, verifiedJWT, secret);
     }).catch(err => {
-      console.log('Error', err);
-      this.toastCtrl.presentToast("Error: Contacte con el service provider", 3000);
-      this.navCtrl.setRoot(Index);
+      // console.log('Error', err);
+      // this.toastCtrl.presentToast("Error: Contacte con el service provider", 3000);
+      this.navCtrl.setRoot(UserProfilePage);
     });
   }
 

@@ -33,9 +33,13 @@ import { ToastService } from '../services/toast-service';
 import {RegisterPrivacyConditionsPage} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions";
 import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.module";
 import {RegisterPwdPageModule} from "../pages/register/register-hub/register-pwd/register-pwd.module";
-import {UserProfilePage} from "../pages/user-profile/user-profile";
+import {UserProfilePage} from "../pages/tabsPage/user-profile/user-profile";
 import {SideBarComponent} from "../components/side-bar/side-bar";
 import {InAppBrowser} from "@ionic-native/in-app-browser";
+import { CredentialRequestProvider } from '../providers/credential-request/credential-request';
+import {UserProfilePageModule} from "../pages/tabsPage/user-profile/user-profile.module";
+import {ScanQrInfoPage} from "../pages/tabsPage/scan-qr-info/scan-qr-info";
+import {Camera} from "../pages/tabsPage/camera/camera";
 
 @NgModule({
     declarations: [
@@ -50,7 +54,6 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
         ConfirmLogin,
         WalkthroughPage,
         ConfirmAccess,
-        UserProfilePage,
         SideBarComponent
     ],
     imports: [
@@ -71,7 +74,8 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
         UserInfoHeaderModule,
         IdentityDataListModule,
         UserInfoHeaderModule,
-        HttpClientModule
+        HttpClientModule,
+        UserProfilePageModule
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -85,9 +89,7 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
         WalkthroughPage,
         ConfirmAccess,
         WalkthroughPage,
-        ConfirmLogin,
-        UserProfilePage
-
+        ConfirmLogin
     ],
     exports: [
         SideBarComponent
@@ -105,7 +107,8 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
         {provide: ErrorHandler, useClass: IonicErrorHandler},
         ToastService,
         TokenService,
-        InAppBrowser
+        InAppBrowser,
+    CredentialRequestProvider
     ]
 })
 export class AppModule { }

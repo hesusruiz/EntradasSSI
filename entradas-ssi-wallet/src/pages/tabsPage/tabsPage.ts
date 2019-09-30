@@ -32,12 +32,16 @@ export class TabsPage {
     }
 
     setTabsParams() {
+        console.log("Entra en el método");
         this.tabs.data = [
-            { page: "Index", icon: "home", title: "Inicio" },
-            { page: "Activity", icon: "act", title: "Actividad" },
-            { page: "Camera", icon: "leerQr", title: "Leer Qr" },
-            { page: "Notification", icon: "bell", title: "Avisos" },
-            { page: "Options", icon: "more", title: "Mas" }
+            { page: "Activity", icon: "albums"},
+            { page: "ScanQrInfoPage", icon: "leerQr"},
+            { page: "UserProfilePage", icon: "list"}
+           //{ page: "Notification", icon: "bell", title: "Avisos" },
+          //{ page: "Options", icon: "more", title: "Mas" },
+             //{ page: "Index", icon: "home", title: "Inicio" },
+          // { page: "Activity", icon: "archive", title: "Wallet" },
+
         ];
 
         this.tabs.events = {

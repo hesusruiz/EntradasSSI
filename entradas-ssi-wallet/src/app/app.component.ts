@@ -3,7 +3,7 @@ import {Platform, App, NavController, Nav} from 'ionic-angular';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {HomePage} from '../pages/home/home';
-import {UserProfilePage} from "../pages/user-profile/user-profile";
+import {UserProfilePage} from "../pages/tabsPage/user-profile/user-profile";
 import {InAppBrowser, InAppBrowserOptions} from "@ionic-native/in-app-browser";
 
 @Component({

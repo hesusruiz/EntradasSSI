@@ -1,4 +1,4 @@
-import { ModalController } from 'ionic-angular';
+import {ModalController, NavController} from 'ionic-angular';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, AlertController } from 'ionic-angular';
 import { ToastService } from '../../../services/toast-service';
@@ -6,7 +6,7 @@ import { TabsService } from '../../../services/tabs-service';
 import { Activities } from './../../../services/activities/activities.service';
 import { ActivityM } from './../../../models/activity.model';
 import { OptionsComponent } from './options/options';
-import { IdentitySecuredStorageService } from '../../../services/securedStorage.service';
+import {IdentitySecuredStorageService, SessionSecuredStorageService} from '../../../services/securedStorage.service';
 
 @IonicPage()
 @Component({
@@ -18,6 +18,14 @@ export class Activity {
 
     @ViewChild(OptionsComponent)
     public optionsComponent: OptionsComponent;
+
+    ///////data to get from securestorage
+    username: User;
+    name: string;
+    surname: string;
+    email: string;
+    ticketId: string;
+    ////////////////////
 
     public activities: Array<ActivityM>;
     public searchTerm: string;
@@ -35,10 +43,28 @@ export class Activity {
         private activitiesService: Activities,
         public alertCtrl: AlertController,
         public modalCtrl: ModalController,
-        private securedStrg: IdentitySecuredStorageService
+        private securedStrg: IdentitySecuredStorageService,
+                private navCtrl: NavController,
+                public sessionSecuredStorageService: SessionSecuredStorageService
     ) {
         this.type = this.CREDENTIAL_TYPE;
         this.getActivities();
+
+        this.sessionSecuredStorageService.getUsername().then(
+            (result) => {
+                this.username = result.split(" ");
+                this.name = this.username[0];
+                this.surname = this.username[1] + " " + this.username[2];
+            }
+        );
+
+        this.sessionSecuredStorageService.getTicketId().then(
+            (result) => {
+                this.ticketId = result;
+            }
+        );
+
+
     }
 
     /**
@@ -298,4 +324,16 @@ export class Activity {
             console.log(err);
         }
     }
+
+    openQR() {
+
+    }
+}
+interface User {
+
+    name: string;
+    surname: string;
+    email: string;
+    ticketId: string;
+
 }

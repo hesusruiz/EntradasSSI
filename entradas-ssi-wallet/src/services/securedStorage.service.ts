@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { SecureStorage, SecureStorageObject } from '@ionic-native/secure-storage';
-import { Platform } from 'ionic-angular';
+import {Injectable} from '@angular/core';
+import {SecureStorage, SecureStorageObject} from '@ionic-native/secure-storage';
+import {Platform} from 'ionic-angular';
 
 @Injectable()
 export class IdentitySecuredStorageService {
@@ -23,7 +23,6 @@ export class IdentitySecuredStorageService {
                     this.securedStorageObject = secStoObj;
                     console.log("IdentitySecureStorage ready");
                 }
-
             );
     }
 
@@ -35,7 +34,9 @@ export class IdentitySecuredStorageService {
         let keyExists = false;
         return this.securedStorageObject.keys()
             .then(result => {
-                keyExists = result.some(k => { return k === key });
+                keyExists = result.some(k => {
+                    return k === key
+                });
                 console.log(keyExists);
                 return keyExists;
             });
@@ -59,7 +60,7 @@ export class IdentitySecuredStorageService {
         return JSON.parse(jsonTmp);
     }
 
-    async removeJson(key: string){
+    async removeJson(key: string) {
         return this.securedStorageObject.remove(key);
     }
 
@@ -182,8 +183,7 @@ export class SessionSecuredStorageService {
                                 (result) => {
                                     if (result) {
                                         resolve(result);
-                                    }
-                                    else {
+                                    } else {
                                         reject('No esta registrado, hay que crear una cuenta nueva');
                                     }
                                 }
@@ -195,8 +195,7 @@ export class SessionSecuredStorageService {
                         (result) => {
                             if (result) {
                                 resolve(result);
-                            }
-                            else {
+                            } else {
                                 reject('No esta registrado, hay que crear una cuenta nueva');
                             }
                         }
@@ -238,6 +237,22 @@ export class SessionSecuredStorageService {
         );
     }
 
+    getTicketId(): Promise<any> {
+        return this.securedStorageObject.keys().then(
+            (str) => {
+                if (str.length > 0 && str.indexOf('ticketId') > -1) {
+                    return this.securedStorageObject.get('ticketId');
+                } else {
+                    return null;
+                }
+            },
+        ).catch(
+            (error) => {
+                console.log('Falla al comprobar las keys', error);
+            }
+        );
+    }
+
     async checkPassword(username: string, password: string) {
         const usernameSto = await this.securedStorageObject.get('username');
         const passwordSto = await this.securedStorageObject.get('password');
@@ -245,7 +260,7 @@ export class SessionSecuredStorageService {
         return username === usernameSto && password === passwordSto;
     }
 
-    register(username: string, password: any, email: string): Promise<any> {
+    register(username: string, password: any, email: string, ticketId: string): Promise<any> {
         return new Promise(
             (resolve, reject) => {
                 this.getUsername().then(
@@ -255,30 +270,33 @@ export class SessionSecuredStorageService {
                         //     reject('El usuario ya esta registrado');
                         // }
                         // else {
-                            this.securedStorageObject.set('username', username).then(
-                                (result) => {
-                                    this.securedStorageObject.set('password', password).then(
-                                        (result) => {
-                                            //  resolve();
+                        this.securedStorageObject.set('username', username).then(
+                            (result) => {
+                                this.securedStorageObject.set('password', password).then(
+                                    (result) => {
+                                        //  resolve();
+                                        this.securedStorageObject.set('email', email).then(
+                                            (result) => {
+                                                this.securedStorageObject.set('ticketId', ticketId).then(
+                                                    (result) => {
+                                                        resolve();
+                                                    }
+                                                )
+                                            }
+                                        )
+                                    })
+                                // ).catch(
+                                //     (error) => {
+                                //         reject();
+                                //     }
+                                // );
+                            })
 
-                                            this.securedStorageObject.set('email', email).then(
-                                                (result) => {
-                                                    resolve();
-                                                }
-                                            )
-                                        })
-                                    // ).catch(
-                                    //     (error) => {
-                                    //         reject();
-                                    //     }
-                                    // );
-                                })
-
-                            // ).catch(
-                            //     (error) => {
-                            //         reject();
-                            //     }
-                            // );
+                        // ).catch(
+                        //     (error) => {
+                        //         reject();
+                        //     }
+                        // );
                         //}
                     }
                 );

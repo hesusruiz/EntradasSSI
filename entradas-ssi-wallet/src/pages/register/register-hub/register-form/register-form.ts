@@ -5,6 +5,7 @@ import {TermsConditionsPage} from '../../../terms-conditions/terms-conditions';
 import {SessionSecuredStorageService} from '../../../../services/securedStorage.service';
 import {IdentitySecuredStorageService} from '../../../../services/securedStorage.service';
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
+import {CredentialRequestProvider} from "../../../../providers/credential-request/credential-request";
 
 @Component({
     selector: 'register-form',
@@ -34,7 +35,8 @@ export class RegisterForm {
                 public modalCtrl: ModalController,
                 public sessionSecuredStorageService: SessionSecuredStorageService,
                 public identitySecuredStorageService: IdentitySecuredStorageService,
-                public alertCtrl: AlertController, private scanner: BarcodeScanner, public navParams: NavParams) {
+                public alertCtrl: AlertController, private scanner: BarcodeScanner, public navParams: NavParams,
+                public credentialRequest: CredentialRequestProvider) {
 
         this.password = navParams.get('pwd');
 
@@ -47,13 +49,13 @@ export class RegisterForm {
                 // modal.onDidDismiss((res) => {
                 //     /* Guardo en el secureStorage */
                 //     if (res.accept === 'true') {
-                        this.sessionSecuredStorageService.register(this.name + " " + this.surnames, this.password, this.email)
+                        this.sessionSecuredStorageService.register(this.name + " " + this.surnames, this.password, this.email, this.ticketId)
                             .then(
                                 () => {
                                     console.log('Información guardada correctamente en el secureStorage');
                                     // this.credentialRequestService.getCredentials("did:alastria:quorum", "redt",this.ticketId,this.name);
                                     this.identitySecuredStorageService.getKeys().then((result) => {
-                                        console.log("holo" + result);
+                                        this.credentialRequest.requestCredential();
                                     });
 
                                     /* Redirecciono a la pagina principal */

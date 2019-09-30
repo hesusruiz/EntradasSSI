@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar transparent>
+        <ion-navbar>
+            <button ion-button icon-only menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <div class="img-in2">
+                <img src="assets/images/logo-in2/logo_in2.png">
+            </div>
+        </ion-navbar>
+    </ion-toolbar>
+</ion-header>
+
+<div id="userSettings">
+    <!--    <div class="outterOval"></div>-->
+    <!--    <div class="innerOval"></div>-->
+    <label class="name">Username</label>
+    <span class="outerUserCircle"></span>
+    <img class="innerUserCircle" src="/assets/images/avatar/0.jpg">
+    <span class="editPhoto">
+        <img src="assets/svg/edit.svg"/>
+    </span>
+</div>
+
+<ion-content>
+    <h3 text-center style="margin: 20px">Escanea un código QR</h3>
+    <button style="margin-left: auto; margin-right: auto; background: transparent; height: 70px" (click)="openScanner()">
+        <img style="margin-top: 50px"
+             src="assets/images/qr-to-scan/jwtQr.PNG" >
+    </button>
+    <p style="margin-top: 80px;">
+        Escanee un código de <a style="font-weight: bold">solicitud de presentación</a>
+        para obtener las credenciales necesarias.
+    </p>
+    <p style="margin-top: 30px;">
+        El escaneo es <a style="font-weight: bold">automático</a>. Simplemente
+        enfoca el código QR a la distancia adecuada.
+    </p>
+</ion-content>
+
+
