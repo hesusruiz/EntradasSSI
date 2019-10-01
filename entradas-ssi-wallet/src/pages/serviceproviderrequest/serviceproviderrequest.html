@@ -26,20 +26,21 @@
     <ion-card-content>
         <div>
             <a>La empresa:</a>
-            <h2 text-center style="margin: 15px;">ServiceProvider1</h2>
-            <a>Solicita los siguientes datos:</a>
-            <a style="font-weight: bold">Obligatorios:</a>
+            <h2 text-center>ServiceProvider1</h2>
+            <a style="padding-bottom: 10px">Solicita los siguientes datos:</a>
+            <br>
+            <a style="font-weight: bold; display: flex; margin-left: 15px; margin-top: 30px;">Obligatorios:</a>
         </div>
         <ion-card style="border-radius: 20px !important; margin: 10px;">
             <ion-card-header>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Ticket
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px; text-align: center; display: grid !important;">Ticket
                     {{user?.name}}
                 </ion-card-title>
                 <ion-row>
                     <ion-col text-start>
                         <a style="font-size: 14px;">Nombre</a>
                     </ion-col>
-                    <ion-col text-end>
+                    <ion-col text-end style="flex: none !important;">
                         <ion-toggle color="success" checked></ion-toggle>
                     </ion-col>
                 </ion-row>
@@ -64,8 +65,8 @@
                     <ion-col text-start>
                         <a style="font-size: 14px;">Apellidos</a>
                     </ion-col>
-                    <ion-col text-end>
-                        <ion-toggle color="success" checked></ion-toggle>
+                    <ion-col text-end style="flex: none !important;">
+                        <ion-toggle color="success" checked ></ion-toggle>
                     </ion-col>
                 </ion-row>
                 <ion-row>
@@ -81,7 +82,7 @@
             </ion-card-header>
         </ion-card>
 
-        <div>
+        <div style="display: flex; margin-left: 15px; margin-top: 30px;">
             <a>Opcionales</a>
         </div>
         <ion-card style="border-radius: 20px !important; margin: 10px;">
@@ -93,8 +94,8 @@
                     <ion-col text-start>
                         <a style="font-size: 14px;">Email</a>
                     </ion-col>
-                    <ion-col text-end>
-                        <ion-toggle color="success"></ion-toggle>
+                    <ion-col text-end style="flex: none !important;">
+                        <ion-toggle color="success" ></ion-toggle>
                     </ion-col>
                 </ion-row>
                 <ion-row>
@@ -110,6 +111,20 @@
             </ion-card-header>
         </ion-card>
     </ion-card-content>
+    <div class="privacyTerms">
+        <ion-icon name="information-circle"></ion-icon>
+        <a>https://www.in2.es/</a>
+    </div>
+    <div class="buttons-content">
+        <div class="cancel">
+            <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+            <h6>Cancelar presentación</h6>
+        </div>
+        <div class="cancel">
+            <h6>Aceptar</h6>
+            <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+        </div>
+    </div>
 </ion-content>
 
 
