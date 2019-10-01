@@ -34,19 +34,13 @@ export class TabsPage {
     setTabsParams() {
         console.log("Entra en el método");
         this.tabs.data = [
-            { page: "Activity", icon: "albums"},
-            { page: "ScanQrInfoPage", icon: "leerQr"},
-            { page: "UserProfilePage", icon: "list"}
-           //{ page: "Notification", icon: "bell", title: "Avisos" },
-          //{ page: "Options", icon: "more", title: "Mas" },
-             //{ page: "Index", icon: "home", title: "Inicio" },
-          // { page: "Activity", icon: "archive", title: "Wallet" },
-
+            { page: "UserProfilePage", icon: "albums"},
+            { page: "ScanQrInfoPage", icon: "qr-scanner"},
+            { page: "Activity", icon: "list"},
         ];
 
         this.tabs.events = {
             'onItemClick': function (item: any) {
-
             }
         };
     }

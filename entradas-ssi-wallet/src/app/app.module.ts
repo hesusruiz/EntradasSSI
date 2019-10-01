@@ -40,6 +40,7 @@ import { CredentialRequestProvider } from '../providers/credential-request/crede
 import {UserProfilePageModule} from "../pages/tabsPage/user-profile/user-profile.module";
 import {ScanQrInfoPage} from "../pages/tabsPage/scan-qr-info/scan-qr-info";
 import {Camera} from "../pages/tabsPage/camera/camera";
+import {ServiceproviderrequestPage} from "../pages/serviceproviderrequest/serviceproviderrequest";
 
 @NgModule({
     declarations: [
@@ -54,7 +55,8 @@ import {Camera} from "../pages/tabsPage/camera/camera";
         ConfirmLogin,
         WalkthroughPage,
         ConfirmAccess,
-        SideBarComponent
+        SideBarComponent,
+        ServiceproviderrequestPage
     ],
     imports: [
         BrowserModule,
@@ -89,7 +91,8 @@ import {Camera} from "../pages/tabsPage/camera/camera";
         WalkthroughPage,
         ConfirmAccess,
         WalkthroughPage,
-        ConfirmLogin
+        ConfirmLogin,
+        ServiceproviderrequestPage
     ],
     exports: [
         SideBarComponent

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Camera} from "../camera/camera";
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
+import {ServiceproviderrequestPage} from "../../serviceproviderrequest/serviceproviderrequest";
 
 /**
  * Generated class for the ScanQrInfoPage page.
@@ -26,6 +27,8 @@ export class ScanQrInfoPage {
 
   openScanner() {
     this.scanner.scan().then(barcodeData => {
+
+      this.navCtrl.push(ServiceproviderrequestPage)
 
     }).catch(err => {
       console.log('Error', err);

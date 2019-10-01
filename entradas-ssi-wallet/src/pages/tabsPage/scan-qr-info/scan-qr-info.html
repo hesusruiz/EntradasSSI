@@ -24,18 +24,24 @@
 
 <ion-content>
     <h3 text-center style="margin: 20px">Escanea un código QR</h3>
-    <button style="margin-left: auto; margin-right: auto; background: transparent; height: 70px" (click)="openScanner()">
-        <img style="margin-top: 50px"
-             src="assets/images/qr-to-scan/jwtQr.PNG" >
-    </button>
-    <p style="margin-top: 80px;">
-        Escanee un código de <a style="font-weight: bold">solicitud de presentación</a>
-        para obtener las credenciales necesarias.
-    </p>
-    <p style="margin-top: 30px;">
-        El escaneo es <a style="font-weight: bold">automático</a>. Simplemente
-        enfoca el código QR a la distancia adecuada.
-    </p>
+    <div text-center style="margin-left: auto; margin-right: auto; display: block;  margin-top: 100px">
+        <button  style="background: transparent;" (click)="openScanner()">
+            <img style=" height: 70px;"
+                 src="assets/images/qr-to-scan/jwtQr.PNG" >
+        </button>
+    </div>
+
+    <div style="margin-left: 15px;">
+        <p style="margin-top: 100px;">
+            Escanee un código de <a style="font-weight: bold">solicitud de presentación</a>
+            para obtener las credenciales necesarias.
+        </p>
+        <p style="margin-top: 35px;">
+            El escaneo es <a style="font-weight: bold">automático</a>. Simplemente
+            enfoca el código QR a la distancia adecuada.
+        </p>
+    </div>
+
 </ion-content>
 
 

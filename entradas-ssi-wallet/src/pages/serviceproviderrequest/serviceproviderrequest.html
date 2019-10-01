@@ -1,0 +1,115 @@
+<ion-header>
+    <ion-toolbar transparent>
+        <ion-navbar>
+            <button ion-button icon-only menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <div class="img-in2">
+                <img src="assets/images/logo-in2/logo_in2.png">
+            </div>
+        </ion-navbar>
+    </ion-toolbar>
+</ion-header>
+
+<div id="userSettings">
+    <!--    <div class="outterOval"></div>-->
+    <!--    <div class="innerOval"></div>-->
+    <label class="name">Username</label>
+    <span class="outerUserCircle"></span>
+    <img class="innerUserCircle" src="/assets/images/avatar/0.jpg">
+    <span class="editPhoto">
+        <img src="assets/svg/edit.svg"/>
+    </span>
+</div>
+
+<ion-content>
+    <ion-card-content>
+        <div>
+            <a>La empresa:</a>
+            <h2 text-center style="margin: 15px;">ServiceProvider1</h2>
+            <a>Solicita los siguientes datos:</a>
+            <a style="font-weight: bold">Obligatorios:</a>
+        </div>
+        <ion-card style="border-radius: 20px !important; margin: 10px;">
+            <ion-card-header>
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Ticket
+                    {{user?.name}}
+                </ion-card-title>
+                <ion-row>
+                    <ion-col text-start>
+                        <a style="font-size: 14px;">Nombre</a>
+                    </ion-col>
+                    <ion-col text-end>
+                        <ion-toggle color="success" checked></ion-toggle>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col text-start>
+                        <a style="font-size: 14px;">Emitido por: {{company}}</a>
+                    </ion-col>
+                    <ion-col text-end>
+                        <a style="font-size: 14px;">
+                            <ion-icon name="arrow-up">Basico</ion-icon>
+                        </a>
+                    </ion-col>
+                </ion-row>
+            </ion-card-header>
+        </ion-card>
+        <ion-card style="border-radius: 20px !important; margin: 10px;">
+            <ion-card-header>
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Ticket
+                    {{user?.surnames}}
+                </ion-card-title>
+                <ion-row>
+                    <ion-col text-start>
+                        <a style="font-size: 14px;">Apellidos</a>
+                    </ion-col>
+                    <ion-col text-end>
+                        <ion-toggle color="success" checked></ion-toggle>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col text-start>
+                        <a style="font-size: 14px;">Emitido por: {{company}}</a>
+                    </ion-col>
+                    <ion-col text-end>
+                        <a style="font-size: 14px;">
+                            <ion-icon name="arrow-up">Basico</ion-icon>
+                        </a>
+                    </ion-col>
+                </ion-row>
+            </ion-card-header>
+        </ion-card>
+
+        <div>
+            <a>Opcionales</a>
+        </div>
+        <ion-card style="border-radius: 20px !important; margin: 10px;">
+            <ion-card-header>
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Ticket
+                    {{user?.email}}
+                </ion-card-title>
+                <ion-row>
+                    <ion-col text-start>
+                        <a style="font-size: 14px;">Email</a>
+                    </ion-col>
+                    <ion-col text-end>
+                        <ion-toggle color="success"></ion-toggle>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col text-start>
+                        <a style="font-size: 14px;">Emitido por: {{company}}</a>
+                    </ion-col>
+                    <ion-col text-end>
+                        <a style="font-size: 14px;">
+                            <ion-icon name="arrow-up">Basico</ion-icon>
+                        </a>
+                    </ion-col>
+                </ion-row>
+            </ion-card-header>
+        </ion-card>
+    </ion-card-content>
+</ion-content>
+
+

@@ -3,6 +3,7 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {SessionSecuredStorageService} from "../../../services/securedStorage.service";
 import {TabsService} from "../../../services/tabs-service";
 import {ToastService} from "../../../services/toast-service";
+import {User} from "../../../models/User";
 
 
 /**
@@ -54,13 +55,5 @@ export class UserProfilePage {
     ionViewDidLoad() {
         console.log('ionViewDidLoad UserProfilePage');
     }
-
-}
-
-interface User {
-
-    name: string;
-    surname: string;
-    email: string;
 
 }
