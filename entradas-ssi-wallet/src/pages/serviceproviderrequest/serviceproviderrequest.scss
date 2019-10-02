@@ -7,10 +7,28 @@
   transition: background-color 300ms;
   pointer-events: none;
 }
-
 .row{
   display: flex;
   align-items: center;
+}
+toggle_style{
+  flex: none !important;
+}
+.privacyTerms{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cancel{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 

@@ -112,6 +112,7 @@ export class Login {
     goToRegister(){
         this.navCtrl.push(RegisterPrivacyConditionsPage);
         console.log("Ok");
+
     }
 
 }

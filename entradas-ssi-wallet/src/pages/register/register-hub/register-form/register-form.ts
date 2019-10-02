@@ -6,6 +6,7 @@ import {SessionSecuredStorageService} from '../../../../services/securedStorage.
 import {IdentitySecuredStorageService} from '../../../../services/securedStorage.service';
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 import {CredentialRequestProvider} from "../../../../providers/credential-request/credential-request";
+import {KeyGeneratorService} from "../../../../services/KeyGenerator.service";
 
 @Component({
     selector: 'register-form',
@@ -36,7 +37,7 @@ export class RegisterForm {
                 public sessionSecuredStorageService: SessionSecuredStorageService,
                 public identitySecuredStorageService: IdentitySecuredStorageService,
                 public alertCtrl: AlertController, private scanner: BarcodeScanner, public navParams: NavParams,
-                public credentialRequest: CredentialRequestProvider) {
+                public credentialRequest: CredentialRequestProvider, private keyGenerator: KeyGeneratorService) {
 
         this.password = navParams.get('pwd');
 
@@ -54,9 +55,12 @@ export class RegisterForm {
                                 () => {
                                     console.log('Información guardada correctamente en el secureStorage');
                                     // this.credentialRequestService.getCredentials("did:alastria:quorum", "redt",this.ticketId,this.name);
+                                    let encodedKey=keyGenerator.generatePublicPrivateKey();
+
                                     this.identitySecuredStorageService.getKeys().then((result) => {
-                                        this.credentialRequest.requestCredential();
+                                        this.credentialRequest.requestCredential(encodedKey, this.email, this.name, this.surnames, this.ticketId);
                                     });
+
 
                                     /* Redirecciono a la pagina principal */
                                     this.navCtrl.setRoot(HomePage);

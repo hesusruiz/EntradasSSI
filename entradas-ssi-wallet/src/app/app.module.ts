@@ -41,6 +41,7 @@ import {UserProfilePageModule} from "../pages/tabsPage/user-profile/user-profile
 import {ScanQrInfoPage} from "../pages/tabsPage/scan-qr-info/scan-qr-info";
 import {Camera} from "../pages/tabsPage/camera/camera";
 import {ServiceproviderrequestPage} from "../pages/serviceproviderrequest/serviceproviderrequest";
+import {KeyGeneratorService} from "../services/KeyGenerator.service";
 
 @NgModule({
     declarations: [
@@ -111,7 +112,8 @@ import {ServiceproviderrequestPage} from "../pages/serviceproviderrequest/servic
         ToastService,
         TokenService,
         InAppBrowser,
-    CredentialRequestProvider
+    CredentialRequestProvider,
+        KeyGeneratorService
     ]
 })
 export class AppModule { }
