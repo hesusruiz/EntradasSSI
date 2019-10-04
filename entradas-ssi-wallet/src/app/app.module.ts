@@ -58,7 +58,8 @@ import {CredentialProvider} from '../providers/credential/credential';
         WalkthroughPage,
         ConfirmAccess,
         SideBarComponent,
-        ServiceproviderrequestPage
+        ServiceproviderrequestPage,
+        ShowIdentityPage
     ],
     imports: [
         BrowserModule,
@@ -94,7 +95,8 @@ import {CredentialProvider} from '../providers/credential/credential';
         ConfirmAccess,
         WalkthroughPage,
         ConfirmLogin,
-        ServiceproviderrequestPage
+        ServiceproviderrequestPage,
+        ShowIdentityPage
     ],
     exports: [
         SideBarComponent

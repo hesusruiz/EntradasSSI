@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {User} from "../../models/User";
+import {ShowIdentityPage} from "../show-identity/show-identity";
 
 /**
  * Generated class for the ServiceproviderrequestPage page.
@@ -32,5 +33,8 @@ export class ServiceproviderrequestPage {
       this.user.ticketId='12371283had';
   }
 
+  showIdentity(){
+    this.navCtrl.push(ShowIdentityPage);
+  }
 
 }
