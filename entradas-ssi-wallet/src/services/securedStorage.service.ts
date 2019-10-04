@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {SecureStorage, SecureStorageObject} from '@ionic-native/secure-storage';
 import {Platform} from 'ionic-angular';
+import {CredentialProvider} from "../providers/credential/credential";
 
 @Injectable()
 export class IdentitySecuredStorageService {
@@ -253,11 +254,23 @@ export class SessionSecuredStorageService {
         );
     }
 
+    saveUserData(data: string[]){
+        this.securedStorageObject.set('userData', JSON.stringify(data));
+    }
+
     async checkPassword(username: string, password: string) {
         const usernameSto = await this.securedStorageObject.get('username');
         const passwordSto = await this.securedStorageObject.get('password');
 
         return username === usernameSto && password === passwordSto;
+    }
+
+    saveCredential(id:string,credential: CredentialProvider): Promise<any> {
+        return new Promise(
+            (resolve, reject)=>{
+                this.securedStorageObject.set('credential'+id,JSON.stringify(credential));
+            }
+        )
     }
 
     register(username: string, password: any, email: string, ticketId: string): Promise<any> {
