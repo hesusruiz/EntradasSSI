@@ -43,6 +43,11 @@ import {Camera} from "../pages/tabsPage/camera/camera";
 import {ServiceproviderrequestPage} from "../pages/serviceproviderrequest/serviceproviderrequest";
 import {KeyGeneratorService} from "../services/KeyGenerator.service";
 import {CredentialProvider} from '../providers/credential/credential';
+import {ScannerErrorPage} from "../pages/scanner-error/scanner-error";
+import {ScannerErrorPageModule} from "../pages/scanner-error/scanner-error.module";
+import { Platform, NavController } from 'ionic-angular';
+import { Deeplinks } from '@ionic-native/deeplinks';
+
 
 @NgModule({
     declarations: [
@@ -58,7 +63,7 @@ import {CredentialProvider} from '../providers/credential/credential';
         WalkthroughPage,
         ConfirmAccess,
         SideBarComponent,
-        ServiceproviderrequestPage
+        ServiceproviderrequestPage,
     ],
     imports: [
         BrowserModule,
@@ -79,7 +84,8 @@ import {CredentialProvider} from '../providers/credential/credential';
         IdentityDataListModule,
         UserInfoHeaderModule,
         HttpClientModule,
-        UserProfilePageModule
+        UserProfilePageModule,
+        ScannerErrorPageModule,
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -94,7 +100,8 @@ import {CredentialProvider} from '../providers/credential/credential';
         ConfirmAccess,
         WalkthroughPage,
         ConfirmLogin,
-        ServiceproviderrequestPage
+        ServiceproviderrequestPage,
+        ScannerErrorPage
     ],
     exports: [
         SideBarComponent
@@ -115,8 +122,16 @@ import {CredentialProvider} from '../providers/credential/credential';
         InAppBrowser,
         CredentialRequestProvider,
         KeyGeneratorService,
-        CredentialProvider
+        CredentialProvider,
+        Deeplinks
     ]
 })
 export class AppModule {
+    constructor(
+        protected platform: Platform,
+        protected deeplinks: Deeplinks
+    ) {
+
+    }
+
 }

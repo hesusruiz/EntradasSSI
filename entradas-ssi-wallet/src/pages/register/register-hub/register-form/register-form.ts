@@ -75,7 +75,7 @@ export class RegisterForm {
 
                                     let i=0;
                                     while (i<userData.length){
-                                        let newCredential= new CredentialProvider('cred'+i,'in2',userData[i],true, currentDate.toUTCString(),'213',0);
+                                        let newCredential= new CredentialProvider('cred'+i,'in2',userData[i],true, currentDate.toLocaleTimeString(),'213',0);
                                         this.sessionSecuredStorageService.saveCredential('_'+i,newCredential);
 
                                         i++;
