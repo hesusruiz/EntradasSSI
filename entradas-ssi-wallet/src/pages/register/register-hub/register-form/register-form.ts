@@ -7,6 +7,7 @@ import {IdentitySecuredStorageService} from '../../../../services/securedStorage
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 import {CredentialRequestProvider} from "../../../../providers/credential-request/credential-request";
 import {KeyGeneratorService} from "../../../../services/KeyGenerator.service";
+import {CredentialProvider} from "../../../../providers/credential/credential";
 
 @Component({
     selector: 'register-form',
@@ -61,6 +62,24 @@ export class RegisterForm {
                                         this.credentialRequest.requestCredential(encodedKey, this.email, this.name, this.surnames, this.ticketId);
                                     });
 
+                                    let userData= [this.name, this.surnames, this.email, this.ticketId];
+
+                                    this.sessionSecuredStorageService.saveUserData(userData);
+
+                                    userData.forEach(function (value) {
+                                        // let newCredential= new CredentialProvider(issuer,value,isActive,issueDate,expireDate,level);
+                                    });
+
+                                    let currentDate=new Date();
+                                    console.log(currentDate);
+
+                                    let i=0;
+                                    while (i<userData.length){
+                                        let newCredential= new CredentialProvider('cred'+i,'in2',userData[i],true, currentDate.toUTCString(),'213',0);
+                                        this.sessionSecuredStorageService.saveCredential('_'+i,newCredential);
+
+                                        i++;
+                                    }
 
                                     /* Redirecciono a la pagina principal */
                                     this.navCtrl.setRoot(HomePage);
@@ -83,6 +102,13 @@ export class RegisterForm {
         //         this.navCtrl.setRoot(HomePage);
         //     }
          }
+    }
+
+    createCredential(id:string,issuer: string, name: string, isActive: boolean, issueDate: string,
+                     expireDate: string, level: number): CredentialProvider{
+
+        return new CredentialProvider(id,issuer,name,isActive,issueDate,expireDate,level);
+
     }
 
     showAlert(title: string, message: string) {

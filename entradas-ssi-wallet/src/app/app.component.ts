@@ -29,7 +29,7 @@ export class MyApp {
 
     }
 
-    pushPage(page) {
+    pushPage(page:string) {
         this.nav.push(page);
     }
 
