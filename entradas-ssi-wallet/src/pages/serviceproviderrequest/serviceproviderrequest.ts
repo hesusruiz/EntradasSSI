@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {User} from "../../models/User";
-import {ShowIdentityPage} from "../show-identity/show-identity";
+import {IdentitySecuredStorageService, SessionSecuredStorageService} from "../../services/securedStorage.service";
 
 /**
  * Generated class for the ServiceproviderrequestPage page.
@@ -20,21 +20,33 @@ export class ServiceproviderrequestPage {
   user : User;
   company: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, secureStorage: SessionSecuredStorageService) {
 
+    secureStorage.getUsername().then(
+        (result) => {
+          this.user = result.split(" ");
+          this.user.name = this.user[0];
+          this.user.surnames = this.user[1] + " " + this.user[2];
+        }
+    );
+
+    secureStorage.getTicketId().then(
+        (result) => {
+          this.user.ticketId = result;
+        }
+    );
+    secureStorage.getEmail().then(
+        (result) => {
+          this.user.email = result;
+        }
+    );
 
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ServiceproviderrequestPage');
-      this.user.name='Juan';
-      this.user.surnames='Garcia Garcia';
-      this.user.email='jgarcia@gmail.com';
-      this.user.ticketId='12371283had';
+
   }
 
-  showIdentity(){
-    this.navCtrl.push(ShowIdentityPage);
-  }
 
 }

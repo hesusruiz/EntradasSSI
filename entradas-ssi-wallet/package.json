@@ -26,6 +26,7 @@
     "@angular/platform-browser-dynamic": "5.0.3",
     "@ionic-native/barcode-scanner": "4.4.2",
     "@ionic-native/core": "4.11.0",
+    "@ionic-native/deeplinks": "4.4.2",
     "@ionic-native/fingerprint-aio": "4.18.0",
     "@ionic-native/firebase": "4.4.2",
     "@ionic-native/google-analytics": "4.4.2",
@@ -115,7 +116,12 @@
       "cordova-plugin-fingerprint-aio": {
         "FACEID_USAGE_DESCRIPTION": " "
       },
-      "cordova-plugin-inappbrowser": {}
+      "cordova-plugin-inappbrowser": {},
+      "ionic-plugin-deeplinks": {
+        "URL_SCHEME": "myapp",
+        "DEEPLINK_SCHEME": "https",
+        "DEEPLINK_HOST": "entradas.com"
+      }
     },
     "platforms": [
       "browser",
