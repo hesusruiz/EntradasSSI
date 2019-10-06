@@ -19,28 +19,30 @@ export class ServiceproviderrequestPage {
 
   user : User;
   company: string;
+  wantedRq: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, secureStorage: SessionSecuredStorageService) {
 
-    secureStorage.getUsername().then(
-        (result) => {
-          this.user = result.split(" ");
-          this.user.name = this.user[0];
-          this.user.surnames = this.user[1] + " " + this.user[2];
-        }
-    );
-
-    secureStorage.getTicketId().then(
-        (result) => {
-          this.user.ticketId = result;
-        }
-    );
-    secureStorage.getEmail().then(
-        (result) => {
-          this.user.email = result;
-        }
-    );
-
+     this.wantedRq = this.navParams.get('wantedRq');
+      if (this.wantedRq === "ticketID") {
+          secureStorage.getUsername().then(
+              (result) => {
+                this.user = result.split(" ");
+                this.user.name = this.user[0];
+                this.user.surnames = this.user[1] + " " + this.user[2];
+              }
+          );
+          secureStorage.getTicketId().then(
+              (result) => {
+                this.user.ticketId = result;
+              }
+          );
+          secureStorage.getEmail().then(
+              (result) => {
+                this.user.email = result;
+              }
+          );
+      }
   }
 
   ionViewDidLoad() {

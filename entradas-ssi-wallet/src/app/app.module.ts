@@ -46,7 +46,6 @@ import {CredentialProvider} from '../providers/credential/credential';
 import {ScannerErrorPage} from "../pages/scanner-error/scanner-error";
 import {ScannerErrorPageModule} from "../pages/scanner-error/scanner-error.module";
 import { Platform, NavController } from 'ionic-angular';
-import { Deeplinks } from '@ionic-native/deeplinks';
 
 
 @NgModule({
@@ -123,15 +122,7 @@ import { Deeplinks } from '@ionic-native/deeplinks';
         CredentialRequestProvider,
         KeyGeneratorService,
         CredentialProvider,
-        Deeplinks
     ]
 })
-export class AppModule {
-    constructor(
-        protected platform: Platform,
-        protected deeplinks: Deeplinks
-    ) {
+export class AppModule {}
 
-    }
-
-}
