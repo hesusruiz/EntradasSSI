@@ -37,8 +37,9 @@ export class ScanQrInfoPage {
         console.log('ENTRA')
         let dataQR
             = JSON.parse(barcodeData.text);
-        let wantedRq = this.searchJSON(dataQR);
-        this.navCtrl.push(ServiceproviderrequestPage,{wantedRq:'wantedRq'});
+        this.searchJSON(dataQR);
+        //console.log(wantedRq);
+
       }
     }).catch(err => {
       console.log('Error', err);
@@ -53,7 +54,8 @@ export class ScanQrInfoPage {
       }
       else{
         if(k=='field_name'){
-            return data[k];
+            console.log(data[k]);
+            this.navCtrl.push(ServiceproviderrequestPage,{wantedRq:data[k]});
         }
       }
 

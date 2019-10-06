@@ -19,12 +19,13 @@ export class ServiceproviderrequestPage {
 
   user : User;
   company: string;
-  wantedRq: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, secureStorage: SessionSecuredStorageService) {
 
-     this.wantedRq = this.navParams.get('wantedRq');
-      if (this.wantedRq === "ticketID") {
+     let value = navParams.get('wantedRq');
+     console.log(value);
+      if (value === "ticketID") {
+          console.log("DINS DEL TICKET ID")
           secureStorage.getUsername().then(
               (result) => {
                 this.user = result.split(" ");
