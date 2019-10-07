@@ -109,10 +109,10 @@
   resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-4.11.0.tgz#9397ff47c35b23c9541eb40c4936857caf5f6322"
   integrity sha512-bBFE6bM0P254CWmqAqWe2ju7WPo51yn/vIoBrEb5SX2Iousn+1xYwuIO93n9+nlx17EI7Uz+h2mPej4Chi7hLQ==
 
-"@ionic-native/deeplinks@4.4.2":
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/deeplinks/-/deeplinks-4.4.2.tgz#ed9abd02659337955d3527d288e1a9f22b48ff73"
-  integrity sha512-hokJRod+0oAboYNvasDTGH/w9iPXjjBpLWuuE8F77gVvu5oJHIJ0B25I3C8A1ZPrne7/80gSYHBYjT96WIQJ8w==
+"@ionic-native/deeplinks@^4.20.0":
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/deeplinks/-/deeplinks-4.20.0.tgz#15ca1f283eb7798398d078c27bb58577109c2237"
+  integrity sha512-lBbdLkxvzpzIyNF6HCW8RwZ3N8bvosZLYi9jBgdrmr+w/PtA+FInr+5D1FmTF8ljsB2hdpbciivVjclCuuhgJg==
 
 "@ionic-native/fingerprint-aio@4.18.0":
   version "4.18.0"
