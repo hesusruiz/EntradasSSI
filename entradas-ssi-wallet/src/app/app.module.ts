@@ -30,23 +30,18 @@ import {ConfirmAccess} from '../pages/confirm-access/confirm-access';
 import {HttpClientModule} from "@angular/common/http"
 import {TokenService} from '../services/token-service';
 import {ToastService} from '../services/toast-service';
-import {RegisterPrivacyConditionsPage} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions";
 import {RegisterPrivacyConditionsPageModule} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.module";
 import {RegisterPwdPageModule} from "../pages/register/register-hub/register-pwd/register-pwd.module";
-import {UserProfilePage} from "../pages/tabsPage/user-profile/user-profile";
 import {SideBarComponent} from "../components/side-bar/side-bar";
 import {InAppBrowser} from "@ionic-native/in-app-browser";
 import {CredentialRequestProvider} from '../providers/credential-request/credential-request';
 import {UserProfilePageModule} from "../pages/tabsPage/user-profile/user-profile.module";
-import {ScanQrInfoPage} from "../pages/tabsPage/scan-qr-info/scan-qr-info";
-import {Camera} from "../pages/tabsPage/camera/camera";
 import {ServiceproviderrequestPage} from "../pages/serviceproviderrequest/serviceproviderrequest";
 import {KeyGeneratorService} from "../services/KeyGenerator.service";
 import {CredentialProvider} from '../providers/credential/credential';
-import {ScannerErrorPage} from "../pages/scanner-error/scanner-error";
 import {ScannerErrorPageModule} from "../pages/scanner-error/scanner-error.module";
-import { Platform, NavController } from 'ionic-angular';
 import {ShowIdentityPage} from "../pages/show-identity/show-identity";
+import { Deeplinks } from '@ionic-native/deeplinks';
 
 
 @NgModule({
@@ -125,6 +120,7 @@ import {ShowIdentityPage} from "../pages/show-identity/show-identity";
         CredentialRequestProvider,
         KeyGeneratorService,
         CredentialProvider,
+        Deeplinks
     ]
 })
 export class AppModule {}
