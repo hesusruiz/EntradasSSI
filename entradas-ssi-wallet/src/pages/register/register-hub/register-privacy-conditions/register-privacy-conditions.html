@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-navbar>
+        <ion-icon name="menu"></ion-icon>
+        <a slot="primary">
+            <img height="50px" src="assets/images/logo-in2/logo_in2.png">
+        </a>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row padding-horizontal align-items-start>
+            <ion-col no-padding col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+                <!--Form Title-->
+                <h1 ion-text register-title padding-bottom color="registerTitle">Privacidad y condiciones</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam rutrum justo massa, maximus elementum leo dignissim ac.
+                    Vestibulum eleifend lorem nec neque interdum varius.
+                    Sed in neque at nibh congue tincidunt.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Suspendisse potenti.
+                    Donec magna odio, semper ac nibh et, vestibulum eleifend felis. Donec pulvinar ex non
+                    quam vulputate malesuada in a magna. Praesent massa arcu, vehicula id pharetra et, cursus at lectus.
+                </p>
+                <ion-item>
+                    <ion-checkbox color="primary" [checked]="isChecked" (ionChange)="notifyChecked()"></ion-checkbox>
+                    <ion-label>Aceptar</ion-label>
+                </ion-item>
+                <button [disabled]="!isChecked" ion-button float-right clear button-clear text-capitalize (click)="goToRegisterForm()">Empezar
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
