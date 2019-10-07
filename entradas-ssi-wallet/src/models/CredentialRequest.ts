@@ -5,7 +5,6 @@ export class HeaderUserRequest{
     alg: "ES256";
     vc : VerifiableCredential[];
 }
-
 export class CredentialRequest {
     iss: "did:alastria:quorum:redt:1111";
     sub: "did:alastria:quorum:redt:345";
@@ -13,11 +12,9 @@ export class CredentialRequest {
     exp: 1525465;
     nbf: 1525465;
 }
-
 export class VerifiableCredential{
     credentialSubject: CredentialSubject;
 }
-
 export class CredentialSubject{
     urlServer: string;
     apellido: string;
@@ -29,13 +26,11 @@ export class CredentialSubject{
     type: Type;
     context: Context;
 }
-
- export class Type {
+export class Type {
     verifiableCredential:  "VerifiableCredential";
     alastriaExample:  "AlastriaExampleCredential";
- }
-
- export class Context{
+}
+export class Context{
     urlContext: "https://www.w3.org/2018/credentials/v1";
     jwt: "JWT";
- }
+}
