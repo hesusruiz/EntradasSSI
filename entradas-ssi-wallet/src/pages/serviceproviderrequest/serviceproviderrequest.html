@@ -27,12 +27,14 @@
             <h2 text-center>ServiceProvider1</h2>
             <a style="padding-bottom: 10px">Solicita los siguientes datos:</a>
             <br>
-            <a style="font-weight: bold; display: flex; margin-left: 15px; margin-top: 30px;">Obligatorios:</a>
+            <a style="font-weight: bold; display: flex; margin-left: 15px; margin-top: 30px;">OBLIGATORIOS:</a>
         </div>
         <ion-card style="border-radius: 20px !important; margin: 10px;">
             <ion-card-header>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px; text-align: center; display: grid !important;">Ticket
-                    {{user}}
+                <ion-card-title text-center
+                                style="font-weight: bold; font-size: 20px; text-align: center; display: grid !important;">
+                    Ticket
+                    {{user?.ticketId}}
                 </ion-card-title>
                 <ion-row>
                     <ion-col text-start>
@@ -54,37 +56,13 @@
                 </ion-row>
             </ion-card-header>
         </ion-card>
-        <ion-card style="border-radius: 20px !important; margin: 10px;">
-            <ion-card-header>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Ticket
-                    {{user?.surnames}}
-                </ion-card-title>
-                <ion-row>
-                    <ion-col text-start>
-                        <a style="font-size: 14px;">Apellidos</a>
-                    </ion-col>
-                    <ion-col text-end style="flex: none !important;">
-                        <ion-toggle color="success" checked ></ion-toggle>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col text-start>
-                        <a style="font-size: 14px;">Emitido por: {{company}}</a>
-                    </ion-col>
-                    <ion-col text-end>
-                        <a style="font-size: 14px;">
-                            <ion-icon name="arrow-up">Basico</ion-icon>
-                        </a>
-                    </ion-col>
-                </ion-row>
-            </ion-card-header>
-        </ion-card>
+
         <div style="display: flex; margin-left: 15px; margin-top: 30px;">
-            <a>Opcionales</a>
+            <a>OPCIONALES:</a>
         </div>
         <ion-card style="border-radius: 20px !important; margin: 10px;">
             <ion-card-header>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Ticket
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Email
                     {{user?.email}}
                 </ion-card-title>
                 <ion-row>
@@ -92,7 +70,7 @@
                         <a style="font-size: 14px;">Email</a>
                     </ion-col>
                     <ion-col text-end style="flex: none !important;">
-                        <ion-toggle color="success" ></ion-toggle>
+                        <ion-toggle color="success"></ion-toggle>
                     </ion-col>
                 </ion-row>
                 <ion-row>
@@ -118,8 +96,10 @@
             <h6>Cancelar presentación</h6>
         </div>
         <div class="cancel">
-            <h6>Aceptar</h6>
-            <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" (click)="showIdentity()"></ion-icon>
+            <button ion-item (click)="showIdentity()">
+                <h6>Aceptar</h6>
+                <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" ></ion-icon>
+            </button>
         </div>
     </div>
 </ion-content>

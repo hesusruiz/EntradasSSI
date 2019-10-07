@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {User} from "../../models/User";
 
 /**
  * Generated class for the ShowIdentityPage page.
@@ -15,10 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ShowIdentityPage {
 
-  nombre: string;
+  user: User;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.nombre = "Dani";
+    this.user= navParams.get('user');
+
   }
 
   ionViewDidLoad() {

@@ -46,6 +46,7 @@ import {CredentialProvider} from '../providers/credential/credential';
 import {ScannerErrorPage} from "../pages/scanner-error/scanner-error";
 import {ScannerErrorPageModule} from "../pages/scanner-error/scanner-error.module";
 import { Platform, NavController } from 'ionic-angular';
+import {ShowIdentityPage} from "../pages/show-identity/show-identity";
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { Platform, NavController } from 'ionic-angular';
         ConfirmAccess,
         SideBarComponent,
         ServiceproviderrequestPage,
+        ShowIdentityPage
     ],
     imports: [
         BrowserModule,
@@ -100,7 +102,8 @@ import { Platform, NavController } from 'ionic-angular';
         WalkthroughPage,
         ConfirmLogin,
         ServiceproviderrequestPage,
-        ScannerErrorPage
+        ShowIdentityPage
+
     ],
     exports: [
         SideBarComponent
