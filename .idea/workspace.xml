@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ae7b800-fabf-49b4-9478-c33cae87ea28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/EntradasSSI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs 2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,24 +20,27 @@
     <session id="1942476577">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="json" value="1" />
-          <entry key="ts" value="13" />
+          <entry key="html" value="4" />
+          <entry key="json" value="2" />
+          <entry key="scss" value="1" />
+          <entry key="ts" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JSON" value="1" />
-          <entry key="TypeScript" value="13" />
+          <entry key="HTML" value="4" />
+          <entry key="JSON" value="2" />
+          <entry key="SCSS" value="1" />
+          <entry key="TypeScript" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -50,84 +50,69 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="TypeScriptServerServiceImpl" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ts" value="1062" />
+          <entry key="html" value="74" />
+          <entry key="ts" value="1166" />
+          <entry key="txt" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="TypeScript" value="1062" />
+          <entry key="HTML" value="74" />
+          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="TypeScript" value="1166" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts">
+        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="15">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-335" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/models/CredentialRequest.ts">
+        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.scss">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-form/register-form.ts">
+        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="-460">
+              <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#100#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@types/node/globals.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2925">
-              <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -137,6 +122,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>navParams.get</find>
+      <find>dee</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,8 +137,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-form/register-form.ts" />
-        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.ts" />
         <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts" />
+        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.ts" />
+        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.ts" />
+        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.html" />
+        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.html" />
+        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/entradas-ssi-wallet/package.json" />
       </list>
     </option>
   </component>
@@ -162,9 +153,1077 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@agm/core/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular-devkit/build-optimizer/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular-devkit/build-optimizer/node_modules/typescript/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular-devkit/build-optimizer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular-devkit/build-optimizer/webpack-loader/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/common/http/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/common/http/testing/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/common/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/common/testing/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/load-json-file/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/magic-string/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/os-locale/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/path-type/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/read-pkg-up/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/read-pkg/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/strip-bom/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/which-module/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler-cli/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/compiler/testing/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/core/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/core/testing/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/forms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/http/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/http/testing/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/platform-browser-dynamic/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/platform-browser-dynamic/testing/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/platform-browser/animations/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/platform-browser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@angular/platform-browser/testing/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@babel/code-frame/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@babel/highlight/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/barcode-scanner/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/core/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/deeplinks/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/fingerprint-aio/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/firebase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/google-analytics/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/in-app-browser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/secure-storage/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/splash-screen/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/status-bar/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic/app-scripts/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic/storage/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@types/jsonwebtoken/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@types/localforage/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@types/node/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/acorn-dynamic-import/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/acorn-dynamic-import/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/align-text/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/align-text/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/amdefine/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/android-versions/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/angular2-google-maps/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/angularfire2/auth/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/angularfire2/database-deprecated/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/angularfire2/database/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/angularfire2/firestore/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/angularfire2/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/angularfire2/storage/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/anymatch/node_modules/normalize-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/anymatch/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/aproba/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/are-we-there-yet/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/argparse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/arr-diff/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/arr-flatten/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/arr-union/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/array-find-index/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/array-unique/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/asn1.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/asn1/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/assert/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/assert/node_modules/util/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/assert/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/assign-symbols/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ast-types/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/async-each/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/async-foreach/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/async-limiter/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/asynckit/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/atob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/autoprefixer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/aws-sign2/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/aws4/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/base/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/base/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/base/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/base/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/base/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/base62/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/bcrypt-pbkdf/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/big-integer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/big.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/bignumber.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/binary-extensions/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/bn.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/body/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/body/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/body/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/body/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/bplist-creator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/bplist-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/braces/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/braces/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/braces/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/braces/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/braces/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/braces/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/brorand/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/node_modules/resolve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/node_modules/resolve/test/pathfilter/deep_ref/node_modules/deep/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/node_modules/resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/node_modules/resolve/test/resolver/biz/node_modules/garply/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/node_modules/resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/node_modules/resolve/test/subdirs/node_modules/a/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browser-resolve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browserify-aes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browserify-cipher/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browserify-des/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browserify-rsa/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browserify-sign/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browserify-zlib/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/browserslist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/buffer-equal-constant-time/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/buffer-xor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/buffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/builtin-modules/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/builtin-status-codes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cache-base/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/camelcase-keys/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/caniuse-lite/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/canonical-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/caseless/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/center-align/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/chokidar/node_modules/braces/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/chokidar/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/chokidar/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cipher-base/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/class-utils/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/class-utils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/clean-css/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cliui/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/co/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/code-point-at/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/collection-visit/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/colors/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/component-emitter/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/console-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/console-control-strings/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/constants-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/continuable-cache/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/convert-source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/copy-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-android/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-android/node_modules/shelljs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-android/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/big-integer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/bplist-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/compressible/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/compressible/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/compression/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/cordova-common/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/cordova-registry-mapper/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/cordova-serve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/elementtree/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/has-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/is-wsl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/on-headers/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/opn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/plist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/q/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/raw-body/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/raw-body/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/raw-body/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/shelljs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/underscore/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/unorm/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/xmlbuilder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/node_modules/xmldom/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-browser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-common/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-common/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-common/node_modules/strip-bom/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-common/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/big-integer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/bplist-creator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/bplist-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/cordova-common/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/cordova-registry-mapper/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/elementtree/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/ios-sim/node_modules/bplist-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/ios-sim/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/ios-sim/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/node-uuid/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/pegjs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/plist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/q/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/shelljs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/simctl/node_modules/shelljs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/simctl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/simple-plist/node_modules/bplist-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/simple-plist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/stream-buffers/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/tail/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/underscore/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/unorm/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/xml-escape/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/xmlbuilder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/node_modules/xmldom/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-ios/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-add-swift-support/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-compat/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-console/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-console/tests/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-device/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-device/tests/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-fingerprint-aio/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-flashlight/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-google-analytics/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-inappbrowser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-inappbrowser/tests/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-ionic-webview/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-secure-storage/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-secure-storage/tests/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-spinner-dialog/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-splashscreen/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-splashscreen/tests/ios/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-splashscreen/tests/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-statusbar/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-statusbar/tests/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-vibration/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-vibration/tests/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-whitelist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cordova-plugin-x-toast/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/create-ecdh/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/create-hash/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/create-hmac/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/crypto-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/crypto-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/currently-unhandled/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/d/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/dashdash/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/date-now/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/decamelize/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/decode-uri-component/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/dedent/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/define-properties/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/define-property/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/define-property/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/defined/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/delegates/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/dependency-graph/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/des.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/diff/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/diffie-hellman/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/dijkstrajs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/doctrine/node_modules/esutils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/doctrine/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/doctrine/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/domain-browser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/dotenv-defaults/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/dotenv-webpack/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/dotenv/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ecc-jsbn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ecdsa-sig-formatter/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/electron-to-chromium/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/elementtree/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/elementtree/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/elliptic/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/emojis-list/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/endent/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/enhanced-resolve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/errno/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/error-ex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/error/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es-abstract/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es-to-primitive/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es3ify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es5-ext/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es6-iterator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es6-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es6-set/node_modules/es6-symbol/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es6-set/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es6-symbol/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/es6-weak-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/escope/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/esmangle-evaluator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/esprima-fb/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/esprima/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/esrecurse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/estraverse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/estree-walker/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/esutils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ethjs-abi/node_modules/bn.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ethjs-abi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/event-emitter/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/events/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/evp_bytestokey/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/execa/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/expand-brackets/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/expand-brackets/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/expand-brackets/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extend-shallow/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extend/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extglob/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extglob/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extglob/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extglob/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extglob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/extsprintf/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/falafel/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/falafel/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/falafel/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fast-json-parse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fast-json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/faye-websocket/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fill-range/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fill-range/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/for-each/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/for-in/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/foreach/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/forever-agent/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fragment-cache/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/aproba/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/are-we-there-yet/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/code-point-at/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/console-control-strings/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/deep-extend/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/delegates/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/detect-libc/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/fs-minipass/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/gauge/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/has-unicode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/ignore-walk/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/minipass/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/minizlib/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/needle/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/node-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/npm-bundled/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/npm-packlist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/rc/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/rc/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/set-blocking/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/strip-json-comments/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/wide-align/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fsevents/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/function-bind/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/gauge/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/gaze/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/get-caller-file/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/get-stdin/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/get-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/get-value/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/getpass/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/glob-parent/node_modules/is-glob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/glob-parent/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/globule/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/har-schema/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/har-validator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has-symbols/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has-unicode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has-value/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has-values/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has-values/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/has/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/hash-base/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/hash.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/hmac-drbg/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/hosted-git-info/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/http-errors/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/http-parser-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/http-signature/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/https-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/immediate/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/in-publish/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/in-publish/test/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/indent-string/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/inline-process-browser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/interpret/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/invert-kv/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ion-affix/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ionic-angular/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ionic-plugin-keyboard/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ionicons/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-arrayish/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-binary-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-buffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-callable/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-data-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-date-object/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-extglob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-finite/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-glob/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-hex-prefixed/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-module/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-number/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-number/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-plain-object/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-symbol/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-typedarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-utf8/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/is-windows/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/isobject/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/isstream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/js-base64/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/js-sha3/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/js-yaml/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jsbn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/json-loader/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/json-schema/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/json-stringify-safe/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/json5/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jsonfile/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jsonwebtoken/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jsonwebtoken/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jsprim/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jsrsasign/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jstransform/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jstransform/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jwa/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/jws/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/keypair/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lazy-cache/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lcid/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lie/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/livereload-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/load-json-file/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/loader-runner/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/localforage-cordovasqlitedriver/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/localforage/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/locate-path/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/locate-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash.includes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash.isboolean/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash.isinteger/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash.isnumber/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash.isplainobject/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash.isstring/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash.once/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/longest/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/loud-rejection/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/macos-release/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/magic-string/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/map-cache/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/map-obj/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/map-visit/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/md5.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mem/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/memory-fs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/meow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/micromatch/node_modules/braces/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/micromatch/node_modules/braces/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/micromatch/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/miller-rabin/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/minimalistic-assert/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/minimalistic-crypto-utils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mixin-deep/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mixin-deep/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mkdirp/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/nan/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/nan/tools/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/nanomatch/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/neo-async/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/next-tick/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ngx-clipboard/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ngx-qrcode2/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/nice-try/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-gyp/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-gyp/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-gyp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-libs-browser/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-libs-browser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-sass/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-sass/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-sass/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-sass/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/node-sass/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/normalize-package-data/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/normalize-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/normalize-range/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/npm-run-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/num2fraction/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/number-to-bn/node_modules/bn.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/number-to-bn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/oauth-sign/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object-copy/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object-copy/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object-copy/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object-inspect/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object-keys/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object-visit/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object.getownpropertydescriptors/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/object.pick/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/objectorarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/os-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/os-locale/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/os-name/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/p-finally/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/p-limit/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/p-locate/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/p-try/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pako/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/parse-asn1/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/parse-json/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pascalcase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-dirname/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-key/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-parse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/path-type/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pbkdf2/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pegjs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/performance-now/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/phonegap-plugin-barcodescanner/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pinkie-promise/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pinkie/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/plist/node_modules/xmlbuilder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/plist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pngjs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/posix-character-classes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/postcss-value-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/postcss/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/private/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/process/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/promise-polyfill/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/properties-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/proxy-middleware/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/prr/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/pseudomap/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/psl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/public-encrypt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/q/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/qrcode/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/qrcode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/querystring-es3/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/querystring/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/randombytes/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/randomfill/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/read-pkg-up/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/read-pkg/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/readdirp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/recast/node_modules/esprima-fb/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/recast/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/recast/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rechoir/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/redent/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/reflect-metadata/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/regex-not/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/remove-trailing-separator/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/repeat-element/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/repeat-string/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/repeating/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/request/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/request/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/require-directory/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/require-main-filename/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve-url/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/browser_field/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/dot_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/invalid_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/multirepo/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/multirepo/packages/package-a/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/multirepo/packages/package-b/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/nested_symlinks/mylib/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resolve/test/resolver/symlinked/package/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/resumer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ret/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/right-align/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ripemd160/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rollup-plugin-commonjs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rollup-plugin-node-resolve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rollup-pluginutils/node_modules/estree-walker/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rollup-pluginutils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rollup/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/rxjs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/safe-json-parse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/safe-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sass-graph/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/scss-tokenizer/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/scss-tokenizer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/send/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/serviceworker-cache-polyfill/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/set-blocking/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/set-value/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/set-value/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/setimmediate/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sha.js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/shelljs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/simple-plist/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/simple-plist/node_modules/plist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/simple-plist/node_modules/xmlbuilder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/simple-plist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon-node/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon-node/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon-util/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon-util/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/snapdragon/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/source-list-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/source-map-resolve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/source-map-url/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sourcemap-codec/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/spdx-correct/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/spdx-exceptions/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/spdx-expression-parse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/spdx-license-ids/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/split-string/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sprintf-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sshpk/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/static-extend/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/static-extend/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/stdout-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/stream-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/stream-buffers/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/stream-http/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/stream-http/test/browser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/string-template/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/string.prototype.codepointat/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/string.prototype.trim/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/string.prototype.trimleft/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/string.prototype.trimright/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/strip-bom/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/strip-eof/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/strip-hex-prefix/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/strip-indent/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sw-toolbox/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sw-toolbox/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/sw-toolbox/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/symbol-observable/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tapable/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/browser_field/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/dot_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/invalid_main/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/multirepo/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/multirepo/packages/package-a/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/node_modules/resolve/test/resolver/multirepo/packages/package-b/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tape/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tar/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/through/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/through2/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/through2/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/through2/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/through2/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/timers-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tiny-lr/examples/express/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tiny-lr/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tiny-lr/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tiny-lr/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/to-arraybuffer/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/to-object-path/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/to-object-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/to-regex-range/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/to-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/toidentifier/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tough-cookie/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tough-cookie/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/trim-newlines/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/true-case-path/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-blockchain-utils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-contract-schema/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-contract-schema/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-contract-schema/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-contract-schema/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-contract-schema/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-contract-schema/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-contract/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/truffle-error/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tslint-eslint-rules/node_modules/tsutils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tslint-eslint-rules/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tslint/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tsutils/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tty-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tunnel-agent/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/tweetnacl/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/type/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/typescript/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglify-es/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglify-es/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglify-to-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglifyjs-webpack-plugin/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglifyjs-webpack-plugin/node_modules/cliui/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglifyjs-webpack-plugin/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglifyjs-webpack-plugin/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uglifyjs-webpack-plugin/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ultron/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/underscore/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/union-value/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/universalify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/unreachable-branch-transform/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/unset-value/node_modules/has-value/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/unset-value/node_modules/has-values/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/unset-value/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/upath/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uri-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/urix/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/url/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/url/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/use/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/utf8/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/util.promisify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/util/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/util/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/validate-npm-package-license/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/verror/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/vlq/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/vm-browserify/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/watchpack/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/web3/bower/crypto-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/web3/node_modules/crypto-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/web3/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack-sources/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/json5/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/load-json-file/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/os-locale/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/path-type/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/read-pkg-up/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/read-pkg/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/strip-bom/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/which-module/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/webpack/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/websocket-driver/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/websocket-extensions/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/which-module/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/wide-align/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/win-release/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/window-size/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/wrap-ansi/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/ws/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xcode/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xcode/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xhr2/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xml2js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xmlbuilder/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xmldom/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xmlhttprequest/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/y18n/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/yargs-parser/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/yargs/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/zone.js/package.json" />
       <path value="$PROJECT_DIR$/entradas-ssi-wallet/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/cordova-common/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/plist/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/android/cordova/node_modules/xmlbuilder/package.json" />
       <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/browser/cordova/node_modules/abbrev/package.json" />
       <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/browser/cordova/node_modules/accepts/package.json" />
       <path value="$PROJECT_DIR$/entradas-ssi-wallet/platforms/browser/cordova/node_modules/ansi-regex/package.json" />
@@ -283,7 +1342,7 @@
       <path value="$PROJECT_DIR$/entradas-ssi-wallet/plugins/phonegap-plugin-barcodescanner/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1004" />
@@ -294,8 +1353,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,7 +1379,7 @@
               <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
               <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
@@ -369,19 +1429,18 @@
               <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="success" type="462c0819:PsiDirectoryNode" />
+              <item name="show-identity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570374836124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570379240513" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -429,17 +1488,26 @@
       <option name="presentableId" value="Default" />
       <updated>1570354909580</updated>
       <workItem from="1570354910784" duration="4032000" />
-      <workItem from="1570359110374" duration="10783000" />
+      <workItem from="1570359110374" duration="13758000" />
+      <workItem from="1570428926838" duration="1101000" />
     </task>
+    <task id="LOCAL-00001" summary="ADD: function to retrieve credentialRequest">
+      <created>1570376306620</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570376306620</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14815000" />
+    <option name="totallyTimeSpent" value="18891000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1004" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1004" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49898168" visible="true" weight="0.18743344" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49898168" visible="true" weight="0.18903089" />
       <window_info id="Structure" order="1" sideWeight="0.50101835" side_tool="true" weight="0.24964234" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -507,6 +1575,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADD: function to retrieve credentialRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: function to retrieve credentialRequest" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/node_modules/@ionic-native/barcode-scanner/index.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
@@ -515,9 +1587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -538,35 +1607,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/models/CredentialRequest.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="82" selection-start-line="82" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/contructions/contructions.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -582,20 +1627,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.ts">
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="515">
+          <caret line="65" selection-start-line="31" selection-start-column="2" selection-end-line="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts">
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.module.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="98">
+          <caret line="25" column="10" selection-start-line="25" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/serviceproviderrequest/serviceproviderrequest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
         </state>
       </provider>
     </entry>
