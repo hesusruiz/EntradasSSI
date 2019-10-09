@@ -1,29 +1,37 @@
 import {Injectable} from "@angular/core";
 import {Base64} from 'js-base64';
 import {Elliptic} from 'elliptic'
+import {SecureStorage} from "@ionic-native/secure-storage";
 
 
 @Injectable()
 export class KeyGeneratorService {
 
 
-    constructor() {
+    constructor( private localstorage: SecureStorage) {
     }
 
     generatePublicPrivateKey() {
         let EC = require('elliptic').ec;
-        // Create and initialize EC context
-        // (better do it once and reuse it)
+
         let ec = new EC('secp256k1');
-        // Generate keys
-        let key = ec.keyFromSecret('693e3c'); // hex string, array or Buffer
-        // key = ec.genKeyPair();
+
+        let key = ec.genKeyPair();
         console.log("KEY---------->", key);
-        let pubKey = key.getPublic();
-        console.log("Key original --->" + pubKey.toString());
-        let encodedKey = Base64.encode(pubKey);
-        console.log("Key base64--_>" + encodedKey);
-        console.log("Key original decoded -->" + Base64.decode(encodedKey));
-        return encodedKey;
+
+       // let copy=ec.keyFromPrivate(key.getPrivate('hex'),'hex');
+       //  console.log(key.getPublic().x +'+'+ key.getPublic().y);
+       //  console.log('Copy= '+copy);
+
+        let pubKey = key.getPublic('hex');
+        let privKey = key.getPrivate('hex');
+        localStorage.setItem('privateKey', privKey);
+
+        console.log("Pub Key original --->" + pubKey);
+        console.log("Priv Key original --->" + privKey);
+        // let encodedKey = Base64.encode(pubKey);
+        // console.log("Key base64--_>" + encodedKey);
+        // console.log("Key original decoded -->" + Base64.decode(encodedKey));
+        // return encodedKey;
     }
 }

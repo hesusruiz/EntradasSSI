@@ -25,150 +25,48 @@
 <ion-content>
     <ion-card-content>
         <h3 text-center style="margin: 15px;">Credenciales entregadas</h3>
-        <ion-card style="border-radius: 20px !important; margin: 10px;">
-            <ion-card-header>
-                <ion-row>
-                    <ion-col text-center>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 18px;">Ticket
-                            ID: {{ticketId}}</ion-card-title>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-icon name="help-circle"></ion-icon>
-                    </ion-col>
-                </ion-row>
+        <div *ngIf="credencialesEntregadas.length==0">
+            <h3>Aún no tienes crendenciales entregadas!</h3>
+        </div>
+        <div *ngIf="credencialesEntregadas.length>0">
+            <ion-card *ngFor="let cred of credencialesEntregadas"
+                      style="border-radius: 20px !important; margin: 10px;">
+                <ion-card-header>
+                    <ion-row>
+                        <ion-col text-center>
+                            <ion-card-title text-center style="font-weight: bold; font-size: 18px;">Ticket
+                                ID: {{cred}}</ion-card-title>
+                        </ion-col>
+                        <ion-col text-end>
+                            <ion-icon name="help-circle"></ion-icon>
+                        </ion-col>
+                    </ion-row>
 
-                <ion-row>
+                    <ion-row>
+                        <ion-col text-start>
+                            <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
+                        </ion-col>
+                        <ion-col text-end>
+                            <ion-card-subtitle style="font-size: 14px;">
+                                <ion-icon name="arrow-up">Basico</ion-icon>
+                            </ion-card-subtitle>
+                        </ion-col>
+                    </ion-row>
+                </ion-card-header>
+                <ion-row style="margin-top: -20px;">
                     <ion-col text-start>
-                        <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
+                        <ion-card-content>
+                            Presentado a ServiceProvider1
+                        </ion-card-content>
                     </ion-col>
                     <ion-col text-end>
-                        <ion-card-subtitle style="font-size: 14px;">
-                            <ion-icon name="arrow-up">Basico</ion-icon>
-                        </ion-card-subtitle>
+                        <ion-card-content>
+                            10:20:50 1/1/19
+                        </ion-card-content>
                     </ion-col>
                 </ion-row>
-            </ion-card-header>
-            <ion-row style="margin-top: -20px;">
-                <ion-col text-start>
-                    <ion-card-content>
-                        Presentado a ServiceProvider1
-                    </ion-card-content>
-                </ion-col>
-                <ion-col text-end>
-                    <ion-card-content>
-                        10:20:50 1/1/19
-                    </ion-card-content>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-        <ion-card style="border-radius: 20px !important; margin: 10px;">
-            <ion-card-header>
-                <ion-row>
-                    <ion-col text-center>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 18px;">Ticket
-                            ID: {{ticketId}}</ion-card-title>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-icon name="help-circle"></ion-icon>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row>
-                    <ion-col text-start>
-                        <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-card-subtitle style="font-size: 14px;">
-                            <ion-icon name="arrow-up">Basico</ion-icon>
-                        </ion-card-subtitle>
-                    </ion-col>
-                </ion-row>
-            </ion-card-header>
-            <ion-row style="margin-top: -20px;">
-                <ion-col text-start>
-                    <ion-card-content>
-                        Presentado a ServiceProvider1
-                    </ion-card-content>
-                </ion-col>
-                <ion-col text-end>
-                    <ion-card-content>
-                        10:20:50 1/1/19
-                    </ion-card-content>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-        <ion-card style="border-radius: 20px !important; margin: 10px;">
-            <ion-card-header>
-                <ion-row>
-                    <ion-col text-center>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 18px;">Ticket
-                            ID: {{ticketId}}</ion-card-title>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-icon name="help-circle"></ion-icon>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row>
-                    <ion-col text-start>
-                        <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-card-subtitle style="font-size: 14px;">
-                            <ion-icon name="arrow-up">Basico</ion-icon>
-                        </ion-card-subtitle>
-                    </ion-col>
-                </ion-row>
-            </ion-card-header>
-            <ion-row style="margin-top: -20px;">
-                <ion-col text-start>
-                    <ion-card-content>
-                        Presentado a ServiceProvider1
-                    </ion-card-content>
-                </ion-col>
-                <ion-col text-end>
-                    <ion-card-content>
-                        10:20:50 1/1/19
-                    </ion-card-content>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-        <ion-card style="border-radius: 20px !important; margin: 10px;">
-            <ion-card-header>
-                <ion-row>
-                    <ion-col text-center>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 18px;">Ticket
-                            ID: {{ticketId}}</ion-card-title>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-icon name="help-circle"></ion-icon>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row>
-                    <ion-col text-start>
-                        <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-card-subtitle style="font-size: 14px;">
-                            <ion-icon name="arrow-up">Basico</ion-icon>
-                        </ion-card-subtitle>
-                    </ion-col>
-                </ion-row>
-            </ion-card-header>
-            <ion-row style="margin-top: -20px;">
-                <ion-col text-start>
-                    <ion-card-content>
-                        Presentado a ServiceProvider1
-                    </ion-card-content>
-                </ion-col>
-                <ion-col text-end>
-                    <ion-card-content>
-                        10:20:50 1/1/19
-                    </ion-card-content>
-                </ion-col>
-            </ion-row>
-        </ion-card>
+            </ion-card>
+        </div>
     </ion-card-content>
 </ion-content>
 

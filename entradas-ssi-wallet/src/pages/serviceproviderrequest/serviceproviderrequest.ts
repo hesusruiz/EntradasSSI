@@ -26,7 +26,6 @@ export class ServiceproviderrequestPage {
         let value = navParams.get('wantedRq');
         console.log(value);
         if (value === "ticketID") {
-            console.log("DINS DEL TICKET ID")
             secureStorage.getUsername().then(
                 (result) => {
                     this.user = result.split(" ");

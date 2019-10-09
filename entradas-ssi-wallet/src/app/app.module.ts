@@ -42,6 +42,8 @@ import {CredentialProvider} from '../providers/credential/credential';
 import {ScannerErrorPageModule} from "../pages/scanner-error/scanner-error.module";
 import {ShowIdentityPage} from "../pages/show-identity/show-identity";
 import { Deeplinks } from '@ionic-native/deeplinks';
+import {Activity} from "../pages/tabsPage/activity/activity";
+import {ActivityModule} from "../pages/tabsPage/activity/activity.module";
 
 
 @NgModule({
@@ -82,6 +84,7 @@ import { Deeplinks } from '@ionic-native/deeplinks';
         HttpClientModule,
         UserProfilePageModule,
         ScannerErrorPageModule,
+        ActivityModule
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -97,7 +100,9 @@ import { Deeplinks } from '@ionic-native/deeplinks';
         WalkthroughPage,
         ConfirmLogin,
         ServiceproviderrequestPage,
-        ShowIdentityPage
+        ShowIdentityPage,
+        Activity
+
 
     ],
     exports: [

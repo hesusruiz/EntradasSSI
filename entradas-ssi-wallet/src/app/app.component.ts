@@ -6,6 +6,7 @@ import {HomePage} from '../pages/home/home';
 import {UserProfilePage} from "../pages/tabsPage/user-profile/user-profile";
 import {InAppBrowser, InAppBrowserOptions} from "@ionic-native/in-app-browser";
 import { Deeplinks } from '@ionic-native/deeplinks';
+import {Login} from "../pages/login/login";
 
 @Component({
     templateUrl: 'app.html'
@@ -13,6 +14,7 @@ import { Deeplinks } from '@ionic-native/deeplinks';
 
 export class MyApp {
     @ViewChild(Nav) nav: Nav;
+    @ViewChild(Platform) plat:Platform;
 
     rootPage: any = HomePage;
     userProfile = UserProfilePage;
@@ -20,7 +22,21 @@ export class MyApp {
     constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks) {
         platform.ready().then(() => {
             this.deepLink.routeWithNavController(this.nav, {
-                '/login':'Login'
+                '/login': Login
+            }).subscribe(match => {
+                console.log('Successfully matched route', match);
+            }, nomatch => {
+                console.error('Got a deeplink that didn\'t match', nomatch);
+            });
+
+
+        });
+    }
+
+    ionViewDidLoad(){
+        this.plat.ready().then(() => {
+            this.deepLink.routeWithNavController(this.nav, {
+                '/login': Login
             }).subscribe(match => {
                 console.log('Successfully matched route', match);
             }, nomatch => {

@@ -119,8 +119,7 @@
       "cordova-plugin-inappbrowser": {},
       "ionic-plugin-deeplinks": {
         "URL_SCHEME": "myapp",
-        "DEEPLINK_SCHEME": "https",
-        "DEEPLINK_HOST": "example.com",
+        "DEEPLINK_HOST": "app",
         "ANDROID_PATH_PREFIX": "/"
       }
     },

@@ -56,8 +56,8 @@ export class RegisterForm {
                                 () => {
                                     console.log('Información guardada correctamente en el secureStorage');
                                     // this.credentialRequestService.getCredentials("did:alastria:quorum", "redt",this.ticketId,this.name);
-                                    // let encodedKey=keyGenerator.generatePublicPrivateKey();
-                                    //
+                                    let encodedKey=keyGenerator.generatePublicPrivateKey();
+
                                     // this.identitySecuredStorageService.getKeys().then((result) => {
                                     //     this.credentialRequest.requestCredential(encodedKey, this.email, this.name, this.surnames, this.ticketId);
                                     // });
