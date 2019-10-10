@@ -37,45 +37,6 @@ export class Login {
         this.pass = '';
     }
 
-    /*TODO: NO SE LLAMA NUNCA, cambiar de sitio */
-    // scanBarcode() {
-    //     if (this.isCamera) {
-    //
-    //     }
-    //     this.isCamera = true;
-    //     let options = {
-    //         prompt: "Situe el código Qr en el interior del rectángulo.",
-    //         formats: "QR_CODE"
-    //     }
-    //
-    //     /* Comprobamos si el usuario esta registrado */
-    //     this.sessionSecuredStorageService.isRegistered()
-    //         .then(
-    //             (result) => {
-    //                 /* Comprobar si el usuario coincide */
-    //                 this.navCtrl.setRoot(HomePage);
-    //             }
-    //         )
-    //         .catch(
-    //             (error) => {
-    //                 /* TODO Cambiar esto para la version final */
-    //                 if (error === "cordova_not_available") {
-    //                     this.navCtrl.setRoot(HomePage);
-    //                 }
-    //
-    //                 console.log(error)
-    //             }
-    //         );
-    //
-    //     this.barcodeScanner.scan(options).then(barcodeData => {
-    //         this.onEvent("onLogin");
-    //     }).catch(err => {
-    //         if (err === "cordova_not_available") {
-    //             this.onEvent("onLogin");
-    //         }
-    //     });
-    //
-    // }
 
     onEvent = (event: string): void => {
         if (event == "onLogin" && !this.validate()) {

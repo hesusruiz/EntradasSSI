@@ -1,28 +1,34 @@
 /*  # Style Tabs Footer tab - text
 ==================================*/
+
 tabs {
+
+    .tabs-md .tabbar {
+        background: #1a1831ff;
+    }
+
     .ion-ios-home-outline,.ion-ios-home,.ion-md-home,.ion-md-home-outline {
-        content: url('../assets/images/tabIcon/house.png');
+        content: url('../assets/images/hdpi/menubar-01.png');
         height: 32px;
     }
     .ion-md-home[ng-reflect-is-active=true] {
-        content: url('../assets/images/tabIcon/house_sel.png');
+        content: url('../assets/images/hdpi/menubar-01Y.png');
     }
 
     .ion-ios-act-outline,.ion-ios-act,.ion-md-act,.ion-md-act-outline {
-        content: url('../assets/images/tabIcon/act.png');
+        content: url('../assets/images/hdpi/menubar-03.png');
         height: 32px;
     }
     .ion-md-act[ng-reflect-is-active=true] {
-        content: url('../assets/images/tabIcon/act_sel.png');
+        content: url('../assets/images/hdpi/menubar-03Y.png');
     }
 
     .ion-ios-bell-outline,.ion-ios-bell,.ion-md-bell,.ion-md-bell-outline {
-        content: url('../assets/images/tabIcon/bell.png');
+        content: url('../assets/images/hdpi/menubar-02.png');
         height: 32px;
     }
     .ion-md-bell[ng-reflect-is-active=true] {
-        content: url('../assets/images/tabIcon/bell_sel.png');
+        content: url('../assets/images/hdpi/menubar-02Y.png');
     }
 
     .ion-ios-more-outline,.ion-ios-more,.ion-md-more,.ion-md-more-outline {

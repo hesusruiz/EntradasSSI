@@ -55,12 +55,12 @@ export class RegisterForm {
                             .then(
                                 () => {
                                     console.log('Información guardada correctamente en el secureStorage');
-                                    // this.credentialRequestService.getCredentials("did:alastria:quorum", "redt",this.ticketId,this.name);
+                                     // this.credentialRequestService.getCredentials("did:alastria:quorum", "redt",this.ticketId,this.name);
                                     let encodedKey=keyGenerator.generatePublicPrivateKey();
 
-                                    // this.identitySecuredStorageService.getKeys().then((result) => {
-                                    //     this.credentialRequest.requestCredential(encodedKey, this.email, this.name, this.surnames, this.ticketId);
-                                    // });
+
+                                    this.credentialRequest.requestCredential('2132', this.email, this.name, this.surnames, this.ticketId);
+
 
                                     let userData= [this.name, this.surnames, this.email, this.ticketId];
 
@@ -88,7 +88,7 @@ export class RegisterForm {
                             .catch(
                                 (err) => {
                                     console.error('Error al guardar en el secureStorage ', err);
-                                    this.showAlert('Usuario Registrado', 'El usuario ya estaba registrado');
+                                    this.showAlert('Dispositivo no seguro', 'Su dispositivo no dispone de la seguridad mínima para almacenar sus credenciales, por favor añada un patrón de bloqueo.');
                                 }
                             );
                     }

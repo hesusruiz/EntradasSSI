@@ -45,6 +45,7 @@
     "cordova-plugin-add-swift-support": "^1.7.2",
     "cordova-plugin-compat": "1.2.0",
     "cordova-plugin-console": "^1.1.0",
+    "cordova-plugin-customurlscheme": "git+https://github.com/EddyVerbruggen/Custom-URL-scheme.git",
     "cordova-plugin-device": "^1.1.7",
     "cordova-plugin-fingerprint-aio": "^1.5.0",
     "cordova-plugin-flashlight": "^3.2.0",
@@ -121,6 +122,12 @@
         "URL_SCHEME": "myapp",
         "DEEPLINK_HOST": "app",
         "ANDROID_PATH_PREFIX": "/"
+      },
+      "cordova-plugin-customurlscheme": {
+        "URL_SCHEME": "entradaswallet",
+        "ANDROID_SCHEME": " ",
+        "ANDROID_HOST": " ",
+        "ANDROID_PATHPREFIX": "/"
       }
     },
     "platforms": [

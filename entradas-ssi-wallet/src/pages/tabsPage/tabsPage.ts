@@ -34,9 +34,9 @@ export class TabsPage {
     setTabsParams() {
         console.log("Entra en el método");
         this.tabs.data = [
-            { page: "UserProfilePage", icon: "albums"},
-            { page: "ScanQrInfoPage", icon: "qr-scanner"},
-            { page: "Activity", icon: "list"},
+            { page: "UserProfilePage", icon: "home"},
+            { page: "ScanQrInfoPage", icon: "bell"},
+            { page: "Activity", icon: "act"},
         ];
 
         this.tabs.events = {

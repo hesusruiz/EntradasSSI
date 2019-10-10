@@ -18,17 +18,6 @@ export class CredentialRequestProvider {
         did: string, email: string, name: string, surname: string, ticketId: string
     ) {
 
-        // let headers: HttpHeaders = new HttpHeaders();
-        // headers.append('Access-Control-Allow-Origin' , '*');
-        // headers.append('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT');
-        // headers.append('Accept','application/json');
-        // headers.append('content-type','application/json');
-        // headers.append("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-
-        // let body = {
-        //
-        // };
-
         this.http.post('http://10.14.3.80:8080/api/v1/credential/', {
             did: did,
             email: email,
