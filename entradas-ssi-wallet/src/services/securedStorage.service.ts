@@ -316,4 +316,13 @@ export class SessionSecuredStorageService {
             }
         )
     }
+
+    saveURLjwt(urlget: string, value: any) {
+        this.securedStorageObject.set('urlJWT', value);
+    }
+
+
+    getUrlJWT(){
+        return this.securedStorageObject.get('urlget');
+    }
 }

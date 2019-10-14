@@ -15,14 +15,21 @@ export class SideBarComponent {
 
   text: string;
 
-  constructor(public navCtr: NavController) {
+  constructor(private navCtrl: NavController) {
     console.log('Hello SideBarComponent Component');
     this.text = 'Hello World';
   }
 
-  openPage(pageName: string) {
-    console.log("Opening page: "+pageName);
-    this.navCtr.push(pageName);
+
+  openPage(page: string){
+    switch (page) {
+      case 'pendingToRegister':
+        this.navCtrl.push('');
+        break;
+      case 'qr-response' :
+        this.navCtrl.push('');
+        break;
+    }
   }
 
 }

@@ -1,20 +1,13 @@
-<!--<ion-header>-->
-<!--    <ion-navbar transparent>-->
-<!--        <ion-buttons>-->
-<!--            <button ion-button icon-only menuToggle>-->
-<!--                <ion-icon name="menu"></ion-icon>-->
-<!--            </button>-->
-<!--        </ion-buttons>-->
-<!--    </ion-navbar>-->
-<!--</ion-header>-->
-
-<!-- Themes Login + logo 1 -->
+<ion-header>
+    <side-bar></side-bar>
+</ion-header>
 <ion-content ion-fixed class="mainContent" style="z-index: 1;" *ngIf="data" main>
+<!-- Themes Login + logo 1 -->
     <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%; align-items: center">
         <ion-grid *ngIf="data != null">
             <ion-row style="display: flex; flex-direction: column; align-items: center;">
                 <ion-col style="margin-top: 25px;">
-                    <h1 style="color: #1F2126">ENTRADAS SSI</h1>
+                    <h1 style="color: #a19dae">Registro</h1>
                     <br/>
                 </ion-col>
                 <!-- Login -->
@@ -30,7 +23,9 @@
                         <!--                        </ion-item>-->
                     </div>
                     <ng-template #login>
-                        <ion-label style="color: #1F2126" floating class="nameUser">Hola {{ data.userRegister }}, bienvenid@</ion-label>
+                        <ion-label style="color: #1F2126" floating class="nameUser">Hola {{ data.userRegister }},
+                            bienvenid@
+                        </ion-label>
                     </ng-template>
 
 
@@ -39,20 +34,23 @@
                         <img class="iconLogin" src="assets/images/logo/pass.png"/>
                         <ion-item style="background-color: transparent;">
                             <ion-label floating class="grey">Password</ion-label>
-                            <ion-input style="color: #1F2126" class="menu" type="password" [(ngModel)]="pass"></ion-input>
+                            <ion-input style="color: #1F2126" class="menu" type="password"
+                                       [(ngModel)]="pass"></ion-input>
                         </ion-item>
                     </div>
 
                 </ion-list>
 
                 <!-- Boton Login Alastria -->
-                <ion-col style="width: 100%; margin-top: 50px;">
+                <ion-col style="margin-top: 50px;">
                     <button ion-button block class="btnLogin"
-                            (click)="onEvent('onLogin')">{{data.loginalastria}}</button>
+                            (click)="onEvent('onLogin')">Acceder
+                    </button>
                 </ion-col>
                 <ion-col>
-                    <div class="grey" style="padding-top: 5px; color: #1F2126">
-                        ¿Aún no tienes cuenta? <a class="menu" (click)="onEvent('onRegister')" style="color: #1F2126"> {{data.newAccount}}
+                    <div class="grey" style="padding-top: 50px; color: #1F2126" *ngIf="!data.isRegistered;">
+                        ¿Aún no tienes cuenta? <a class="menu" (click)="onEvent('onRegister')"
+                                                  style="color: #1F2126"> {{data.newAccount}}
                     </a>
                     </div>
                 </ion-col>

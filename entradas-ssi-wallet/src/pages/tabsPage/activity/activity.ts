@@ -35,8 +35,6 @@ export class Activity {
     ) {
         this.type = this.CREDENTIAL_TYPE;
 
-
-
         if(navParams.get('cred') != undefined || navParams.get('cred') != null){
             this.credencialesEntregadas.push(navParams.get('cred'));
             this.credencialesEntregadas.reverse();

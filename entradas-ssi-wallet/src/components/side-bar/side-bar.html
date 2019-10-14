@@ -1,55 +1,43 @@
-<ion-menu [content]="content">
-    <ion-content>
-        <ion-list class="login-menu">
-            <button ion-item (click)="openPage('changeUser')">
-                <div item-start><
-                    <ion-icon name="arrow-up"></ion-icon>
-                </div>
-                Aumentar nivel de acreditación
-            </button>
-            <button ion-item (click)="openPage('infoPage')">
-                <div item-start>
-                    <ion-icon name="checkbox-outline"></ion-icon>
-                </div>
-                Credenciales disponibles
-            </button>
-            <button ion-item (click)="openPage('reportProblem')">
-                <div item-start>
-                    <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>
-                </div>
-                Información de interés
-            </button>
-            <button ion-item (click)="openPage('legal')">
-                <div item-start>
-                    <ion-icon name="bonfire"></ion-icon>
-                </div>
-                Reportar un problema
-            </button>
-            <button ion-item (click)="openPage('legal')">
-                <div item-start>
-                    <ion-icon name="lock"></ion-icon>
-                </div>
-                Aviso legal
-            </button>
-            <button ion-item (click)="openPage('legal')">
-                <div item-start>
-                    <ion-icon name="log-out"></ion-icon>
-                </div>
-                Cerrar Sesión
-            </button>
-        </ion-list>
-        <label class="version-info">Versión in2 1.0</label>
-    </ion-content>
+<ion-menu persistent="true" [content]="content" type="overlay">
+  <ion-header>
+    <button>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-header>
+  <ion-content>
+    <ion-list class="login-menu">
+      <button ion-item (click)="openPage('qr-response')">
+        <div item-start><ion-icon name="qr-scanner"></ion-icon></div>Inicio
+      </button>
+      <button ion-item (click)="openPage('pendingToRegister')">
+        <div item-start><ion-icon name="cloud-upload"></ion-icon></div>Accesos no registrados
+      </button>
+      <button ion-item (click)="openPage('reportProblem')">
+        <div item-start> <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon></div>Información de interés
+      </button>
+      <button ion-item (click)="openPage('legal')">
+        <div item-start><ion-icon name="bonfire"></ion-icon></div>Reportar un problema
+      </button>
+      <button ion-item (click)="openPage('legal')">
+        <div item-start><ion-icon name="paper"></ion-icon></div>Aviso legal
+      </button>
+      <button ion-item (click)="openPage('legal')">
+        <div item-start><ion-icon name="exit"></ion-icon></div>Salir
+      </button>
+    </ion-list>
+    <label class="version-info">Versión AlastriaID 1.1</label>
+  </ion-content>
 </ion-menu>
-<ion-nav class="main" id="nav" #content [root]="Login">
-</ion-nav>
-<ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle clear icon-start>
-            <img class="menu" name='menu' src="assets/svg/hamburguer-menu.svg">
-        </button>
-        <div>
-            <img class="menu" name='menu' src="assets/images/logo-in2/logo_in2.png">
-        </div>
-    </ion-navbar>
-</ion-header>
+​
+<ion-navbar [hideBackButton]="true"  class="nav-bar-custom">
+  <div class="button-container">
+    <ion-title>
+      <img  class="img-header" src="assets/images/hdpi/Header-background.png"/>
+      <img  class="img-header-logos" src="assets/images/hdpi/Header-logos.png"/>
+    </ion-title>
+  </div>
+  <button class="btn-side-bar" #content ion-button menuToggle clear icon-start>
+    <!--        <ion-icon src="assets/images/hdpi/Header-iconW.png"></ion-icon>-->
+    <img clas="img-button-icon" src="assets/images/hdpi/Header-iconW.png"/>
+  </button>
+</ion-navbar>

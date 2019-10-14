@@ -7,6 +7,7 @@ import {ScannerErrorPage} from "../../scanner-error/scanner-error";
 import {CredentialProvider} from "../../../providers/credential/credential";
 import {CredentialRequestProvider} from "../../../providers/credential-request/credential-request";
 import {CredentialSubject, HeaderUserRequest, VerifiableCredential} from "../../../models/CredentialRequest";
+import {SessionSecuredStorageService} from "../../../services/securedStorage.service";
 
 /**
  * Generated class for the ScanQrInfoPage page.
@@ -21,8 +22,12 @@ import {CredentialSubject, HeaderUserRequest, VerifiableCredential} from "../../
   templateUrl: 'scan-qr-info.html',
 })
 export class ScanQrInfoPage {
+  jwt:any;
     checkCredentials:boolean = false;
-  constructor(public navCtrl: NavController, public navParams: NavParams,private scanner: BarcodeScanner) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private scanner: BarcodeScanner, private credentialRequestProvider: CredentialRequestProvider,
+              ) {
+    this.jwt=credentialRequestProvider.getJWT();
+    console.log(this.jwt);
   }
 
   ionViewDidLoad() {

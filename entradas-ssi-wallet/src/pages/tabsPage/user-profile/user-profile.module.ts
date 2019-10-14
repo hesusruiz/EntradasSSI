@@ -3,6 +3,7 @@ import {IonicPageModule} from 'ionic-angular';
 import {UserProfilePage} from './user-profile';
 import {AppModule} from "../../../app/app.module";
 import {BrowserModule} from "@angular/platform-browser";
+import {ComponentsModule} from "../../../components/components.module";
 
 @NgModule({
     declarations: [
@@ -10,6 +11,7 @@ import {BrowserModule} from "@angular/platform-browser";
     ],
     imports: [
         IonicPageModule.forChild(UserProfilePage),
+        ComponentsModule,
     ],
     exports: [
         UserProfilePage

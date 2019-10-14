@@ -1,15 +1,16 @@
-.aclass{
-  display: flex;
-  justify-content: center;
-  height: 300px;
-}
+page-show-identity {
+  .aclass {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
 
-.title-identity{
-  display: flex;
-  justify-content: center;
-}
+  .title-identity {
+    display: flex;
+    justify-content: center;
+  }
 
-img{
-  height: 100% !important;
+  img {
+    height: 100% !important;
+  }
 }
-

@@ -1,3 +1,44 @@
-side-bar {
+.ion-md-checkmark-circle:before {
+  content: "\f2bb";
+  color: green;
+}
+.img-header{
+  position: absolute;
+  z-index: 1;
+  max-width: 30em;
+}
+.img-header-logos{
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  left: 25%;
+  margin-top: 12px;
+}
+.btn-side-bar{
+  position: fixed;
+}
+.nav-bar-custom{
+  height: 4em;
+}
+.button-container{
+  height: 4em;
+}
+.toolbar-background-md {
+  background: none;
+}
+.toolbar-title-md {
+  padding: 0 !important;
+}
 
+.toolbar-md {
+  padding: 0;
+}
+
+ion-header {
+  left: 0;
+  top: -17px;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 100%;
 }

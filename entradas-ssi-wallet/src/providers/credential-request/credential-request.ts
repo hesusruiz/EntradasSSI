@@ -1,5 +1,7 @@
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import {Injectable} from '@angular/core';
+import {SecureStorage} from "@ionic-native/secure-storage";
+import {SessionSecuredStorageService} from "../../services/securedStorage.service";
 
 /*
   Generated class for the CredentialRequestProvider provider.
@@ -10,7 +12,7 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class CredentialRequestProvider {
 
-    constructor(public http: HttpClient) {
+    constructor(public http: HttpClient, private secureStorage:SessionSecuredStorageService) {
         console.log('Hello CredentialRequestProvider Provider');
     }
 
@@ -32,9 +34,9 @@ export class CredentialRequestProvider {
             });
     }
 
-    getJWT(uuid: string) {
+    getJWT() {
 
-        this.http.get('http://10.14.3.80:8080/api/v1/credential/' + uuid)
+        this.http.get('http://10.14.3.80:8080/api/v1/credential' + this.secureStorage.getUrlJWT())
             .subscribe((result: any) => {
                 console.log(result);
             }, (errorResponse: HttpErrorResponse) => {
