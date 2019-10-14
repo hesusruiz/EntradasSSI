@@ -6,21 +6,21 @@
   </ion-header>
   <ion-content>
     <ion-list class="login-menu">
-      <button ion-item (click)="openPage('qr-response')">
-        <div item-start><ion-icon name="qr-scanner"></ion-icon></div>Inicio
+      <button ion-item (click)="openPage('login')">
+        <div item-start><img src="assets/images/hdpi/ico-02.png"></div>Inicio
       </button>
       <button ion-item (click)="openPage('pendingToRegister')">
         <div item-start><ion-icon name="cloud-upload"></ion-icon></div>Accesos no registrados
       </button>
-      <button ion-item (click)="openPage('reportProblem')">
-        <div item-start> <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon></div>Información de interés
-      </button>
-      <button ion-item (click)="openPage('legal')">
-        <div item-start><ion-icon name="bonfire"></ion-icon></div>Reportar un problema
-      </button>
-      <button ion-item (click)="openPage('legal')">
-        <div item-start><ion-icon name="paper"></ion-icon></div>Aviso legal
-      </button>
+      <!--            <button ion-item (click)="openPage('reportProblem')">-->
+      <!--                <div item-start> <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon></div>Información de interés-->
+      <!--            </button>-->
+      <!--            <button ion-item (click)="openPage('legal')">-->
+      <!--                <div item-start><ion-icon name="bonfire"></ion-icon></div>Reportar un problema-->
+      <!--            </button>-->
+      <!--            <button ion-item (click)="openPage('legal')">-->
+      <!--                <div item-start><ion-icon name="paper"></ion-icon></div>Aviso legal-->
+      <!--            </button>-->
       <button ion-item (click)="openPage('legal')">
         <div item-start><ion-icon name="exit"></ion-icon></div>Salir
       </button>
@@ -28,7 +28,7 @@
     <label class="version-info">Versión AlastriaID 1.1</label>
   </ion-content>
 </ion-menu>
-​
+
 <ion-navbar [hideBackButton]="true"  class="nav-bar-custom">
   <div class="button-container">
     <ion-title>

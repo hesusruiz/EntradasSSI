@@ -1,205 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ae7b800-fabf-49b4-9478-c33cae87ea28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/resources/android/icon/ic_launcher_APP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/resources/android/splash/splash-b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/resources/android/splash/splash-sm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/Header-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/Header-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/Header-iconW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/Header-logos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/Header2-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/credencial-A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/credencial-B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/credencial-C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-01w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-02-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-03w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-04w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-05w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-06w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-07w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-QR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-chevron-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-chevron-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-close-red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-oval-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-oval.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/ico-question-circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/img-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/menubar-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/menubar-01Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/menubar-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/menubar-02Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/menubar-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/menubar-03Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/splash-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/splash-logo-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/hdpi/splash-logos-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/Header-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/Header-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/Header-iconW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/Header-logos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/Header2-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/credencial-A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/credencial-B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/credencial-C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-01w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-02-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-03w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-04w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-05w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-06w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-07w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-QR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-chevron-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-chevron-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-close-red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-oval-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-oval.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-question-circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/img-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/menubar-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/menubar-01Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/menubar-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/menubar-02Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/menubar-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/menubar-03Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/splash-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/splash-logo-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/splash-logos-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/menubar-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/menubar-01Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/menubar-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/menubar-02Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/menubar-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/menubar-03Y.png" afterDir="false" />
+    <list default="true" id="5ae7b800-fabf-49b4-9478-c33cae87ea28" name="Default Changelist" comment="ADD: images + texts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1942476577">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="2" />
-          <entry key="png" value="2" />
-          <entry key="scss" value="1" />
-          <entry key="ts" value="3" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="2" />
-          <entry key="Image" value="2" />
-          <entry key="SCSS" value="1" />
-          <entry key="TypeScript" value="3" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-form/register-form.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/tabsPage.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/tabsPage.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>navParams.get</find>
-      <find>dee</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -209,177 +18,23 @@
       </map>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.html" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules" />
-  </component>
   <component name="ProjectId" id="1RsOpnl3atylDOiZrTZVdYedcba" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="icon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="hdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="tabs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="register-hub" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="register-hub" type="462c0819:PsiDirectoryNode" />
-              <item name="register-privacy-conditions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="tabsPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570698986216" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570699332549" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/entradas-ssi-wallet/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/fonts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images" />
       <recent name="$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon" />
@@ -401,7 +56,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="start:browser" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+    <configuration name="start:browser" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/entradas-ssi-wallet/package.json" />
       <command value="run" />
       <scripts>
@@ -431,6 +86,9 @@
       <workItem from="1570359110374" duration="13758000" />
       <workItem from="1570428926838" duration="4302000" />
       <workItem from="1570452524923" duration="603000" />
+      <workItem from="1570703561773" duration="12000" />
+      <workItem from="1571058048256" duration="6809000" />
+      <workItem from="1571066447916" duration="6001000" />
     </task>
     <task id="LOCAL-00001" summary="ADD: function to retrieve credentialRequest">
       <created>1570376306620</created>
@@ -439,46 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1570376306620</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ADD: images + texts">
+      <created>1570699125864</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570699125864</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1136000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329235" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.329235" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -489,12 +116,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -503,61 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD: function to retrieve credentialRequest" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: function to retrieve credentialRequest" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/bell.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/tabIcon/act.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/tabsPage.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/tabsPage.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-form/register-form.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-privacy-conditions/register-privacy-conditions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <MESSAGE value="ADD: images + texts" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: images + texts" />
   </component>
   <component name="masterDetails">
     <states>

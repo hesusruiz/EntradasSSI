@@ -1,18 +1,16 @@
 <ion-header>
     <side-bar></side-bar>
 </ion-header>
-<ion-content ion-fixed class="mainContent" style="z-index: 1;" *ngIf="data" main>
+
+<ion-content ion-fixed class="background-app" style="z-index: 1;" *ngIf="data" main>
+
 <!-- Themes Login + logo 1 -->
-    <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%; align-items: center">
+    <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%;">
         <ion-grid *ngIf="data != null">
-            <ion-row style="display: flex; flex-direction: column; align-items: center;">
-                <ion-col style="margin-top: 25px;">
-                    <h1 style="color: #a19dae">Registro</h1>
-                    <br/>
-                </ion-col>
+            <ion-row style="display: flex; flex-direction: column;">
+
                 <!-- Login -->
                 <ion-list>
-
                     <!-- User -->
                     <div style="margin-top:35px; display: flex; align-items: flex-end"
                          *ngIf="!data.isRegistered; else login">
@@ -31,10 +29,9 @@
 
                     <!-- Password -->
                     <div style="display: flex; align-items: flex-end">
-                        <img class="iconLogin" src="assets/images/logo/pass.png"/>
                         <ion-item style="background-color: transparent;">
-                            <ion-label floating class="grey">Password</ion-label>
-                            <ion-input style="color: #1F2126" class="menu" type="password"
+                            <ion-label floating class="grey">PASSWORD</ion-label>
+                            <ion-input style="color: #1F2126"  type="password"
                                        [(ngModel)]="pass"></ion-input>
                         </ion-item>
                     </div>
@@ -42,9 +39,10 @@
                 </ion-list>
 
                 <!-- Boton Login Alastria -->
-                <ion-col style="margin-top: 50px;">
-                    <button ion-button block class="btnLogin"
+                <ion-col style="margin-top: 50px;" text-center>
+                    <button ion-button class="btnLogin"
                             (click)="onEvent('onLogin')">Acceder
+                        <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                     </button>
                 </ion-col>
                 <ion-col>

@@ -25,3 +25,52 @@
 .top50 {
     margin-top: 50px !important;
 }
+
+.black_menu {
+    background: rgb(36, 43, 66);
+}
+
+.black_menu > button {
+    background: rgb(36, 43, 66);
+    color: white;
+}
+
+.black_menu > .scroll-content {
+    background: rgb(36, 43, 66);
+    button {
+        background: rgb(36, 43, 66);
+        color: white;
+    }
+    button:hover {
+        background: rgb(54, 65, 99);
+    }
+    button:last-child{
+        border-bottom: 1px solid #dedede;
+    }
+}
+.white_color {
+    color: white;
+}
+
+.titol_gran{
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: rgba(26, 24, 49, 1);
+}
+
+.titol_card{
+    font-family: Montserrat-ExtraBold;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: rgba(52, 134, 186, 1);
+}
+
+.background-app{
+    background: #f0f0f5ff;
+}
+

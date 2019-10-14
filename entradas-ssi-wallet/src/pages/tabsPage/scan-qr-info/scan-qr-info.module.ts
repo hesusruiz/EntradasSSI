@@ -1,7 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ScanQrInfoPage } from './scan-qr-info';
-import {ComponentsModule} from "../../../components/components.module";
 import {AppModule} from "../../../app/app.module";
 
 @NgModule({
@@ -9,9 +8,7 @@ import {AppModule} from "../../../app/app.module";
     ScanQrInfoPage,
   ],
   imports: [
-    IonicPageModule.forChild(ScanQrInfoPage),
-    ComponentsModule,
-    AppModule,
+    IonicPageModule.forChild(ScanQrInfoPage)
   ],
   exports:[
     ScanQrInfoPage
