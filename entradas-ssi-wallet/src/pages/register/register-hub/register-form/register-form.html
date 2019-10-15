@@ -2,60 +2,67 @@
 <!--Content -->
 <ion-content>
     <ion-grid>
-        <ion-row padding-horizontal align-items-start>
-            <ion-col no-padding col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
-                <!--Form Title-->
-                <h1 ion-text register-title padding-bottom color="registerTitle">Crea tu AlastriaId</h1>
-                <!---Input field username-->
-                <ion-item style="text-align: center" no-lines>
-                    <button ion-button="" (click)="openScanner()">
+        <ion-col>
+            <ion-row>
+                <h3 class="titol_gran" ion-text  padding-bottom color="registerTitle">Crea tu AlastriaId</h3>
+            </ion-row>
+            <ion-row>
+                <ion-item style="text-align: start" no-lines>
+                    <button ion-button="" style="background: #4a4a4c" (click)="openScanner()">
                         <ion-icon slot="icon-only" name="qr-scanner"></ion-icon>
                     </button>
                 </ion-item>
-                <!--                <ion-item>-->
-                <!--                    <ion-label stacked>Usuario</ion-label>-->
-                <!--                    <ion-input required placeholder="Introduce tu nombre de usuario" type="text" [(ngModel)]="username"></ion-input>-->
-                <!--                    <ion-label style="font-size: 16px;" error-field color="primary" no-margin *ngIf="!isUsernameValid">"Usuario existente"</ion-label>-->
-                <!--                </ion-item>-->
-                <!---Input field name-->
+            </ion-row>
+            <ion-row>
                 <ion-item>
-                    <ion-label stacked>Nombre</ion-label>
-                    <ion-input required placeholder="Introduce tu nombre" type="text" [(ngModel)]="name"></ion-input>
-                    <!--                    <ion-label style="font-size: 16px;" error-field color="primary" no-margin *ngIf="!isUsernameValid">{{data.errorUser}}</ion-label>-->
+                    <ion-label stacked>NOMBRE</ion-label>
+                    <ion-input no-lines style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+    box-shadow: none !important;" required type="text" [(ngModel)]="name"></ion-input>
                 </ion-item>
-                <!---Input field name-->
+            </ion-row>
+            <ion-row>
                 <ion-item>
-                    <ion-label stacked>Apellidos</ion-label>
-                    <ion-input required placeholder="Introduce tu apellido" type="text"
+                    <ion-label stacked>APELLIDOS</ion-label>
+                    <ion-input no-lines style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+    box-shadow: none !important;" required type="text"
                                [(ngModel)]="surnames"></ion-input>
-                    <!--                    <ion-label style="font-size: 16px;" error-field color="primary" no-margin *ngIf="!isUsernameValid">{{data.errorUser}}</ion-label>-->
                 </ion-item>
-                <!---Input field email-->
+            </ion-row>
+            <ion-row>
                 <ion-item>
-                    <ion-label stacked>Email</ion-label>
-                    <ion-input required placeholder="Introduce tu email" type="email"
+                    <ion-label stacked>EMAIL</ion-label>
+                    <ion-input no-lines style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+    box-shadow: none !important;" required type="email"
                                pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required
                                [(ngModel)]="email"></ion-input>
                     <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">"Formato
                         incorrecto de email"
                     </ion-label>
                 </ion-item>
+            </ion-row>
+            <ion-row>
                 <ion-item>
-                    <ion-label stacked>Ticket Id</ion-label>
-                    <ion-input required placeholder="Introduce tu ticket id del congreso" type="text"
+                    <ion-label stacked>TICKET ID</ion-label>
+                    <ion-input no-lines style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+    box-shadow: none !important;" required type="text"
                                required [(ngModel)]="ticketId"></ion-input>
-<!--                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">-->
-<!--                        Formato-->
-<!--                        incorrecto de email-->
-<!--                    </ion-label>-->
+                    <!--                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">-->
+                    <!--                        Formato-->
+                    <!--                        incorrecto de email-->
+                    <!--                    </ion-label>-->
                 </ion-item>
-                <button ion-button float-left clear button-clear text-capitalize (click)="onEvent('onBack')">Atras
+            </ion-row>
+            <ion-row style="display: flex; justify-content: space-around; margin-top: 20px;">
+                <button ion-button
+                        (click)="onEvent('onRegister')">Crear y solicitar credenciales
+                    <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
-                <button ion-button float-right clear button-clear text-capitalize (click)="onEvent('onRegister')">
-                    Generar Identidad
-                    <ion-icon name="arrow-forward"></ion-icon>
-                </button>
-            </ion-col>
-        </ion-row>
+            </ion-row>
+            <ion-row style="display: flex; justify-content: center; margin-top: 10px;">
+                <div style="margin-left: 4px; margin-right: 4px; "><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
+                <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
+                <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval-active.png"></div>
+            </ion-row>
+        </ion-col>
     </ion-grid>
 </ion-content>

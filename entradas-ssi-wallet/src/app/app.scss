@@ -53,7 +53,6 @@
 }
 
 .titol_gran{
-    font-family: Montserrat;
     font-weight: 700;
     text-transform: none;
     font-size: 24px;
@@ -62,8 +61,7 @@
 }
 
 .titol_card{
-    font-family: Montserrat-ExtraBold;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: none;
     font-size: 18px;
     letter-spacing: 0px;
@@ -72,5 +70,27 @@
 
 .background-app{
     background: #f0f0f5ff;
+    .scroll-content {
+        margin-bottom: 110px !important;
+    }
 }
 
+
+ion-nav {
+    position: unset !important;
+    padding-bottom: 16px !important;
+}
+
+.button-md {
+    border-radius: 10px;
+    background-color: #6ca966ff;
+    text-transform: none;
+}
+
+.toggle-md.toggle-checked .toggle-icon {
+    background-color: #6ca966ff;
+}
+
+.button-md:hover:not(.disable-hover) {
+    background-color: #6ca966ff !important;
+}

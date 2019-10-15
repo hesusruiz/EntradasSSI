@@ -1,19 +1,4 @@
-<ion-header>
-    <side-bar></side-bar>
-</ion-header>
-
-<div id="userSettings">
-    <!--    <div class="outterOval"></div>-->
-    <!--    <div class="innerOval"></div>-->
-    <label class="name">Username</label>
-    <span class="outerUserCircle"></span>
-    <img class="innerUserCircle" src="/assets/images/avatar/0.jpg">
-    <span class="editPhoto">
-        <img src="assets/svg/edit.svg"/>
-    </span>
-</div>
-
-<ion-content>
+<ion-content class="background-app">
     <ion-card-content>
         <h3 text-center style="margin: 15px;">Credenciales entregadas</h3>
         <div *ngIf="credencialesEntregadas.length==0">

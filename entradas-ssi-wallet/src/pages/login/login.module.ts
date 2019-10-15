@@ -10,7 +10,6 @@ import {AppModule} from "../../app/app.module";
     ],
     imports: [
         IonicPageModule.forChild(Login),
-        AppModule,
 
     ],
     exports: [

@@ -16,6 +16,7 @@ login {
   .button-md {
     border-radius: 10px;
     background-color: #6ca966ff;
+    text-transform: none;
   }
 
   .toggle-md.toggle-checked .toggle-icon {
@@ -29,5 +30,45 @@ login {
   img {
     max-width: 60%;
     border: 0;
+  }
+
+  .btnLogin{
+
+  }
+
+  .item-md {
+    /* padding-left: 16px; */
+    padding-right: 0;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: normal;
+    border-style: solid;
+    text-transform: none;
+    color: #000;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  ion-input, ion-textarea, .input-has-focus .item-inner {
+    position: relative;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-color: transparent;
+    width: 100%;
+    box-shadow: none;
+    border-bottom: none;
+  }
+  .item-md.item-block .item-inner{
+    border: transparent;
+  }
+
+  button{
+    text-align: center;
   }
 }

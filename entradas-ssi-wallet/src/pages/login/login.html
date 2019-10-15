@@ -1,58 +1,30 @@
-<ion-header>
-    <side-bar></side-bar>
-</ion-header>
-
 <ion-content ion-fixed class="background-app" style="z-index: 1;" *ngIf="data" main>
 
-<!-- Themes Login + logo 1 -->
-    <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%;">
-        <ion-grid *ngIf="data != null">
-            <ion-row style="display: flex; flex-direction: column;">
-
-                <!-- Login -->
-                <ion-list>
-                    <!-- User -->
-                    <div style="margin-top:35px; display: flex; align-items: flex-end"
-                         *ngIf="!data.isRegistered; else login">
-                        <!--                        <img class="iconLogin" src="assets/images/logo/user.png" />-->
-                        <!--                        <ion-item style="background-color: transparent;">-->
-                        <!--                            <ion-label floating class="grey">User</ion-label>-->
-                        <!--                            <ion-input class="menu" type="text" [(ngModel)]="user"></ion-input>-->
-                        <!--                        </ion-item>-->
-                    </div>
-                    <ng-template #login>
-                        <ion-label style="color: #1F2126" floating class="nameUser">Hola {{ data.userRegister }},
-                            bienvenid@
-                        </ion-label>
-                    </ng-template>
-
-
-                    <!-- Password -->
-                    <div style="display: flex; align-items: flex-end">
-                        <ion-item style="background-color: transparent;">
-                            <ion-label floating class="grey">PASSWORD</ion-label>
-                            <ion-input style="color: #1F2126"  type="password"
-                                       [(ngModel)]="pass"></ion-input>
-                        </ion-item>
-                    </div>
-
-                </ion-list>
-
-                <!-- Boton Login Alastria -->
-                <ion-col style="margin-top: 50px;" text-center>
-                    <button ion-button class="btnLogin"
+    <!-- Themes Login + logo 1 -->
+    <ion-grid>
+        <ion-col>
+            <ion-row style="display: block; margin-top: 20px;">
+                <div style="display: block; align-items: start; background: transparent">
+                    <ion-item>
+                        <ion-label stacked class="grey">PASSWORD</ion-label>
+                        <ion-input no-lines style="border-radius: 10px; border-style: solid; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+                            box-shadow: none !important;" type="password" [(ngModel)]="pass"></ion-input>
+                    </ion-item>
+                </div>
+            </ion-row>
+                <ion-row style="margin-top: 70px; display: flex; justify-content: space-around;">
+                    <button ion-button
                             (click)="onEvent('onLogin')">Acceder
                         <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                     </button>
-                </ion-col>
-                <ion-col>
-                    <div class="grey" style="padding-top: 50px; color: #1F2126" *ngIf="!data.isRegistered;">
-                        ¿Aún no tienes cuenta? <a class="menu" (click)="onEvent('onRegister')"
-                                                  style="color: #1F2126"> {{data.newAccount}}
-                    </a>
-                    </div>
-                </ion-col>
+                </ion-row>
+            <ion-row>
+                <div class="grey" style="padding-top: 50px; color: #1F2126" *ngIf="!data.isRegistered;">
+                    ¿Aún no tienes cuenta? <a class="menu" (click)="onEvent('onRegister')"
+                                              style="color: #1F2126"> {{data.newAccount}}
+                </a>
+                </div>
             </ion-row>
-        </ion-grid>
-    </div>
+        </ion-col>
+    </ion-grid>
 </ion-content>

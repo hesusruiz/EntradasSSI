@@ -1,32 +1,49 @@
-<ion-content>
+<ion-content class="background-app">
     <ion-grid>
-        <ion-row padding-horizontal align-items-start>
-            <ion-col no-padding col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
-                <!--Form Title-->
-                <h1 ion-text  padding-bottom class="titol_gran">Privacidad y condiciones</h1>
-                <p>
-                    “xxxxxxxx” es una aplicación que le permite almacenar credenciales de distintos emisores ads-critos a la red de Alastria.
+        <ion-col>
+            <ion-row>
+                <h1 ion-text padding-bottom class="titol_gran">Privacidad y condiciones</h1>
+            </ion-row>
+            <ion-row style="padding: 5px">
+                <p >
+                    “xxxxxxxx” es una aplicación que le permite almacenar credenciales de distintos emisores ads-critos
+                    a la red de Alastria.
                 </p>
                 <p>
-                    Las credenciales se almacenan en el dispositivo en formato JWT, presentándose cuando es re-querido para verificar sus datos.
+                    Las credenciales se almacenan en el dispositivo en formato JWT, presentándose cuando es re-querido
+                    para verificar sus datos.
                 </p>
                 <p>
-                    La solicitud y presentación de credenciales sigue el protocolo de Alastria Id, que cumple con la regulación del eIDAS y las buenas prácticas del e-Identity Workshop Report, del Foro y Obser-vatorio EUBlockchain .
+                    La solicitud y presentación de credenciales sigue el protocolo de Alastria Id, que cumple con la
+                    regulación del eIDAS y las buenas prácticas del e-Identity Workshop Report, del Foro y Obser-vatorio
+                    EUBlockchain .
                 </p>
                 <p>
-                    Éste protocolo permite la compartición de datos firmados criptográficamente y su validación de forma descentralizada, permitiendo su validación de forma rápida y segura.
+                    Éste protocolo permite la compartición de datos firmados criptográficamente y su validación de forma
+                    descentralizada, permitiendo su validación de forma rápida y segura.
                 </p>
                 <p>
-                    Al instalar ésta aplicación acepta que los datos y credenciales obtenidos se almacenen en su dispositivo hasta la desinstalación del mismo.
+                    Al instalar ésta aplicación acepta que los datos y credenciales obtenidos se almacenen en su
+                    dispositivo hasta la desinstalación del mismo.
                 </p>
+            </ion-row>
+            <ion-row>
                 <ion-item>
-                    <ion-checkbox color="primary" [checked]="isChecked" (ionChange)="notifyChecked()"></ion-checkbox>
-                    <ion-label>Aceptar</ion-label>
+                    <ion-checkbox [checked]="isChecked" (ionChange)="notifyChecked()"></ion-checkbox>
+                    <ion-label no-lines="true" style="border: transparent">Aceptar</ion-label>
                 </ion-item>
-                <button [disabled]="!isChecked" ion-button float-right clear button-clear text-capitalize (click)="NavigateToRegisterForm()">Empezar
-                    <ion-icon name="arrow-forward"></ion-icon>
+            </ion-row>
+            <ion-row style="display: flex; justify-content: space-around;">
+                <button [disabled]="!isChecked" ion-button text-center
+                        (click)="NavigateToRegisterForm()">Empezar
+                    <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
-            </ion-col>
-        </ion-row>
+            </ion-row>
+            <ion-row style="display: flex; justify-content: center; margin-top: 10px">
+                <div style="margin-left: 4px; margin-right: 4px; "><img style="max-width: 70%" src="assets/images/hdpi/ico-oval-active.png"></div>
+                <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
+                <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
+            </ion-row>
+        </ion-col>
     </ion-grid>
 </ion-content>
