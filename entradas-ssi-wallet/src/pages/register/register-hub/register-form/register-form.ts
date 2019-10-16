@@ -8,6 +8,8 @@ import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 import {CredentialRequestProvider} from "../../../../providers/credential-request/credential-request";
 import {KeyGeneratorService} from "../../../../services/KeyGenerator.service";
 import {CredentialProvider} from "../../../../providers/credential/credential";
+import {Base64} from 'js-base64';
+
 
 @Component({
     selector: 'register-form',
@@ -25,6 +27,8 @@ export class RegisterForm {
     public email: string;
     public password: string;
     public ticketId: string;
+    firstPartDid: string="did:ala:quor:redt:";
+    secondPartDid: string="#keys-1";
     // public password_correct: string;
 
     private isEmailValid: boolean = true;
@@ -56,10 +60,17 @@ export class RegisterForm {
                                 () => {
                                     console.log('Información guardada correctamente en el secureStorage');
                                      // this.credentialRequestService.getCredentials("did:alastria:quorum", "redt",this.ticketId,this.name);
-                                    let encodedKey=keyGenerator.generatePublicPrivateKey();
+                                    let encodedKey=keyGenerator.genKey();
+
+                                    let pk=Base64.encode(encodedKey.public1);
+
+                                    let did=this.firstPartDid+pk+this.secondPartDid;
+                                    localStorage.setItem('kid',did);
+
+                                    console.log('DID:'+did);
 
 
-                                    this.credentialRequest.requestCredential('2132', this.email, this.name, this.surnames, this.ticketId);
+                                    this.credentialRequest.requestCredential(did, this.email, this.name, this.surnames, this.ticketId);
 
 
                                     let userData= [this.name, this.surnames, this.email, this.ticketId];

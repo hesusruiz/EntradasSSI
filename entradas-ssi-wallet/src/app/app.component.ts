@@ -21,19 +21,22 @@ export class MyApp {
 
     rootPage: any = HomePage;
     userProfile = UserProfilePage;
+    value:string;
 
-    constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks, private secureStorage:SessionSecuredStorageService) {
+    constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks, private secureStorage:SessionSecuredStorageService,
+                ) {
         platform.ready().then(() => {
             this.deepLink.routeWithNavController(this.nav, {
                 '/login': Login
             }).subscribe(match => {
                 console.log('match: ', match);
 
-               let value= this.searchJSON(match);
+               this.searchJSON(match);
 
-               if(value!='localhost') {
-                   console.log('valor desde app.component'+value);
-                   secureStorage.saveURLjwt('urlget', value);
+               if(this.value!='localhost') {
+                   console.log('valor desde app.component'+this.value);
+                  // secureStorage.saveURLjwt(this.value);
+                   localStorage.setItem('urlVal', this.value);
                }
 
 
@@ -48,14 +51,15 @@ export class MyApp {
     }
 
     searchJSON(data: any) {
+
         for (let k in data) {
             if (typeof data[k] == "object" && data[k] !== null) {
                 this.searchJSON(data[k]);
             } else {
                 if (k == 'host') {
-                    let value=data[k];
-                    console.log(data[k]);
-                    return value;
+                    this.value=data[k];
+                    console.log('valor dentro del searchJSON: '+this.value);
+
                 }
             }
 

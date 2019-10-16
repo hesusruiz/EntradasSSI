@@ -125,7 +125,8 @@ import {ActivityModule} from "../pages/tabsPage/activity/activity.module";
         CredentialRequestProvider,
         KeyGeneratorService,
         CredentialProvider,
-        Deeplinks
+        Deeplinks,
+        Storage
     ]
 })
 export class AppModule {}

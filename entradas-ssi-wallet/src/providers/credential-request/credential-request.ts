@@ -16,11 +16,8 @@ export class CredentialRequestProvider {
         console.log('Hello CredentialRequestProvider Provider');
     }
 
-    requestCredential(
-        did: string, email: string, name: string, surname: string, ticketId: string
-    ) {
-
-        this.http.post('http://10.14.3.80:8080/api/v1/credential/', {
+    requestCredential(did: string, email: string, name: string, surname: string, ticketId: string) {
+        this.http.post('https://des-blockcha.in2.es/api/v1/credential/', {
             did: did,
             email: email,
             nombre: name,
@@ -35,13 +32,16 @@ export class CredentialRequestProvider {
     }
 
     getJWT() {
+        console.log('RECUPERO LA URL: '+localStorage.getItem('urlVal'));
+        return this.http.get('https://des-blockcha.in2.es/api/v1/credential' + localStorage.getItem('urlVal'));
 
-        this.http.get('http://10.14.3.80:8080/api/v1/credential' + this.secureStorage.getUrlJWT())
-            .subscribe((result: any) => {
-                console.log(result);
-            }, (errorResponse: HttpErrorResponse) => {
-                console.log(errorResponse);
-            });
+    }
+
+    postValidateDid(id, did) {
+       return  this.http.post('https://des-blockcha.in2.es/api/v1/credential/did', {
+            id: id,
+            did: did
+        });
     }
 
 }
