@@ -44,6 +44,7 @@ import {ShowIdentityPage} from "../pages/show-identity/show-identity";
 import { Deeplinks } from '@ionic-native/deeplinks';
 import {Activity} from "../pages/tabsPage/activity/activity";
 import {ActivityModule} from "../pages/tabsPage/activity/activity.module";
+import {IonicStorageModule} from "@ionic/storage";
 
 
 @NgModule({
@@ -84,7 +85,8 @@ import {ActivityModule} from "../pages/tabsPage/activity/activity.module";
         HttpClientModule,
         UserProfilePageModule,
         ScannerErrorPageModule,
-        ActivityModule
+        ActivityModule,
+        IonicStorageModule.forRoot(),
     ],
     bootstrap: [IonicApp],
     entryComponents: [

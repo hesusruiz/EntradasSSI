@@ -62,6 +62,7 @@ export class ShowIdentityPage {
         };
 
         this.qrData=this.generateToken();
+        console.log(this.qrData);
     }
 
     ionViewDidLoad() {
