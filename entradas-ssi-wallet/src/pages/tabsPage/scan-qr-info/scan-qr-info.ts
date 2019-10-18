@@ -89,9 +89,10 @@ export class ScanQrInfoPage {
             if (!barcodeData) {
                 alert('Error: Contacte con el service provider.')
             } else {
-                console.log('ENTRA')
-                let dataQR
-                    = JSON.parse(barcodeData.text);
+                console.log('ENTRA');
+
+                let jwt = require("jsonwebtoken");
+                let dataQR = jwt.decode(barcodeData.text);
                 this.searchJSON(dataQR);
                 //console.log(wantedRq);
 
