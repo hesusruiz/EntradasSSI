@@ -1,39 +1,48 @@
-<ion-header>
-  <side-bar></side-bar>
-</ion-header>
-
-<ion-content>
-  <div class="title-identity">
-    <h5>Presentar identidad</h5>
-  </div>
-  <!-- Se genera el QR con los valores que recibe la propiedad input [qrc-value]-->
-  <div>
-    <ngx-qrcode
-            [qrc-value]="qrData | json"
-            qrc-class="aclass"
-            qrc-errorCorrectionLevel="L">
-    </ngx-qrcode>
-  </div>
-
-  <div class=""txt-idnetity>
-    <h5>Muestre el código QR al prestador del servicio para que proceda a su escaneo.</h5>
-  </div>
-
-  <div>
-    <h5 style=""margin-bottom="10px">Datos presentados:</h5>
-    <h5>- Nombre</h5>
-    <h5>- Apellidos</h5>
-  </div>
-
-  <div class="buttons-content">
-    <div class="cancel">
-      <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
-      <h6>Cancelar presentación</h6>
-    </div>
-    <div class="cancel" (click)="showIdentity()">
-      <h6>Finalizar</h6>
-      <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
-    </div>
-  </div>
+<ion-content class="background-app">
+    <ion-col>
+        <ion-row>
+            <div class="title-identity">
+                <h5 class="titol_gran">Presentar identidad</h5>
+            </div>
+        </ion-row>
+        <ion-row>
+            <div class="qr">
+                <ngx-qrcode
+                        [qrc-value]="qrData"
+                        qrc-class="aclass"
+                        qrc-errorCorrectionLevel="L">
+                </ngx-qrcode>
+            </div>
+        </ion-row>
+        <ion-row>
+            <div>
+                <hr style="color:#a19dae">
+                <h5>Presente el código QR al prestador del servicio para que proceda a su escaneo</h5>
+                <hr style="color:#a19dae">
+            </div>
+        </ion-row>
+        <ion-row>
+            <div>
+                <h5 style="color: #8c89aeff" margin-bottom="10px">Datos presentados:</h5>
+                <h5>- Nombre</h5>
+                <h5>- Apellidos</h5>
+            </div>
+        </ion-row>
+        <ion-row>
+            <ion-row text-center>
+                <ion-col>
+                    <button ion-button style="background-color: #4a4a4c">Cancelar presentación
+                        <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-close.png">
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button
+                            (click)="showIdentity()">Finalizar
+                        <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-row>
+    </ion-col>
 
 </ion-content>

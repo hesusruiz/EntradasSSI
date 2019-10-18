@@ -1,8 +1,13 @@
 page-show-identity {
-  .aclass {
-    display: flex;
-    justify-content: center;
-    height: 300px;
+
+
+  .qr{
+    display: inline-block;
+    min-height: 100% !important;
+    background: #eee;
+    contain: inherit !important;
+    text-align: center;
+
   }
 
   .title-identity {
@@ -10,7 +15,4 @@ page-show-identity {
     justify-content: center;
   }
 
-  img {
-    height: 100% !important;
-  }
 }

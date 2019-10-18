@@ -79,11 +79,11 @@ export class ShowIdentityPage {
         let tokenToSign= new this.jsontokens.TokenSigner('ES256k', privatekey).sign(this.jwtPayload, true, this.headerJwt);
         console.log('token to sign: ', tokenToSign);
 
-        let verify= new this.jsontokens.TokenVerifier('ES256k', publickey ).verify(tokenToSign);
-        console.log('is the token verified?: ', verify);
+        /*let verify= new this.jsontokens.TokenVerifier('ES256k', publickey ).verify(tokenToSign);
+        console.log('is the token verified?: ', verify);*/
 
         //console.log(token);
-        return tokenToSign;
+        return JSON.stringify(tokenToSign);
     }
 
     showIdentity() {
