@@ -27,11 +27,7 @@ export class ShowIdentityPage {
     kid:any;
     jsontokens = require('jsontokens');
 
-    headerJwt = {
-        "alg": "ES256",
-        "typ": "JWT",
-        "kid": this.kid,
-    };
+    headerJwt;
 
     jwtPayload;
 
@@ -40,6 +36,13 @@ export class ShowIdentityPage {
         this.kid=localStorage.get('kid');
         let key= localStorage.get('key');
 
+        console.log('el kid:' , this.kid);
+
+        this.headerJwt = {
+            "alg": "ES256",
+            "typ": "JWT",
+            "kid": this.kid,
+        };
 
         this.credentials = Base64.encode(this.user.ticketId);
         this.credentialDecripted=this.user.ticketId;
@@ -47,7 +50,7 @@ export class ShowIdentityPage {
 
         this.jwtPayload = {
             "iss": "did:alastria:quorum:redt:QmeeasCZ9jLbX...ueBJ7d7csxhb",
-            "aud": "did:alastria:quorum:redt:QmeeasCZ9jLbX...ueBJ7d7csxhb",
+            "aud": "did:alastria:quorum:redt:"+this.kid.toString(),
             "iat": 1525465044,
             "vp": {
                 "@context": [
