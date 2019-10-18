@@ -86,8 +86,7 @@ export class ShowIdentityPage {
         console.log('is the token verified?: ', verify);
 
         //console.log(token);
-        console.log('stringify: ',JSON.stringify(tokenToSign));
-        return JSON.stringify(tokenToSign);
+        return tokenToSign;
     }
 
     showIdentity() {
