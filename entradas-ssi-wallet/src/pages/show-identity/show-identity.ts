@@ -20,21 +20,23 @@ import {Storage} from "@ionic/storage";
 })
 export class ShowIdentityPage {
 
-    user: User;
+    cardsState: boolean[]=null;
     qrData: any;
     credentialDecripted;
     credentials;
     kid:any;
+    credentialsList: any[]=[];
     jsontokens = require('jsontokens');
 
     headerJwt;
 
     jwtPayload;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private localStorage:Storage) {
-        this.user = navParams.get('user');
-        this.kid=localStorage.get('kid');
-        let key= localStorage.get('key');
+    constructor(public navCtrl: NavController, public navParams: NavParams, private localStoragy:Storage) {
+        this.cardsState = navParams.get('userDetails');
+        console.log('cardStatessssss', this.cardsState);
+        this.kid=localStoragy.get('kid');
+        let key= localStoragy.get('key');
 
         console.log('el kid:' , this.kid);
 
@@ -44,9 +46,20 @@ export class ShowIdentityPage {
             "kid": this.kid,
         };
 
-        this.credentials = Base64.encode(this.user.ticketId);
-        this.credentialDecripted=this.user.ticketId;
-        console.log('CREDENTIAL: '+this.credentials);
+        if(this.cardsState[0]===true){
+           this.credentialsList.push(localStorage.getItem('jwt-ticketID'));
+        }if(this.cardsState[1]===true){
+            this.credentialsList.push(localStorage.getItem('jwt-name'));
+        }if(this.cardsState[2]===true){
+            this.credentialsList.push(localStorage.getItem('jwt-surnames'));
+        }if(this.cardsState[3]===true){
+            this.credentialsList.push(localStorage.getItem('jwt-mail'));
+        }
+
+        console.log(this.credentialsList);
+
+        this.credentials = Base64.encode(this.credentialsList);
+        console.log('CREDENTIAL in b64: '+this.credentials);
 
         this.jwtPayload = {
             "iss": "did:alastria:quorum:redt:QmeeasCZ9jLbX...ueBJ7d7csxhb",

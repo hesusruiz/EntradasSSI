@@ -4,9 +4,8 @@
             <ion-card-content style="width: 100%">
                 <div>
                     <a>La empresa:</a>
-                    <h2 text-center>ServiceProvider1</h2>
+                    <h2 text-center>in2</h2>
                     <a style="padding-bottom: 10px">Solicita los siguientes datos:</a>
-                    <br>
                     <a style="font-weight: bold; display: flex; margin-left: 15px; margin-top: 30px;">OBLIGATORIOS:</a>
                 </div>
                 <ion-card style="border-radius: 20px !important; margin: 10px;">
@@ -21,7 +20,7 @@
                                 <a style="font-size: 14px;">Nombre</a>
                             </ion-col>
                             <ion-col text-end style="flex: none !important;">
-                                <ion-toggle color="success" checked></ion-toggle>
+                                <ion-toggle (ionChange)="checkChange($event, 0)" color="success" checked></ion-toggle>
                             </ion-col>
                         </ion-row>
                         <ion-row>
@@ -45,7 +44,65 @@
                 </div>
                 <ion-card style="border-radius: 20px !important; margin: 10px;">
                     <ion-card-header>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Email
+                        <ion-card-title text-center style="font-weight: bold; font-size: 20px;">NOMBRE:
+                            {{user?.name}}
+                        </ion-card-title>
+                        <ion-row>
+                            <ion-col text-start>
+                                <a style="font-size: 14px;">Email</a>
+                            </ion-col>
+                            <ion-col text-end style="flex: none !important;">
+                                <ion-toggle (ionChange)="checkChange($event, 1)"color="success"></ion-toggle>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col text-start>
+                                <a style="font-size: 14px;">Emitido por: {{company}}</a>
+                            </ion-col>
+                            <ion-col text-end>
+                                <a style="font-size: 14px;">
+                                    <ion-icon name="arrow-up">Basico</ion-icon>
+                                </a>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-header>
+                </ion-card>
+            </ion-card-content>
+        </ion-row>
+        <ion-row>
+            <ion-card-content style="width: 100%">
+                <ion-card style="border-radius: 20px !important; margin: 10px;">
+                    <ion-card-header>
+                        <ion-card-title text-center style="font-weight: bold; font-size: 20px;">APELLIDOS:
+                            {{user?.surnames}}
+                        </ion-card-title>
+                        <ion-row>
+                            <ion-col text-start>
+                                <a style="font-size: 14px;">Email</a>
+                            </ion-col>
+                            <ion-col text-end style="flex: none !important;">
+                                <ion-toggle (ionChange)="checkChange($event, 2)"color="success"></ion-toggle>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col text-start>
+                                <a style="font-size: 14px;">Emitido por: {{company}}</a>
+                            </ion-col>
+                            <ion-col text-end>
+                                <a style="font-size: 14px;">
+                                    <ion-icon name="arrow-up">Basico</ion-icon>
+                                </a>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-header>
+                </ion-card>
+            </ion-card-content>
+        </ion-row>
+        <ion-row>
+            <ion-card-content style="width: 100%">
+                <ion-card style="border-radius: 20px !important; margin: 10px;">
+                    <ion-card-header>
+                        <ion-card-title text-center style="font-weight: bold; font-size: 20px;">EMAIL:
                             {{user?.email}}
                         </ion-card-title>
                         <ion-row>
@@ -53,7 +110,7 @@
                                 <a style="font-size: 14px;">Email</a>
                             </ion-col>
                             <ion-col text-end style="flex: none !important;">
-                                <ion-toggle color="success"></ion-toggle>
+                                <ion-toggle (ionChange)="checkChange($event, 3)"color="success"></ion-toggle>
                             </ion-col>
                         </ion-row>
                         <ion-row>

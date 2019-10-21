@@ -99,3 +99,15 @@ ion-nav {
     max-width: 35px !important;
     max-height: 15px !important;
 }
+
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom-color: transparent !important;
+    -webkit-box-shadow: transparent !important;
+    box-shadow: transparent !important;
+}
+
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom-color: transparent !important;
+    -webkit-box-shadow: transparent !important;
+    box-shadow: transparent !important;
+}

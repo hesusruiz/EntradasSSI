@@ -9,6 +9,7 @@ import {CredentialRequestProvider} from "../../../providers/credential-request/c
 import {decodeToken} from 'jsontokens';
 import {encodeToken} from 'jsontokens';
 import {HttpErrorResponse} from "@angular/common/http";
+import {Storage} from "@ionic/storage";
 
 /**
  * Generated class for the ScanQrInfoPage page.
@@ -33,20 +34,24 @@ export class ScanQrInfoPage {
     constructor(public navCtrl: NavController, public navParams: NavParams, private scanner: BarcodeScanner, private credentialRequestProvider: CredentialRequestProvider,
     private postValidateDid: CredentialRequestProvider) {
 
-      credentialRequestProvider.getJWT() .subscribe((result: any) => {
+      credentialRequestProvider.getJWT().subscribe((result: any) => {
         let data=JSON.stringify(result);
+        console.log('HA LLEGADO: '+data);
 
         let splitted= data.split(":");
         this.reSplitted=splitted[1].split('"');
 
-          console.log('RESULT->'+ this.reSplitted[1]);
+          localStorage.setItem('jwt-name', this.reSplitted[1]);
+          localStorage.setItem('jwt-surnames', this.reSplitted[3]);
+          localStorage.setItem('jwt-mail', this.reSplitted[5]);
+          localStorage.setItem('jwt-ticketID', this.reSplitted[7]);
 
         let tokenText = new this.jsontokens.decodeToken(this.reSplitted[1]);
 
         console.log('tokentext: '+tokenText);
 
         this.searchKID(this.jwt);
-        console.log('KID: ' + tokenText.header.kid);
+        console.log('KID:' + tokenText.header.kid);
 
        let resultado= postValidateDid.postValidateDid(this.backendId,tokenText.header.kid);
        resultado

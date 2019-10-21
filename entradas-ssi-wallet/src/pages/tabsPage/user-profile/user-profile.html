@@ -5,15 +5,21 @@
             <ion-card-header>
                 <ion-row>
                     <ion-col text-start>
-                        <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
+                        <ion-card-subtitle style="font-size: 14px;">EMITIDO POR<a style="font-weight: bold">IN2</a></ion-card-subtitle>
                     </ion-col>
                     <ion-col text-end>
                         <ion-card-subtitle style="font-size: 14px;">
-                            <ion-icon name="arrow-up">Basico</ion-icon>
+                            <a><img src="assets/images/hdpi/credencial-A.png">Básico</a>
                         </ion-card-subtitle>
                     </ion-col>
                 </ion-row>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">TicketId: {{ticketId}}</ion-card-title>
+                <ion-row>
+                    <a>TICKET ID:</a>
+                </ion-row>
+                <ion-row>
+                    <a>{{ticketId}}</a>
+                </ion-row>
+                <ion-card-title style="font-weight: bold; font-size: 20px;">TicketId: {{ticketId}}</ion-card-title>
             </ion-card-header>
             <ion-row style="margin-top: -20px;">
                 <ion-col text-start>

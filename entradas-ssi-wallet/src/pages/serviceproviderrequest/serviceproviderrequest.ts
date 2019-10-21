@@ -20,6 +20,9 @@ export class ServiceproviderrequestPage {
 
     user: User;
     company: string;
+    cardsState: boolean[] = [
+        true, false, false, false
+    ];
 
     constructor(public navCtrl: NavController, public navParams: NavParams, secureStorage: SessionSecuredStorageService) {
 
@@ -52,7 +55,12 @@ export class ServiceproviderrequestPage {
     }
 
     showIdentity() {
-      this.navCtrl.push(ShowIdentityPage, {user:this.user})
+      this.navCtrl.push(ShowIdentityPage, {userDetails:this.cardsState})
+    }
+
+    checkChange(event, item) {
+        this.cardsState[item] = !this.cardsState[item];
+        console.log(this.cardsState);
     }
 
 
