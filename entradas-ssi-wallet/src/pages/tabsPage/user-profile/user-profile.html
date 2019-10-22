@@ -2,24 +2,52 @@
     <ion-card-content>
         <h2 style="margin: 15px;">Credenciales</h2>
         <ion-card style="border-radius: 20px !important; margin: 10px;">
+            <ion-row>
+                <ion-col text-start>
+                    <a style="font-size: 14px; color: #bdbbd1ff">EMITIDO POR<a
+                            style="font-weight: bold; color: #1a1831ff; margin-left: 10px">IN2</a></a>
+                </ion-col>
+                <ion-col text-end>
+                    <a style="color: #1a1831ff"><img style="height: 20%; width: auto !important;" src="assets/images/hdpi/credencial-A.png">Básico</a>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <a style="color: #bdbbd1ff">TICKET ID:</a>
+            </ion-row>
+            <ion-row>
+                <a style="font-weight: bolder; font-size: 22px;">{{ticketId}}</a>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <a style="color: #bdbbd1ff">
+                        Emitida <a style="color: #1a1831ff">1/1/19</a>
+                    </a>
+                </ion-col>
+                <ion-col>
+                    <a style="color: #bdbbd1ff">
+                        Expira <a style="color: #1a1831ff">12/1/19</a>
+                    </a>
+                </ion-col>
+                <ion-col >
+                   <a style="color: #3c8e2f">Activa</a>
+                </ion-col>
+
+            </ion-row>
+        </ion-card>
+        <ion-card style="border-radius: 20px !important; margin: 10px;">
             <ion-card-header>
                 <ion-row>
                     <ion-col text-start>
-                        <ion-card-subtitle style="font-size: 14px;">EMITIDO POR<a style="font-weight: bold">IN2</a></ion-card-subtitle>
+                        <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
                     </ion-col>
                     <ion-col text-end>
                         <ion-card-subtitle style="font-size: 14px;">
-                            <a><img src="assets/images/hdpi/credencial-A.png">Básico</a>
+                            <ion-icon name="arrow-up">Basico</ion-icon>
                         </ion-card-subtitle>
                     </ion-col>
                 </ion-row>
-                <ion-row>
-                    <a>TICKET ID:</a>
-                </ion-row>
-                <ion-row>
-                    <a>{{ticketId}}</a>
-                </ion-row>
-                <ion-card-title style="font-weight: bold; font-size: 20px;">TicketId: {{ticketId}}</ion-card-title>
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">
+                    Nombre: {{name}}</ion-card-title>
             </ion-card-header>
             <ion-row style="margin-top: -20px;">
                 <ion-col text-start>
@@ -51,7 +79,8 @@
                         </ion-card-subtitle>
                     </ion-col>
                 </ion-row>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Nombre: {{name}}</ion-card-title>
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">
+                    Apellidos: {{surname}}</ion-card-title>
             </ion-card-header>
             <ion-row style="margin-top: -20px;">
                 <ion-col text-start>
@@ -83,39 +112,8 @@
                         </ion-card-subtitle>
                     </ion-col>
                 </ion-row>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Apellidos: {{surname}}</ion-card-title>
-            </ion-card-header>
-            <ion-row style="margin-top: -20px;">
-                <ion-col text-start>
-                    <ion-card-content style="color: #3c8e2f">
-                        Activa
-                    </ion-card-content>
-                </ion-col>
-                <ion-col text-center>
-                    <ion-card-content>
-                        Emitido: 1/1/19
-                    </ion-card-content>
-                </ion-col>
-                <ion-col text-end>
-                    <ion-card-content>
-                        Expira: 1/1/20
-                    </ion-card-content>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-        <ion-card style="border-radius: 20px !important; margin: 10px;">
-            <ion-card-header>
-                <ion-row>
-                    <ion-col text-start>
-                        <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-card-subtitle style="font-size: 14px;">
-                            <ion-icon name="arrow-up">Basico</ion-icon>
-                        </ion-card-subtitle>
-                    </ion-col>
-                </ion-row>
-                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">Email: {{email}}</ion-card-title>
+                <ion-card-title text-center style="font-weight: bold; font-size: 20px;">
+                    Email: {{email}}</ion-card-title>
             </ion-card-header>
             <ion-row style="margin-top: -20px;">
                 <ion-col text-start>

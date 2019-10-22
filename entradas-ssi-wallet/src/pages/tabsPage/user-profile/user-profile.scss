@@ -2,4 +2,10 @@ page-user-profile {
   ion-app.md [padding] .scroll-content {
     padding: 0;
   }
+
+  .card-content-md {
+    padding: 0 !important;
+    font-size: 1.4rem;
+    line-height: 1.1 !important;
+  }
 }

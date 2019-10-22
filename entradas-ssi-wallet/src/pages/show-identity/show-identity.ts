@@ -35,7 +35,7 @@ export class ShowIdentityPage {
     constructor(public navCtrl: NavController, public navParams: NavParams, private localStoragy:Storage) {
         this.cardsState = navParams.get('userDetails');
         console.log('cardStatessssss', this.cardsState);
-        this.kid=localStoragy.get('kid');
+        this.kid=localStorage.getItem('kid');
         let key= localStoragy.get('key');
 
         console.log('el kid:' , this.kid);
@@ -43,7 +43,7 @@ export class ShowIdentityPage {
         this.headerJwt = {
             "alg": "ES256",
             "typ": "JWT",
-            "kid": this.kid,
+            "kid": this.kid.toString(),
         };
 
         if(this.cardsState[0]===true){
@@ -72,7 +72,6 @@ export class ShowIdentityPage {
                 ],
                 "type": ["VerifiablePresentation", "AlastriaVPTicket"],
                 "proc": "H398sjHd...kldjUYn475n",
-                // base64url-encoded JWT as string
                 "verifiableCredential": [this.credentials]
             }
         };
@@ -86,11 +85,10 @@ export class ShowIdentityPage {
     }
 
     generateToken() {
-        // let privatekey = fs.readFileSync("src/PEM/privateKyudo.pem");
+
         let privatekey=localStorage.getItem('privateKey');
         let publickey=localStorage.getItem('publicKey');
-        //let jwt = require("jsonwebtoken");
-        //let token = jwt.sign(this.jwtPayload, pk , {header: this.headerJwt, algorithm: "ES256"});
+
 
         let tokenToSign= new this.jsontokens.TokenSigner('ES256k', privatekey).sign(this.jwtPayload, false, this.headerJwt);
         console.log('token to sign: ', tokenToSign);
@@ -98,7 +96,6 @@ export class ShowIdentityPage {
         let verify= new this.jsontokens.TokenVerifier('ES256k', publickey ).verify(tokenToSign);
         console.log('is the token verified?: ', verify);
 
-        //console.log(token);
         return tokenToSign;
     }
 
