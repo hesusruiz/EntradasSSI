@@ -6,14 +6,11 @@
             </div>
         </ion-row>
         <ion-row>
-            <div class="qr">
                 <ngx-qrcode
                         [qrc-value]="qrData"
-                        qrc-class="aclass"
-                        qrc-errorCorrectionLevel="L"
-                        qrc-version="38">
+                        [qrc-errorCorrectionLevel]="'L'"
+                        [qrc-version]="'40'">
                 </ngx-qrcode>
-            </div>
         </ion-row>
         <ion-row>
             <div>

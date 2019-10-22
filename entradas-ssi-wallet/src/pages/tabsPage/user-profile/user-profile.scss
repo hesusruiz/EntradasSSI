@@ -8,4 +8,46 @@ page-user-profile {
     font-size: 1.4rem;
     line-height: 1.1 !important;
   }
+
+  ion-app.md [padding] .scroll-content {
+    padding: 0;
+  }
+  .card-content-md {
+    padding: 0 !important;
+    font-size: 1.4rem;
+    line-height: 1.1 !important;
+  }
+  .title-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+  }
+  .level{
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+  }
+  .card-md{
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .txt-color {
+    font-size: 14px;
+    color: #bdbbd1ff
+  }
+  .txt-state{
+    color:#5db05a !important;
+  }
+  .txt-credential{
+    font-size: 20px !important;
+    font-family: unset !important;
+    font-weight: bold !important;
+    color: #3486baff !important;
+    margin-top: -12px !important;
+  }
 }
