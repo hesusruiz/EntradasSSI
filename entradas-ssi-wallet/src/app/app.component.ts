@@ -20,12 +20,14 @@ export class MyApp {
     @ViewChild(Platform) plat: Platform;
 
     rootPage: any = HomePage;
+    platform: any;
     userProfile = UserProfilePage;
     value:string;
 
     constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks, private secureStorage:SessionSecuredStorageService,
                 ) {
         platform.ready().then(() => {
+            this.platform=platform;
             this.deepLink.routeWithNavController(this.nav, {
                 '/login': Login
             }).subscribe(match => {
@@ -48,6 +50,10 @@ export class MyApp {
         });
 
 
+    }
+
+    exitApp(){
+        this.platform.exitApp();
     }
 
     searchJSON(data: any) {

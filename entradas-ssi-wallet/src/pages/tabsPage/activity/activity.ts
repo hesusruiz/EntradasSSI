@@ -21,6 +21,7 @@ export class Activity {
     username: User;
     name: string;
     surname: string;
+    provider:string;
     email: string;
     ticketId: string;
 
@@ -35,8 +36,8 @@ export class Activity {
     ) {
         this.type = this.CREDENTIAL_TYPE;
 
-        if(navParams.get('cred') != undefined || navParams.get('cred') != null){
-            this.credencialesEntregadas.push(navParams.get('cred'));
+        if(navParams.get('cred') != undefined || navParams.get('prov') != null){
+            this.credencialesEntregadas.push(navParams.get('prov'));
             this.credencialesEntregadas.reverse();
         }
 

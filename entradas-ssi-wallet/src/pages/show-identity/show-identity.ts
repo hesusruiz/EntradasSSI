@@ -106,7 +106,9 @@ export class ShowIdentityPage {
     }
 
     showIdentity() {
-        this.navCtrl.push(Activity, {cred:this.credentialDecripted})
+        let provider=localStorage.getItem('provider');
+        console.log('el provider final=', provider);
+        this.navCtrl.push(Activity, {prov: provider})
     }
 
 }

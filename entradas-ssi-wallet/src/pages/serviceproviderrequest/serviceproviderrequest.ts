@@ -20,6 +20,7 @@ export class ServiceproviderrequestPage {
 
     user: User;
     company: string;
+    isChecked:boolean =true;
     cardsState: boolean[] = [
         true, false, false, false
     ];
@@ -62,6 +63,11 @@ export class ServiceproviderrequestPage {
         this.cardsState[item] = !this.cardsState[item];
         console.log(this.cardsState);
     }
+
+    notifyChecked(){
+        this.isChecked = !this.isChecked;
+    }
+
 
 
 }

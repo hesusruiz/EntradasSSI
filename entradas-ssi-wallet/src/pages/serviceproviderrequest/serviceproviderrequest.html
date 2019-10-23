@@ -1,150 +1,47 @@
 <ion-content class="background-app">
-    <ion-col>
-        <ion-row>
-            <ion-card-content style="width: 100%">
-                <div>
-                    <a>La empresa:</a>
-                    <h2 text-center>in2</h2>
-                    <a style="padding-bottom: 10px">Solicita los siguientes datos:</a>
-                    <a style="font-weight: bold; display: flex; margin-left: 15px; margin-top: 30px;">OBLIGATORIOS:</a>
+    <ion-card-content>
+        <div>
+            <a>The company:</a>
+            <h2 text-center>IN2</h2>
+            <a style="padding-bottom: 10px">Request the following information:</a>
+            <a style="font-weight: bold; display: flex; margin-left: 15px; margin-top: 30px;">OBLIGATORY:</a>
+        </div>
+        <ion-card>
+            <div class="title-cards">
+                <h3 class="txt-color">TICKET ID: </h3>
+                <ion-toggle (ionChange)="checkChange($event, 0) && notifyChecked()" color="success" [checked]="isChecked"></ion-toggle>
+
+            </div>
+            <div class="title-cards">
+                    <h3 class="txt-credential">{{user?.ticketId}}</h3>
+                 </div>
+            <div class="title-cards">
+                <div class="title-provider">
+                    <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
                 </div>
-                <ion-card style="border-radius: 20px !important; margin: 10px;">
-                    <ion-card-header>
-                        <ion-card-title text-center
-                                        style="font-weight: bold; font-size: 20px; text-align: center; display: grid !important;">
-                            Ticket
-                            {{user?.ticketId}}
-                        </ion-card-title>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Nombre</a>
-                            </ion-col>
-                            <ion-col text-end style="flex: none !important;">
-                                <ion-toggle (ionChange)="checkChange($event, 0)" color="success" checked></ion-toggle>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Emitido por: {{company}}</a>
-                            </ion-col>
-                            <ion-col text-end>
-                                <a style="font-size: 14px;">
-                                    <ion-icon name="arrow-up">Basico</ion-icon>
-                                </a>
-                            </ion-col>
-                        </ion-row>
-                    </ion-card-header>
-                </ion-card>
-            </ion-card-content>
-        </ion-row>
-        <ion-row>
-            <ion-card-content style="width: 100%">
-                <div style="display: flex; margin-left: 15px; margin-top: 30px;">
-                    <a>OPCIONALES:</a>
+                <div class="level">
+                    <img src="assets/images/hdpi/credencial-A.png">
+                    <h3 style="color: #000;"><strong>Basic</strong></h3>
                 </div>
-                <ion-card style="border-radius: 20px !important; margin: 10px;">
-                    <ion-card-header>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 20px;">NOMBRE:
-                            {{user?.name}}
-                        </ion-card-title>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Email</a>
-                            </ion-col>
-                            <ion-col text-end style="flex: none !important;">
-                                <ion-toggle (ionChange)="checkChange($event, 1)"color="success"></ion-toggle>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Emitido por: {{company}}</a>
-                            </ion-col>
-                            <ion-col text-end>
-                                <a style="font-size: 14px;">
-                                    <ion-icon name="arrow-up">Basico</ion-icon>
-                                </a>
-                            </ion-col>
-                        </ion-row>
-                    </ion-card-header>
-                </ion-card>
-            </ion-card-content>
-        </ion-row>
-        <ion-row>
-            <ion-card-content style="width: 100%">
-                <ion-card style="border-radius: 20px !important; margin: 10px;">
-                    <ion-card-header>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 20px;">APELLIDOS:
-                            {{user?.surnames}}
-                        </ion-card-title>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Email</a>
-                            </ion-col>
-                            <ion-col text-end style="flex: none !important;">
-                                <ion-toggle (ionChange)="checkChange($event, 2)"color="success"></ion-toggle>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Emitido por: {{company}}</a>
-                            </ion-col>
-                            <ion-col text-end>
-                                <a style="font-size: 14px;">
-                                    <ion-icon name="arrow-up">Basico</ion-icon>
-                                </a>
-                            </ion-col>
-                        </ion-row>
-                    </ion-card-header>
-                </ion-card>
-            </ion-card-content>
-        </ion-row>
-        <ion-row>
-            <ion-card-content style="width: 100%">
-                <ion-card style="border-radius: 20px !important; margin: 10px;">
-                    <ion-card-header>
-                        <ion-card-title text-center style="font-weight: bold; font-size: 20px;">EMAIL:
-                            {{user?.email}}
-                        </ion-card-title>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Email</a>
-                            </ion-col>
-                            <ion-col text-end style="flex: none !important;">
-                                <ion-toggle (ionChange)="checkChange($event, 3)"color="success"></ion-toggle>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col text-start>
-                                <a style="font-size: 14px;">Emitido por: {{company}}</a>
-                            </ion-col>
-                            <ion-col text-end>
-                                <a style="font-size: 14px;">
-                                    <ion-icon name="arrow-up">Basico</ion-icon>
-                                </a>
-                            </ion-col>
-                        </ion-row>
-                    </ion-card-header>
-                </ion-card>
-            </ion-card-content>
-        </ion-row>
-        <ion-row>
+            </div>
+        </ion-card>
+
+        <div>
             <div class="privacyTerms">
                 <ion-icon name="information-circle"></ion-icon>
                 <a href="https://www.in2.es/"> Consultar la privacidad, términos y condiciones</a>
             </div>
-        </ion-row>
-        <ion-row text-center>
-            <ion-col>
+        </div>
+        <div text-center>
+            <div>
                 <button ion-button style="background-color: #4a4a4c">Cancelar presentación
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-close.png">
                 </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button
+                <button ion-button [disabled]="!isChecked"
                         (click)="showIdentity()">Aceptar
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
-            </ion-col>
-        </ion-row>
-    </ion-col>
+            </div>
+        </div>
+    </ion-card-content>
 </ion-content>
