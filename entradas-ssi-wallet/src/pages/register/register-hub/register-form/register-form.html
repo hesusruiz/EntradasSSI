@@ -7,50 +7,50 @@
                 <h3 class="titol_gran" ion-text style="margin-left: 20px;" padding-bottom color="registerTitle">Create your AlastriaId</h3>
             </ion-row>
             <ion-row>
-                <ion-item style="text-align: start; background-color: #f0f0f5ff;" no-lines>
+                <div style="text-align: start; background-color: #f0f0f5ff;" no-lines>
                     <button ion-button="" style="background: #4a4a4c" (click)="openScanner()">
                         <img height="15px" src="assets/images/hdpi/ico-02-2.png">
                     </button>
-                </ion-item>
+                </div>
             </ion-row>
             <ion-row>
-                <ion-item style="background-color: #f0f0f5ff">
-                    <ion-label stacked style="margin-left: 4px;">NAME</ion-label>
+                <div style="background-color: #f0f0f5ff; width: 100%">
+                    <ion-label style="margin-left: 4px;">NAME</ion-label>
                     <ion-input style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
     box-shadow: none !important;" required type="text" [(ngModel)]="name"></ion-input>
-                </ion-item>
+                </div>
             </ion-row>
             <ion-row>
-                <ion-item no-lines style="background-color: #f0f0f5ff">
-                    <ion-label stacked style="margin-left: 4px;">SURNAME</ion-label>
-                    <ion-input no-lines style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+                <div style="background-color: #f0f0f5ff;width: 100%">
+                    <ion-label style="margin-left: 4px;">SURNAME</ion-label>
+                    <ion-input style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
     box-shadow: none !important;" required type="text"
                                [(ngModel)]="surnames"></ion-input>
-                </ion-item>
+                </div>
             </ion-row>
             <ion-row>
-                <ion-item no-lines style="background-color: #f0f0f5ff">
-                    <ion-label stacked style="margin-left: 4px;">EMAIL</ion-label>
-                    <ion-input no-lines style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+                <div style="background-color: #f0f0f5ff;width: 100%">
+                    <ion-label style="margin-left: 4px;">EMAIL</ion-label>
+                    <ion-input  style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
     box-shadow: none !important;" required type="email"
                                pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required
                                [(ngModel)]="email"></ion-input>
                     <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">"Formato
                         incorrecto de email"
                     </ion-label>
-                </ion-item>
+                </div>
             </ion-row>
             <ion-row>
-                <ion-item no-lines style="background-color: #f0f0f5ff">
-                    <ion-label stacked style="margin-left: 4px;">TICKET ID</ion-label>
-                    <ion-input no-lines style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+                <div style="background-color: #f0f0f5ff;width: 100%">
+                    <ion-label style="margin-left: 4px;">TICKET ID</ion-label>
+                    <ion-input style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
     box-shadow: none !important;" required type="text"
                                required [(ngModel)]="ticketId"></ion-input>
                     <!--                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">-->
                     <!--                        Formato-->
                     <!--                        incorrecto de email-->
                     <!--                    </ion-label>-->
-                </ion-item>
+                </div>
             </ion-row>
             <ion-row style="display: flex; justify-content: space-around; margin-top: 20px;">
                 <button ion-button
@@ -60,7 +60,7 @@
             </ion-row>
             <ion-row style="display: flex; justify-content: center; margin-top: 10px;">
                 <div style="margin-left: 4px; margin-right: 4px; "><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
-                <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
+                <div style="margin-left: 4px; margin-right: 4px;" (click)="goToBack()"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
                 <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval-active.png"></div>
             </ion-row>
         </ion-col>

@@ -114,6 +114,9 @@ export class RegisterForm {
         //     }
          }
     }
+    goToBack(): void {
+        this.navCtrl.pop();
+    }
 
     createCredential(id:string,issuer: string, name: string, isActive: boolean, issueDate: string,
                      expireDate: string, level: number): CredentialProvider{

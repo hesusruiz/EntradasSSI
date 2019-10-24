@@ -98,13 +98,13 @@ export class HomePage implements OnInit {
                 }
             ).catch(
                 (error) => {
-                    this.showAlert('Usuario no registrado', 'Tienes que crear previamente una cuenta, para poder logarte en la aplicación');
+                    this.showAlert('User not registered', 'Create your account before login into the application');
                 }
             );
         }
         // no esta registrado
         else {
-            this.showAlert('Usuario no registrado', 'Tienes que crear previamente una cuenta, para poder logarte en la aplicación');
+            this.showAlert('User not registered', 'Create your account before login into the application');
         }
     }
 

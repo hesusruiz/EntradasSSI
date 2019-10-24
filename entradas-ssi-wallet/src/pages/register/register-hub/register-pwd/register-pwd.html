@@ -10,7 +10,7 @@
                 <div style="width: 100%">
                         <ion-label style="margin-left: 4px;">PASSWORD</ion-label>
                     <ion-input  style="border-radius: 10px;  background-color: #bdbbd1ff;"
-                                required placeholder="Introduce to contraseña"
+                                required placeholder="Enter your password"
                                 type="password"
                                [(ngModel)]="pwd">
                     </ion-input>
@@ -23,7 +23,7 @@
                 <div style="width: 100%">
                     <ion-label style="margin-left: 4px;">REPEAT PASSWORD</ion-label>
                     <ion-input id="pwd" style="border-radius: 10px;background-color: #bdbbd1ff;"
-                               required placeholder="Repita su contraseña"
+                               required placeholder="Repeat your password"
                                type="password"
                                [(ngModel)]="pwd2">
                     </ion-input>
@@ -39,7 +39,7 @@
                 </button>
             </ion-row>
             <ion-row style="display: flex; justify-content: center; margin-top: 10px;">
-              <div style="margin-left: 4px; margin-right: 4px; "><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
+                <div style="margin-left: 4px; margin-right: 4px;" (click)="goToBack()"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
               <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval-active.png"></div>
               <div style="margin-left: 4px; margin-right: 4px;"><img style="max-width: 70%" src="assets/images/hdpi/ico-oval.png"></div>
             </ion-row>

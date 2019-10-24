@@ -55,5 +55,7 @@ export class RegisterPwdPage {
             this.isPasswordValid;
 
     }
-
+    goToBack(): void {
+        this.navCtrl.pop();
+    }
 }
