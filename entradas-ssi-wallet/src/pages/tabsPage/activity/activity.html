@@ -1,46 +1,33 @@
 <ion-content class="background-app">
     <ion-card-content>
-        <h3 text-center style="margin: 15px;">Credenciales entregadas</h3>
         <div *ngIf="credencialesEntregadas.length==0">
-            <h3>Aún no tienes crendenciales entregadas!</h3>
+            <h3 text-center="">You do not have any Credentials presented yet!</h3>
         </div>
         <div *ngIf="credencialesEntregadas.length>0">
-            <ion-card *ngFor="let cred of credencialesEntregadas"
-                      style="border-radius: 20px !important; margin: 10px;">
-                <ion-card-header>
-                    <ion-row>
-                        <ion-col text-center>
-                            <ion-card-title text-center style="font-weight: bold; font-size: 18px;">Ticket
-                                ID: {{cred}}</ion-card-title>
-                        </ion-col>
-                        <ion-col text-end>
-                            <ion-icon name="help-circle"></ion-icon>
-                        </ion-col>
-                    </ion-row>
-
-                    <ion-row>
-                        <ion-col text-start>
-                            <ion-card-subtitle style="font-size: 14px;">Emitido por: Empresa X</ion-card-subtitle>
-                        </ion-col>
-                        <ion-col text-end>
-                            <ion-card-subtitle style="font-size: 14px;">
-                                <ion-icon name="arrow-up">Basico</ion-icon>
-                            </ion-card-subtitle>
-                        </ion-col>
-                    </ion-row>
-                </ion-card-header>
-                <ion-row style="margin-top: -20px;">
-                    <ion-col text-start>
-                        <ion-card-content>
-                            Presentado a ServiceProvider1
-                        </ion-card-content>
-                    </ion-col>
-                    <ion-col text-end>
-                        <ion-card-content>
-                            10:20:50 1/1/19
-                        </ion-card-content>
-                    </ion-col>
-                </ion-row>
+            <h3 style="margin: 15px;" text-center="">Presented credentials</h3>
+            <ion-card *ngFor="let cred of credencialesEntregadas">
+                <div class="title-cards">
+                    <h3 class="txt-color">TICKET ID: </h3>
+                    <img src="assets/images/hdpi/ico-question-circle.png">
+                </div>
+                <div class="title-cards">
+                    <h3 class="txt-credential">{{ticketId}}</h3>
+                </div>
+                <div class="title-provider">
+                    <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
+                </div>
+                <div class="title-provider">
+                    <h3 class="txt-color">PRESENTED TO <strong style="color: black !important;">{{cred}}</strong></h3>
+                </div>
+                <div class="title-cards">
+                    <div class="title-provider">
+                        <h3 class="txt-color">10:10 - 11-11-19</h3>
+                    </div>
+                    <div class="level">
+                        <img src="assets/images/hdpi/credencial-A.png">
+                        <h3 style="color: #000;"><strong>Basic</strong></h3>
+                    </div>
+                </div>
             </ion-card>
         </div>
     </ion-card-content>

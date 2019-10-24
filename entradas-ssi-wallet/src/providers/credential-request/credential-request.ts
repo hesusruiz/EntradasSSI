@@ -17,7 +17,7 @@ export class CredentialRequestProvider {
     }
 
     requestCredential(did: string, email: string, name: string, surname: string, ticketId: string) {
-        this.http.post('https://des-blockcha.in2.es/api/v1/credential/', {
+        this.http.post('https://blockcha.in2.es/api/v1/credential/', {
             did: did,
             email: email,
             nombre: name,
@@ -33,12 +33,12 @@ export class CredentialRequestProvider {
 
     getJWT() {
         console.log('RECUPERO LA URL: '+localStorage.getItem('urlVal'));
-        return this.http.get('https://des-blockcha.in2.es/api/v1/credential' + localStorage.getItem('urlVal'));
+        return this.http.get('https://blockcha.in2.es/api/v1/credential' + localStorage.getItem('urlVal'));
 
     }
 
     postValidateDid(id, did) {
-       return  this.http.post('https://des-blockcha.in2.es/api/v1/credential/did', {
+       return  this.http.post('https://blockcha.in2.es/api/v1/credential/did', {
             id: id,
             did: did
         });

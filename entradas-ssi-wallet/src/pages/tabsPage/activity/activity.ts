@@ -8,6 +8,7 @@ import {IdentitySecuredStorageService, SessionSecuredStorageService} from '../..
 
 @IonicPage()
 @Component({
+    selector: 'page-activity',
     templateUrl: 'activity.html',
     providers: [TabsService, ToastService]
 })
@@ -21,6 +22,7 @@ export class Activity {
     username: User;
     name: string;
     surname: string;
+    provider:string;
     email: string;
     ticketId: string;
 
@@ -33,12 +35,24 @@ export class Activity {
     constructor(
         public sessionSecuredStorageService: SessionSecuredStorageService, private navParams: NavParams
     ) {
+        this.ticketId=localStorage.getItem('_SS_ticketId');
         this.type = this.CREDENTIAL_TYPE;
-
-        if(navParams.get('cred') != undefined || navParams.get('cred') != null){
-            this.credencialesEntregadas.push(navParams.get('cred'));
-            this.credencialesEntregadas.reverse();
+        if(localStorage.getItem('credEntregadas')===null) {
+            if (navParams.get('cred') != undefined || navParams.get('prov') != null) {
+                this.credencialesEntregadas.push(navParams.get('prov'));
+                this.credencialesEntregadas.reverse();
+                localStorage.setItem('credEntregadas', JSON.stringify(this.credencialesEntregadas));
+            }
+        }else {
+            if (navParams.get('cred') != undefined || navParams.get('prov') != null) {
+                this.credencialesEntregadas=JSON.parse(localStorage.getItem('credEntregadas'));
+                this.credencialesEntregadas.push(navParams.get('prov'));
+                this.credencialesEntregadas.reverse();
+            }
         }
+
+    }
+    ionViewDidEnter(){
 
     }
 }

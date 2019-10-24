@@ -4,25 +4,25 @@
     <ion-grid>
         <ion-col>
             <ion-row>
-                <h3 class="titol_gran" ion-text style="margin-left: 20px;" padding-bottom color="registerTitle">Crea tu AlastriaId</h3>
+                <h3 class="titol_gran" ion-text style="margin-left: 20px;" padding-bottom color="registerTitle">Create your AlastriaId</h3>
             </ion-row>
             <ion-row>
                 <ion-item style="text-align: start; background-color: #f0f0f5ff;" no-lines>
                     <button ion-button="" style="background: #4a4a4c" (click)="openScanner()">
-                        <ion-icon slot="icon-only" name="qr-scanner"></ion-icon>
+                        <img height="15px" src="assets/images/hdpi/ico-02-2.png">
                     </button>
                 </ion-item>
             </ion-row>
             <ion-row>
-                <ion-item no-lines style="background-color: #f0f0f5ff">
-                    <ion-label stacked style="margin-left: 4px;">NOMBRE</ion-label>
-                    <ion-input no-lines style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
+                <ion-item style="background-color: #f0f0f5ff">
+                    <ion-label stacked style="margin-left: 4px;">NAME</ion-label>
+                    <ion-input style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
     box-shadow: none !important;" required type="text" [(ngModel)]="name"></ion-input>
                 </ion-item>
             </ion-row>
             <ion-row>
                 <ion-item no-lines style="background-color: #f0f0f5ff">
-                    <ion-label stacked style="margin-left: 4px;">APELLIDOS</ion-label>
+                    <ion-label stacked style="margin-left: 4px;">SURNAME</ion-label>
                     <ion-input no-lines style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
     box-shadow: none !important;" required type="text"
                                [(ngModel)]="surnames"></ion-input>
@@ -54,7 +54,7 @@
             </ion-row>
             <ion-row style="display: flex; justify-content: space-around; margin-top: 20px;">
                 <button ion-button
-                        (click)="onEvent('onRegister')">Crear y solicitar credenciales
+                        (click)="onEvent('onRegister')">Create & request credentials
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
             </ion-row>

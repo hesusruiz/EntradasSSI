@@ -4,6 +4,7 @@ import {User} from "../../models/User";
 import {Base64} from 'js-base64';
 import {Activity} from "../tabsPage/activity/activity";
 import {Storage} from "@ionic/storage";
+import {tick} from "@angular/core/testing";
 
 
 /**
@@ -22,7 +23,6 @@ export class ShowIdentityPage {
 
     cardsState: boolean[]=null;
     qrData: any;
-    credentialDecripted;
     credentials;
     kid:any;
     credentialsList: any[]=[];
@@ -47,7 +47,9 @@ export class ShowIdentityPage {
         };
 
         if(this.cardsState[0]===true){
-           this.credentialsList.push(localStorage.getItem('jwt-ticketID'));
+            let ticketId=localStorage.getItem('jwt-ticketID');
+            console.log('ticketId=',ticketId);
+           this.credentialsList.push(ticketId);
         }if(this.cardsState[1]===true){
             this.credentialsList.push(localStorage.getItem('jwt-name'));
         }if(this.cardsState[2]===true){
@@ -56,7 +58,7 @@ export class ShowIdentityPage {
             this.credentialsList.push(localStorage.getItem('jwt-mail'));
         }
 
-        console.log(this.credentialsList);
+        console.log('Array de credentials: ',this.credentialsList);
 
         this.credentials = Base64.encode(this.credentialsList);
         console.log('CREDENTIAL in b64: '+this.credentials);
@@ -72,12 +74,15 @@ export class ShowIdentityPage {
                 ],
                 "type": ["VerifiablePresentation", "AlastriaVPTicket"],
                 "proc": "H398sjHd...kldjUYn475n",
-                "verifiableCredential": [this.credentials]
+                "verifiableCredential": [this.credentialsList]
             }
         };
 
+
         this.qrData=this.generateToken();
-        console.log(this.qrData);
+        //this.qrData=Base64.encode(this.qrData);
+        console.log('QR FINAL=', this.qrData);
+        console.log('QR Data Type',typeof this.qrData);
     }
 
     ionViewDidLoad() {
@@ -100,7 +105,9 @@ export class ShowIdentityPage {
     }
 
     showIdentity() {
-        this.navCtrl.push(Activity, {cred:this.credentialDecripted})
+        let provider=localStorage.getItem('provider');
+        console.log('el provider final=', provider);
+        this.navCtrl.push(Activity, {prov: provider})
     }
 
 }

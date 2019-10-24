@@ -3,25 +3,23 @@
     <!-- Themes Login + logo 1 -->
     <ion-grid>
         <ion-col>
-            <ion-row style="display: block; margin-top: 20px;">
-                <div style="display: block; align-items: start; background: transparent">
-                    <ion-item>
-                        <ion-label stacked class="grey">PASSWORD</ion-label>
-                        <ion-input no-lines style="border-radius: 10px; border-style: solid; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
-                            box-shadow: none !important;" type="password" [(ngModel)]="pass"></ion-input>
-                    </ion-item>
+            <ion-row>
+                <div style="display: block; width: 100%">
+                <ion-label style="color: #8c89aeff">PASSWORD</ion-label>
+                <ion-input style="border-radius: 10px;  background-color: #bdbbd1ff;" type="password"
+                           [(ngModel)]="pass"></ion-input>
                 </div>
             </ion-row>
-                <ion-row style="margin-top: 70px; display: flex; justify-content: space-around;">
-                    <button ion-button
-                            (click)="onEvent('onLogin')">Acceder
-                        <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
-                    </button>
-                </ion-row>
+            <ion-row style="margin-top: 70px; display: flex; justify-content: space-around;">
+                <button ion-button
+                        (click)="onEvent('onLogin')">Login
+                    <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
+                </button>
+            </ion-row>
             <ion-row>
                 <div class="grey" style="padding-top: 50px; color: #1F2126" *ngIf="!data.isRegistered;">
-                    ¿Aún no tienes cuenta? <a class="menu" (click)="onEvent('onRegister')"
-                                              style="color: #1F2126"> {{data.newAccount}}
+                    ¿New to BlockchaIN2?<a class="menu" (click)="onEvent('onRegister')"
+                                                       style="color: #1F2126"> Sign up now
                 </a>
                 </div>
             </ion-row>

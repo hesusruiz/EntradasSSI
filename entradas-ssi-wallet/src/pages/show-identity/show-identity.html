@@ -6,14 +6,11 @@
             </div>
         </ion-row>
         <ion-row>
-            <div class="qr">
                 <ngx-qrcode
                         [qrc-value]="qrData"
-                        qrc-class="aclass"
-                        qrc-errorCorrectionLevel="L"
-                        qrc-version="38">
+                        [qrc-errorCorrectionLevel]="'L'"
+                        [qrc-version]="'40'">
                 </ngx-qrcode>
-            </div>
         </ion-row>
         <ion-row>
             <div>
@@ -25,20 +22,19 @@
         <ion-row>
             <div>
                 <h5 style="color: #8c89aeff" margin-bottom="10px">Datos presentados:</h5>
-                <h5>- Nombre</h5>
-                <h5>- Apellidos</h5>
+                <h5>- Ticket Id</h5>
             </div>
         </ion-row>
         <ion-row>
             <ion-row text-center>
                 <ion-col>
-                    <button ion-button style="background-color: #4a4a4c">Cancelar presentación
+                    <button ion-button style="background-color: #8c89aeff">Cancel presentation
                         <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-close.png">
                     </button>
                 </ion-col>
                 <ion-col>
                     <button ion-button
-                            (click)="showIdentity()">Finalizar
+                            (click)="showIdentity()">Finish
                         <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                     </button>
                 </ion-col>
