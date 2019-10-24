@@ -4,37 +4,37 @@
     <ion-grid>
         <ion-col>
             <ion-row>
-                <h1 ion-text register-title padding-bottom color="registerTitle">Registro</h1>
+                <h1 ion-text register-title padding-bottom color="registerTitle">Register</h1>
             </ion-row>
             <ion-row>
                 <div style="width: 100%">
-                    <ion-label style="margin-left: 4px;">CONTRASEÑA</ion-label>
+                        <ion-label style="margin-left: 4px;">PASSWORD</ion-label>
                     <ion-input  style="border-radius: 10px;  background-color: #bdbbd1ff;"
                                 required placeholder="Introduce to contraseña"
                                 type="password"
                                [(ngModel)]="pwd">
                     </ion-input>
                     <ion-label style="font-size: 16px;" error-field color="primary" no-margin *ngIf="!isPasswordValid">
-                        Formato incorrecto de contraseña
+                        Password is not valid
                     </ion-label>
                 </div>
             </ion-row>
             <ion-row>
                 <div style="width: 100%">
-                    <ion-label style="margin-left: 4px;">REPETIR CONTRASEÑA</ion-label>
+                    <ion-label style="margin-left: 4px;">REPEAT PASSWORD</ion-label>
                     <ion-input id="pwd" style="border-radius: 10px;background-color: #bdbbd1ff;"
                                required placeholder="Repita su contraseña"
                                type="password"
                                [(ngModel)]="pwd2">
                     </ion-input>
                     <ion-label style="font-size: 16px;" error-field color="primary" no-margin
-                               *ngIf="!doPasswordsMatch">Las contraseñas no coinciden
+                               *ngIf="!doPasswordsMatch">Passwords don't match
                     </ion-label>
                 </div>
             </ion-row>
             <ion-row style="display: flex; justify-content: space-around; margin-top: 15px;">
                 <button ion-button
-                        (click)="navigateToRegisterForm()">Continuar
+                        (click)="navigateToRegisterForm()">Continue
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
             </ion-row>

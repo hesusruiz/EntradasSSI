@@ -2,40 +2,35 @@
     <ion-grid>
         <ion-col>
             <ion-row>
-                <h1 ion-text padding-bottom class="titol_gran">Privacidad y condiciones</h1>
+                <h1 ion-text padding-bottom class="titol_gran">Privacity & conditions</h1>
             </ion-row>
             <ion-row style="padding: 5px">
                 <p >
-                    “xxxxxxxx” es una aplicación que le permite almacenar credenciales de distintos emisores ads-critos
-                    a la red de Alastria.
+                    BlockchaIN2 is an application that allows you to store credentials of different assigned issuers
+                    to the Alastria network..
                 </p>
                 <p>
-                    Las credenciales se almacenan en el dispositivo en formato JWT, presentándose cuando es re-querido
-                    para verificar sus datos.
+                    Credentials are stored on the device in JWT format, being presented when required to verify your data.
                 </p>
                 <p>
-                    La solicitud y presentación de credenciales sigue el protocolo de Alastria Id, que cumple con la
-                    regulación del eIDAS y las buenas prácticas del e-Identity Workshop Report, del Foro y Obser-vatorio
-                    EUBlockchain .
+                    The request and presentation of credentials follows the Alastria Id protocol, which complies with the regulation of eIDAS and the good practices of the e-Identity Workshop Report, of the EUBlockchain Forum and Observatory.
                 </p>
                 <p>
-                    Éste protocolo permite la compartición de datos firmados criptográficamente y su validación de forma
-                    descentralizada, permitiendo su validación de forma rápida y segura.
+                    This protocol allows the sharing of cryptographically signed data and its validation in a decentralized manner, allowing its validation quickly and safely.
                 </p>
                 <p>
-                    Al instalar ésta aplicación acepta que los datos y credenciales obtenidos se almacenen en su
-                    dispositivo hasta la desinstalación del mismo.
+                    By installing this application, you accept that the data and credentials obtained are stored on your device until it is uninstalled.
                 </p>
             </ion-row>
             <ion-row>
                 <ion-item>
                     <ion-checkbox [checked]="isChecked" (ionChange)="notifyChecked()"></ion-checkbox>
-                    <ion-label no-lines="true" style="border: transparent">Aceptar</ion-label>
+                    <ion-label no-lines="true" style="border: transparent">Accept</ion-label>
                 </ion-item>
             </ion-row>
             <ion-row style="display: flex; justify-content: space-around;">
                 <button [disabled]="!isChecked" ion-button text-center
-                        (click)="NavigateToRegisterForm()">Empezar
+                        (click)="NavigateToRegisterForm()">Start
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
             </ion-row>

@@ -1,9 +1,9 @@
 <ion-content class="background-app">
     <ion-card-content>
         <div>
-            <a>The company:</a>
-            <h2 text-center>IN2</h2>
-            <a style="padding-bottom: 10px">Request the following information:</a>
+            <a style="color: black">The company:</a>
+            <h2 style="color: black">{{provider}}</h2>
+            <a style="padding-bottom: 10px; color: black">Request the following information:</a>
             <a style="font-weight: bold; display: flex; margin-left: 15px; margin-top: 30px;">OBLIGATORY:</a>
         </div>
         <ion-card>
@@ -29,16 +29,16 @@
         <div>
             <div class="privacyTerms">
                 <ion-icon name="information-circle"></ion-icon>
-                <a href="https://www.in2.es/"> Consultar la privacidad, términos y condiciones</a>
+                <a href="https://www.in2.es/">Read our Terms and Conditions & Privacy Policy</a>
             </div>
         </div>
         <div text-center>
             <div>
-                <button ion-button style="background-color: #4a4a4c">Cancelar presentación
+                <button ion-button style="background-color: #8c89aeff">Cancel presentation
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-close.png">
                 </button>
                 <button ion-button [disabled]="!isChecked"
-                        (click)="showIdentity()">Aceptar
+                        (click)="showIdentity()">Accept
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
             </div>

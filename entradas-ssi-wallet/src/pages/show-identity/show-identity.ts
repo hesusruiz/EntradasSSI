@@ -23,7 +23,6 @@ export class ShowIdentityPage {
 
     cardsState: boolean[]=null;
     qrData: any;
-    credentialDecripted;
     credentials;
     kid:any;
     credentialsList: any[]=[];

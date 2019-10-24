@@ -21,6 +21,7 @@ export class ServiceproviderrequestPage {
     user: User;
     company: string;
     isChecked:boolean =true;
+    provider:string;
     cardsState: boolean[] = [
         true, false, false, false
     ];
@@ -28,6 +29,7 @@ export class ServiceproviderrequestPage {
     constructor(public navCtrl: NavController, public navParams: NavParams, secureStorage: SessionSecuredStorageService) {
 
         let value = navParams.get('wantedRq');
+        this.provider=localStorage.getItem('provider');
         console.log(value);
         if (value === "ticketID") {
             secureStorage.getUsername().then(

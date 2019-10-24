@@ -1,10 +1,10 @@
 <ion-content class="background-app">
     <ion-card-content>
         <div *ngIf="credencialesEntregadas.length==0">
-            <h3>Aún no tienes crendenciales entregadas!</h3>
+            <h3 text-center="">You do not have any Credentials presented yet!</h3>
         </div>
         <div *ngIf="credencialesEntregadas.length>0">
-            <h3 style="margin: 15px;">Credenciales entregadas</h3>
+            <h3 style="margin: 15px;" text-center="">Presented credentials</h3>
             <ion-card *ngFor="let cred of credencialesEntregadas">
                 <div class="title-cards">
                     <h3 class="txt-color">TICKET ID: </h3>
@@ -17,7 +17,7 @@
                     <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
                 </div>
                 <div class="title-provider">
-                    <h3 class="txt-color">PRESENTED TO <strong style="color: black !important;">{{provider}}</strong></h3>
+                    <h3 class="txt-color">PRESENTED TO <strong style="color: black !important;">{{cred}}</strong></h3>
                 </div>
                 <div class="title-cards">
                     <div class="title-provider">
