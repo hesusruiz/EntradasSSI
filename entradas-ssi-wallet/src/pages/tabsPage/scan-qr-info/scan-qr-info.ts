@@ -29,6 +29,7 @@ export class ScanQrInfoPage {
     jsontokens = require('jsontokens');
     reSplitted:any;
     backendId:string='did_back_end';
+    mailAccepted: string;
 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, private scanner: BarcodeScanner, private credentialRequestProvider: CredentialRequestProvider,
@@ -85,8 +86,8 @@ export class ScanQrInfoPage {
         // handleOpenUrl()
     }
 
-    ionViewDidLoad() {
-        console.log('ionViewDidLoad ScanQrInfoPage');
+    ionViewDidEnter() {
+        this.mailAccepted=localStorage.getItem('urlVal');
     }
 
     openScanner() {
@@ -115,7 +116,10 @@ export class ScanQrInfoPage {
             } else {
                 if (k == 'provider') {
                     console.log('El provider',data[k]);
-                    localStorage.setItem('provider', data[k])
+                    console.info('el provider antes del set->',localStorage.getItem('provider'));
+                    let provider: Array<string> = localStorage.getItem('provider') != null ? JSON.parse(localStorage.getItem('provider')) :[];
+                    provider.push(data[k]);
+                    localStorage.setItem('provider',JSON.stringify(provider));
                 }
 
                 if (k == 'field_name') {

@@ -5,6 +5,7 @@ import {Base64} from 'js-base64';
 import {Activity} from "../tabsPage/activity/activity";
 import {Storage} from "@ionic/storage";
 import {tick} from "@angular/core/testing";
+import {ScanQrInfoPage} from "../tabsPage/scan-qr-info/scan-qr-info";
 
 
 /**
@@ -105,9 +106,11 @@ export class ShowIdentityPage {
     }
 
     showIdentity() {
-        let provider=localStorage.getItem('provider');
-        console.log('el provider final=', provider);
-        this.navCtrl.push(Activity, {prov: provider})
+        // let provider=localStorage.getItem('provider');
+        // console.log('el provider final=', provider);
+        this.navCtrl.popAll();
+
+
     }
 
 }

@@ -1,6 +1,4 @@
 <ion-content class="background-app" >
-
-    <ion-grid>
         <ion-row>
             <h3 text-center style="margin: 20px">Scan a QR Code</h3>
         </ion-row>
@@ -13,23 +11,21 @@
         <ion-row>
             <div style="margin-left: 15px;">
                 <p style="margin-top: 60px;">
-                    Scan a code of<a style="color:black; font-weight: bold">presentation request</a>
+                    Scan a code of<a style="color:black; font-weight: bold"> presentation request</a>
                     in order to obtain the necessary credentials.
                 </p>
                 <p style="margin-top: 20px;">
-                    The scanning process is<a style="color:black; font-weight: bold">automatic</a>. Simply
+                    The scanning process is<a style="color:black; font-weight: bold"> automatic</a>. Simply
                     focus the QR code at the right distance.
                 </p>
             </div>
         </ion-row>
         <ion-row style="margin-top: 25px; display: flex; justify-content: space-around;">
-            <button ion-button
+            <button ion-button [disabled]="mailAccepted==null || mailAccepted==undefined"
                     (click)="openScanner()">Scan
-                <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
+                <img style="height: 10px;width:10px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
             </button>
         </ion-row>
-    </ion-grid>
-
 </ion-content>
 
 

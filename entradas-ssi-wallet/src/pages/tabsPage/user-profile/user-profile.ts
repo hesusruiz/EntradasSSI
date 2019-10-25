@@ -26,9 +26,12 @@ export class UserProfilePage {
     surname: string;
     email: string;
     ticketId:string;
+    mailAccepted: string;
 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public sessionSecuredStorageService: SessionSecuredStorageService) {
+
+
 
         this.sessionSecuredStorageService.getUsername().then(
             (result) => {
@@ -52,8 +55,9 @@ export class UserProfilePage {
 
     }
 
-    ionViewDidLoad() {
+    ionViewDidEnter() {
         console.log('ionViewDidLoad UserProfilePage');
+        this.mailAccepted=localStorage.getItem('urlVal');
     }
 
 }

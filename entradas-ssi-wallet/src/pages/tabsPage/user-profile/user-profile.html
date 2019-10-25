@@ -2,92 +2,97 @@
     <ion-card-content>
         <h2 style="margin: 15px;">Credentials</h2>
         <!-- TicketID -->
-        <ion-card>
-            <div class="title-cards">
-                <div class="title-provider">
-                    <h3 class="txt-color">ISSUED BY<strong style="color: black !important;">IN2</strong></h3>
+        <div *ngIf="mailAccepted==null || mailAccepted==undefined">
+            <h4 style="margin-top: 80px" text-center="">Check your email to receive your credentials!</h4>
+        </div>
+        <div *ngIf="mailAccepted">
+            <ion-card>
+                <div class="title-cards">
+                    <div class="title-provider">
+                        <h3 class="txt-color">ISSUED BY<strong style="color: black !important;">IN2</strong></h3>
+                    </div>
+                    <div class="level">
+                        <img src="assets/images/hdpi/credencial-A.png">
+                        <h3 style="color: #000;"><strong>Basic</strong></h3>
+                    </div>
                 </div>
-                <div class="level">
-                    <img src="assets/images/hdpi/credencial-A.png">
-                    <h3 style="color: #000;"><strong>Basic</strong></h3>
+                <div class="title-cards">
+                    <h3 class="txt-color">TICKET ID: </h3>
                 </div>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">TICKET ID: </h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-credential">{{ticketId}}</h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
-                <h3 style="color:#5db05a">Active</h3>
-            </div>
-        </ion-card>
-        <!-- Nombre -->
-        <ion-card>
-            <div class="title-cards">
-                <div class="title-provider">
-                    <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
+                <div class="title-cards">
+                    <h3 class="txt-credential">{{ticketId}}</h3>
                 </div>
-                <div class="level">
-                    <img src="assets/images/hdpi/credencial-A.png">
-                    <h3 style="color: #000;"><strong>Basic</strong></h3>
+                <div class="title-cards">
+                    <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
+                    <h3 style="color:#5db05a">Active</h3>
                 </div>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">NAME: </h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-credential">{{name}}</h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
-                <h3 style="color:#5db05a">Active</h3>
-            </div>
-        </ion-card>
-        <!-- Apellido -->
-        <ion-card>
-            <div class="title-cards">
-                <div class="title-provider">
-                    <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
+            </ion-card>
+            <!-- Nombre -->
+            <ion-card>
+                <div class="title-cards">
+                    <div class="title-provider">
+                        <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
+                    </div>
+                    <div class="level">
+                        <img src="assets/images/hdpi/credencial-A.png">
+                        <h3 style="color: #000;"><strong>Basic</strong></h3>
+                    </div>
                 </div>
-                <div class="level">
-                    <img src="assets/images/hdpi/credencial-A.png">
-                    <h3 style="color: #000;"><strong>Basic</strong></h3>
+                <div class="title-cards">
+                    <h3 class="txt-color">NAME: </h3>
                 </div>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">SURNAME: </h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-credential">{{surname}}</h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
-                <h3 style="color:#5db05a">Active</h3>
-            </div>
-        </ion-card>
-        <!-- EMAIL -->
-        <ion-card>
-            <div class="title-cards">
-                <div class="title-provider">
-                    <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
+                <div class="title-cards">
+                    <h3 class="txt-credential">{{name}}</h3>
                 </div>
-                <div class="level">
-                    <img src="assets/images/hdpi/credencial-A.png">
-                    <h3 style="color: #000;"><strong>Basic</strong></h3>
+                <div class="title-cards">
+                    <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
+                    <h3 style="color:#5db05a">Active</h3>
                 </div>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">EMAIL: </h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-credential">{{email}}</h3>
-            </div>
-            <div class="title-cards">
-                <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
-                <h3 style="color:#5db05a">Active</h3>
-            </div>
-        </ion-card>
+            </ion-card>
+            <!-- Apellido -->
+            <ion-card>
+                <div class="title-cards">
+                    <div class="title-provider">
+                        <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
+                    </div>
+                    <div class="level">
+                        <img src="assets/images/hdpi/credencial-A.png">
+                        <h3 style="color: #000;"><strong>Basic</strong></h3>
+                    </div>
+                </div>
+                <div class="title-cards">
+                    <h3 class="txt-color">SURNAME: </h3>
+                </div>
+                <div class="title-cards">
+                    <h3 class="txt-credential">{{surname}}</h3>
+                </div>
+                <div class="title-cards">
+                    <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
+                    <h3 style="color:#5db05a">Active</h3>
+                </div>
+            </ion-card>
+            <!-- EMAIL -->
+            <ion-card>
+                <div class="title-cards">
+                    <div class="title-provider">
+                        <h3 class="txt-color">ISSUED BY <strong style="color: black !important;">IN2</strong></h3>
+                    </div>
+                    <div class="level">
+                        <img src="assets/images/hdpi/credencial-A.png">
+                        <h3 style="color: #000;"><strong>Basic</strong></h3>
+                    </div>
+                </div>
+                <div class="title-cards">
+                    <h3 class="txt-color">EMAIL: </h3>
+                </div>
+                <div class="title-cards">
+                    <h3 class="txt-credential">{{email}}</h3>
+                </div>
+                <div class="title-cards">
+                    <h3 class="txt-color">ISSUED 11/11/19 - EXPIRES 14/11/19</h3>
+                    <h3 style="color:#5db05a">Active</h3>
+                </div>
+            </ion-card>
+        </div>
     </ion-card-content>
 </ion-content>

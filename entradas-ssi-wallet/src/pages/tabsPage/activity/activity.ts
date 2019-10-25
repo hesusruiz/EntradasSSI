@@ -22,38 +22,29 @@ export class Activity {
     username: User;
     name: string;
     surname: string;
-    provider:string;
+    provider: string;
     email: string;
     ticketId: string;
 
     public type: string;
 
-    credencialesEntregadas: Array<string>=[];
+    credencialesEntregadas: Array<string> = [];
 
     private readonly CREDENTIAL_TYPE = "credentials";
 
-    constructor(
-        public sessionSecuredStorageService: SessionSecuredStorageService, private navParams: NavParams
-    ) {
-        this.ticketId=localStorage.getItem('_SS_ticketId');
+    constructor(public sessionSecuredStorageService: SessionSecuredStorageService, private navParams: NavParams, private navCtrl:NavController
+    ) {}
+
+    ionViewDidEnter() {
+        this.ticketId = localStorage.getItem('_SS_ticketId');
         this.type = this.CREDENTIAL_TYPE;
-        if(localStorage.getItem('credEntregadas')===null) {
-            if (navParams.get('cred') != undefined || navParams.get('prov') != null) {
-                this.credencialesEntregadas.push(navParams.get('prov'));
-                this.credencialesEntregadas.reverse();
-                localStorage.setItem('credEntregadas', JSON.stringify(this.credencialesEntregadas));
-            }
-        }else {
-            if (navParams.get('cred') != undefined || navParams.get('prov') != null) {
-                this.credencialesEntregadas=JSON.parse(localStorage.getItem('credEntregadas'));
-                this.credencialesEntregadas.push(navParams.get('prov'));
-                this.credencialesEntregadas.reverse();
-            }
-        }
-
-    }
-    ionViewDidEnter(){
-
+        this.credencialesEntregadas = [];
+        this.credencialesEntregadas = localStorage.getItem('provider') !== null ? JSON.parse(localStorage.getItem('provider')) : [];
+        console.log('datos recibidos activity --> ',localStorage.getItem('provider'));
+        // if (this.navParams.get('prov')!= null || this.navParams.get('prov')!= undefined ) {
+        //     // this.credencialesEntregadas.unshift(this.navParams.get('prov'));
+        //    // localStorage.setItem('credEntregadas', JSON.stringify(this.credencialesEntregadas));
+        // }
     }
 }
 

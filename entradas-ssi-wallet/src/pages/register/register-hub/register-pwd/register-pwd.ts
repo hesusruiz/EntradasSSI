@@ -20,6 +20,7 @@ export class RegisterPwdPage {
     public pwd2: string;
     private isPasswordValid: boolean = true;
     private doPasswordsMatch: boolean = true;
+    private isPasswordRegex: boolean =true;
 
     constructor(public navCtrl: NavController, public navParams: NavParams) {
     }
@@ -43,7 +44,7 @@ export class RegisterPwdPage {
         //     this.isUsernameValid = false;
         // }
 
-        if (!this.pwd || this.pwd.length == 0) {
+        if (!this.pwd || this.pwd.length <6) {
             this.isPasswordValid = false;
         }
 

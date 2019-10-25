@@ -16,13 +16,13 @@
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
             </ion-row>
-            <ion-row>
-                <div class="grey" style="padding-top: 50px; color: #1F2126" *ngIf="!data.isRegistered;">
+            <div text-center>
+                <div class="grey" text-center style="padding-top: 50px; color: #1F2126" *ngIf="!data.isRegistered;">
                     ¿New to BlockchaIN2?<a class="menu" (click)="onEvent('onRegister')"
                                                        style="color: #1F2126"> Sign up now
                 </a>
                 </div>
-            </ion-row>
+            </div>
         </ion-col>
     </ion-grid>
 </ion-content>
