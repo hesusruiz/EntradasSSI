@@ -73,6 +73,10 @@ export class MyApp {
         }
     }
 
+    openURL(url:string){
+        window.open(url,'_system', 'location=yes');
+    }
+
     pushPage(page:string
     ) {
         this.nav.push(page);
