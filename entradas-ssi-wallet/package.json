@@ -120,7 +120,7 @@
       },
       "cordova-plugin-inappbrowser": {},
       "ionic-plugin-deeplinks": {
-        "URL_SCHEME": "myapp",
+        "URL_SCHEME": "entradaswallet",
         "DEEPLINK_HOST": "app",
         "ANDROID_PATH_PREFIX": "/"
       },
