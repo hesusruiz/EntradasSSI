@@ -38,23 +38,19 @@ export class RegisterPwdPage {
     }
 
     validate(): boolean {
-        this.isPasswordValid = true;
         this.doPasswordsMatch = true;
-        // if (!this.username || this.username.length == 0) {
-        //     this.isUsernameValid = false;
-        // }
-
-        if (!this.pwd || this.pwd.length <6) {
-            this.isPasswordValid = false;
-        }
-
-        if (this.pwd != this.pwd2) {
+        this.isPasswordValid = true;
+        if (this.pwd == this.pwd2) {
+            if (this.pwd.search(/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+-]).{6,}/) >= 0) {
+                return true;
+            } else {
+                this.isPasswordValid = false;
+                return false;
+            }
+        } else {
             this.doPasswordsMatch = false;
+            return false;
         }
-
-        return this.doPasswordsMatch &&
-            this.isPasswordValid;
-
     }
     goToBack(): void {
         this.navCtrl.pop();
