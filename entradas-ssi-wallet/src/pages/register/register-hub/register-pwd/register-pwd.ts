@@ -40,13 +40,13 @@ export class RegisterPwdPage {
     validate(): boolean {
         this.doPasswordsMatch = true;
         this.isPasswordValid = true;
-        if (this.pwd == this.pwd2) {
-            if (this.pwd.search(/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+-]).{6,}/) >= 0) {
+        if (this.pwd === this.pwd2) {
+            // if (this.pwd.search(/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+-]).{6,}/) >= 0) {
                 return true;
-            } else {
-                this.isPasswordValid = false;
-                return false;
-            }
+            // } else {
+            //     this.isPasswordValid = false;
+            //     return false;
+            // }
         } else {
             this.doPasswordsMatch = false;
             return false;
