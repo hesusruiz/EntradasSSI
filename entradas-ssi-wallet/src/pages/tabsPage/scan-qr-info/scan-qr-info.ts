@@ -113,6 +113,9 @@ export class ScanQrInfoPage {
             if (typeof data[k] == "object" && data[k] !== null) {
                 this.searchJSON(data[k]);
             } else {
+                if (k=='procUrl'){
+                    localStorage.setItem('procUrl', data[k]);
+                }
                 if (k == 'provider') {
                     console.log('El provider',data[k]);
                     console.info('el provider antes del set->',localStorage.getItem('provider'));

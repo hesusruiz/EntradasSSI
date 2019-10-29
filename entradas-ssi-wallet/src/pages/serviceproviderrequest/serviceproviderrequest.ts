@@ -65,6 +65,11 @@ export class ServiceproviderrequestPage {
       this.navCtrl.push(ShowIdentityPage, {userDetails:this.cardsState})
     }
 
+    openURL(){
+        let proc=localStorage.getItem('procUrl');
+        window.open(proc,'_system', 'location=yes');
+    }
+
     checkChange(event, item) {
         this.cardsState[item] = !this.cardsState[item];
         console.log(this.cardsState);
