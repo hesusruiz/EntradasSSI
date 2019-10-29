@@ -52,10 +52,6 @@ export class MyApp {
 
     }
 
-    handleOpenURL(url){
-        localStorage.setItem('urlVal', url);
-    }
-
     exitApp(){
         this.platform.exitApp();
     }
