@@ -71,7 +71,6 @@ export class MyApp {
             }
 
         }
-        // handleOpenUrl()
     }
 
     pushPage(page:string

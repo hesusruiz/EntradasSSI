@@ -83,7 +83,6 @@ export class ScanQrInfoPage {
             }
 
         }
-        // handleOpenUrl()
     }
 
     ionViewDidEnter() {
