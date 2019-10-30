@@ -27,6 +27,7 @@ export class UserProfilePage {
     email: string;
     ticketId:string;
     mailAccepted: string;
+    createdDate:string;
 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public sessionSecuredStorageService: SessionSecuredStorageService) {
@@ -53,6 +54,12 @@ export class UserProfilePage {
             }
         );
 
+    }
+
+    getCurrentDate(): void {
+        let today = new Date();
+        let date = today.getDate() + '.' + (today.getMonth() + 1) + '.' + today.getFullYear();
+        this.createdDate = JSON.stringify(date.toString());
     }
 
     ionViewDidEnter() {

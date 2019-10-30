@@ -29,6 +29,7 @@ export class Activity {
     public type: string;
 
     credencialesEntregadas: Array<string> = [];
+    datesPresented: any;
 
     private readonly CREDENTIAL_TYPE = "credentials";
 
@@ -38,13 +39,13 @@ export class Activity {
     ionViewDidEnter() {
         this.ticketId = localStorage.getItem('_SS_ticketId');
         this.type = this.CREDENTIAL_TYPE;
+        this.datesPresented = [];
+        this.datesPresented = localStorage.getItem('presentationDates') !== null ? JSON.parse(localStorage.getItem('presentationDates')) : [];
+        console.log("informacion de fechas --> ", this.datesPresented);
         this.credencialesEntregadas = [];
         this.credencialesEntregadas = localStorage.getItem('provider') !== null ? JSON.parse(localStorage.getItem('provider')) : [];
         console.log('datos recibidos activity --> ',localStorage.getItem('provider'));
-        // if (this.navParams.get('prov')!= null || this.navParams.get('prov')!= undefined ) {
-        //     // this.credencialesEntregadas.unshift(this.navParams.get('prov'));
-        //    // localStorage.setItem('credEntregadas', JSON.stringify(this.credencialesEntregadas));
-        // }
+
     }
 }
 

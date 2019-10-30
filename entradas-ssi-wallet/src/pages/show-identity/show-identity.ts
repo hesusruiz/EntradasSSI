@@ -22,24 +22,24 @@ import {ScanQrInfoPage} from "../tabsPage/scan-qr-info/scan-qr-info";
 })
 export class ShowIdentityPage {
 
-    cardsState: boolean[]=null;
+    cardsState: boolean[] = null;
     qrData: any;
     credentials;
-    kid:any;
-    credentialsList: any[]=[];
+    kid: any;
+    credentialsList: any[] = [];
     jsontokens = require('jsontokens');
 
     headerJwt;
 
     jwtPayload;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private localStoragy:Storage) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, private localStoragy: Storage) {
         this.cardsState = navParams.get('userDetails');
         console.log('cardStatessssss', this.cardsState);
-        this.kid=localStorage.getItem('kid');
-        let key= localStoragy.get('key');
+        this.kid = localStorage.getItem('kid');
+        let key = localStoragy.get('key');
 
-        console.log('el kid:' , this.kid);
+        console.log('el kid:', this.kid);
 
         this.headerJwt = {
             "alg": "ES256",
@@ -47,26 +47,29 @@ export class ShowIdentityPage {
             "kid": this.kid.toString(),
         };
 
-        if(this.cardsState[0]===true){
-            let ticketId=localStorage.getItem('jwt-ticketID');
-            console.log('ticketId=',ticketId);
-           this.credentialsList.push(ticketId);
-        }if(this.cardsState[1]===true){
+        if (this.cardsState[0] === true) {
+            let ticketId = localStorage.getItem('jwt-ticketID');
+            console.log('ticketId=', ticketId);
+            this.credentialsList.push(ticketId);
+        }
+        if (this.cardsState[1] === true) {
             this.credentialsList.push(localStorage.getItem('jwt-name'));
-        }if(this.cardsState[2]===true){
+        }
+        if (this.cardsState[2] === true) {
             this.credentialsList.push(localStorage.getItem('jwt-surnames'));
-        }if(this.cardsState[3]===true){
+        }
+        if (this.cardsState[3] === true) {
             this.credentialsList.push(localStorage.getItem('jwt-mail'));
         }
 
-        console.log('Array de credentials: ',this.credentialsList);
+        console.log('Array de credentials: ', this.credentialsList);
 
         this.credentials = Base64.encode(this.credentialsList);
-        console.log('CREDENTIAL in b64: '+this.credentials);
+        console.log('CREDENTIAL in b64: ' + this.credentials);
 
         this.jwtPayload = {
             "iss": "did:alastria:quorum:redt:QmeeasCZ9jLbX...ueBJ7d7csxhb",
-            "aud": "did:alastria:quorum:redt:"+this.kid.toString(),
+            "aud": "did:alastria:quorum:redt:" + this.kid.toString(),
             "iat": 1525465044,
             "vp": {
                 "@context": [
@@ -80,10 +83,10 @@ export class ShowIdentityPage {
         };
 
 
-        this.qrData=this.generateToken();
+        this.qrData = this.generateToken();
         //this.qrData=Base64.encode(this.qrData);
         console.log('QR FINAL=', this.qrData);
-        console.log('QR Data Type',typeof this.qrData);
+        console.log('QR Data Type', typeof this.qrData);
     }
 
     ionViewDidLoad() {
@@ -92,25 +95,32 @@ export class ShowIdentityPage {
 
     generateToken() {
 
-        let privatekey=localStorage.getItem('privateKey');
-        let publickey=localStorage.getItem('publicKey');
+        let privatekey = localStorage.getItem('privateKey');
+        let publickey = localStorage.getItem('publicKey');
 
 
-        let tokenToSign= new this.jsontokens.TokenSigner('ES256k', privatekey).sign(this.jwtPayload, false, this.headerJwt);
+        let tokenToSign = new this.jsontokens.TokenSigner('ES256k', privatekey).sign(this.jwtPayload, false, this.headerJwt);
         console.log('token to sign: ', tokenToSign);
 
-        let verify= new this.jsontokens.TokenVerifier('ES256k', publickey ).verify(tokenToSign);
+        let verify = new this.jsontokens.TokenVerifier('ES256k', publickey).verify(tokenToSign);
         console.log('is the token verified?: ', verify);
 
         return tokenToSign;
     }
 
     showIdentity() {
-        // let provider=localStorage.getItem('provider');
-        // console.log('el provider final=', provider);
+        this.getCurrentDate();
         this.navCtrl.popAll();
+    }
 
-
+    getCurrentDate(): void {
+        let today = new Date();
+        let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+        let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        let dateplustime = JSON.stringify(time+ '·' + date);
+        let currentDateArray: Array<string> = localStorage.getItem('presentationDates') != null ? JSON.parse(localStorage.getItem('presentationDates')) : [];
+        currentDateArray.push(dateplustime);
+        localStorage.setItem('presentationDates', JSON.stringify(currentDateArray));
     }
 
 }
