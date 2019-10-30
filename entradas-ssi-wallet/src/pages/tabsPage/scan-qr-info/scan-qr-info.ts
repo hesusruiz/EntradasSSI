@@ -119,17 +119,15 @@ export class ScanQrInfoPage {
                 if (k == 'provider') {
                     console.log('El provider',data[k]);
                     console.info('el provider antes del set->',localStorage.getItem('provider'));
-                    let provider: Array<string> = localStorage.getItem('provider') != null ? JSON.parse(localStorage.getItem('provider')) :[];
+                    let provider: Array<string> = localStorage.getItem('provider') != null ? localStorage.getItem('provider').search("]") >= 0 ? JSON.parse(localStorage.getItem('provider')) : [localStorage.getItem('provider')]:[];
                     provider.push(data[k]);
                     localStorage.setItem('provider',JSON.stringify(provider));
                 }
-
                 if (k == 'field_name') {
                     console.log(data[k]);
                     this.navCtrl.push(ServiceproviderrequestPage, {wantedRq: data[k]});
                 }
             }
-
         }
     }
 

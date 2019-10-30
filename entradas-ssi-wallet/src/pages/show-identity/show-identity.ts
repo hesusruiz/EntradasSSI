@@ -117,9 +117,9 @@ export class ShowIdentityPage {
         let today = new Date();
         let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
         let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        let dateplustime = JSON.stringify(time+ '·' + date);
+        let dateplustime = time.toString() + '·' + date.toString();
         let currentDateArray: Array<string> = localStorage.getItem('presentationDates') != null ? JSON.parse(localStorage.getItem('presentationDates')) : [];
-        currentDateArray.push(dateplustime);
+        currentDateArray.unshift(dateplustime);
         localStorage.setItem('presentationDates', JSON.stringify(currentDateArray));
     }
 
