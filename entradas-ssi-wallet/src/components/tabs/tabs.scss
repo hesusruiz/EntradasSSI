@@ -10,7 +10,11 @@ tabs {
 
     @supports (-webkit-overflow-scrolling: touch) {
         /* CSS specific to iOS devices */
-        bottom: 0 !important;
+        .tabs-md .tabbar {
+            background: #1a1831ff;
+            bottom: 0 !important;
+        }
+
     }
 
     .ion-ios-home-outline,.ion-ios-home,.ion-md-home,.ion-md-home-outline {

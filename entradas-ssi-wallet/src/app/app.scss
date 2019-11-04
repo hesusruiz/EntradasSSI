@@ -76,6 +76,21 @@
 }
 
 
+@supports (-webkit-overflow-scrolling: touch) {
+    /* CSS specific to iOS devices */
+    ion-content {
+        height: 92% !important;
+    }
+
+    .background-app{
+        .scroll-content {
+            margin-bottom: 0px !important;
+        }
+    }
+
+}
+
+
 ion-nav {
     position: unset !important;
     padding-bottom: 16px !important;
