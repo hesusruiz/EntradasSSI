@@ -84,6 +84,7 @@ export class HomePage implements OnInit {
                         (res) => {
                             if (res) {
                                 this.isLoged = true;
+
                                 this.navCtrl.setRoot(TabsPage);
                             }
                             else {

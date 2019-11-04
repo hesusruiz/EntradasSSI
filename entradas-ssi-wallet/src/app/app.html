@@ -1,7 +1,7 @@
 <ion-menu persistent="true" [content]="content" type="overlay">
     <ion-header class="black_menu">
     </ion-header>
-    <ion-content class="black_menu">
+    <ion-content class="black_menu" style="height: 100% !important">
         <ion-list class="login-menu">
             <button *ngIf="isLogged!=null;" ion-item (click)="pushPage('UpgradeCredentialPage')" menuClose>
                 <div item-start><img src="assets/images/hdpi/ico-01.png"></div>Add Medium Credential
@@ -31,4 +31,4 @@
     </button>
 </ion-navbar>
 
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-nav [root]="rootPage" style="position:relative !important;" ></ion-nav>

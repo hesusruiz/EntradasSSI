@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5ae7b800-fabf-49b4-9478-c33cae87ea28" name="Default Changelist" comment="ADD: images + texts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/home/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/login/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,58 +19,12 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#1;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#1;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#1;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#2;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#2;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#2;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#3;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#3;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#3;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.scss" />
-        <option value="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.html" />
-      </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -78,92 +35,6 @@
   </component>
   <component name="ProjectId" id="1RsOpnl3atylDOiZrTZVdYedcba" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="hdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="tabsPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="tabsPage" type="462c0819:PsiDirectoryNode" />
-              <item name="user-profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EntradasSSI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntradasSSI" type="462c0819:PsiDirectoryNode" />
-              <item name="entradas-ssi-wallet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -217,6 +88,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -253,41 +134,6 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8133000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1928" y="5" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15884861" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21885157" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -297,12 +143,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -328,86 +168,6 @@
     <MESSAGE value="ADD: function to retrieve credentialRequest" />
     <MESSAGE value="ADD: images + texts" />
     <option name="LAST_COMMIT_MESSAGE" value="ADD: images + texts" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/show-identity/show-identity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-04w.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/ico-02.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/Header-icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/Header-iconW.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/credencial-C.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/credencial-B.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/assets/images/hdpi/credencial-A.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/user-profile/user-profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#0;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#1;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#1;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#1;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#2;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#2;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#2;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#h3#0;n#div#0;n#div#0;n#ion-card#3;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#ion-card#3;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#1;n#div#3;n#ion-card#3;n#ion-card-content#0;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
