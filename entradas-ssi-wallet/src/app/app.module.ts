@@ -69,8 +69,8 @@ import {IonicStorageModule} from "@ionic/storage";
         IonicModule.forRoot(MyApp, {
                 backButtonText: 'Tu AlastriaID',
                 backButtonIcon: 'ios-arrow-back',
-                mode:'md'
-            },
+                mode: 'md'
+            }
         ),
         RegisterFormModule,
         RegisterPrivacyConditionsPageModule,

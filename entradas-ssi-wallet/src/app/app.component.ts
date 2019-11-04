@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, Input, ViewChild} from '@angular/core';
 import {Platform, App, NavController, Nav} from 'ionic-angular';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -23,20 +23,21 @@ export class MyApp {
     platform: any;
     userProfile = UserProfilePage;
     value:string;
+    isLogged:string=null;
 
     constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks, private secureStorage:SessionSecuredStorageService,
                 ) {
         platform.ready().then(() => {
             this.platform=platform;
+            this.isLogged=localStorage.getItem('userLogged');
             this.deepLink.routeWithNavController(this.nav, {
                 '/login': Login
             }).subscribe(match => {
-                console.log('match: ', match);
+                this.isLogged=localStorage.getItem('userLogged');
 
                this.searchJSON(match);
 
                if(this.value!='localhost') {
-                   console.log('valor desde app.component'+this.value);
                   // secureStorage.saveURLjwt(this.value);
                    localStorage.setItem('urlVal', this.value);
                }
