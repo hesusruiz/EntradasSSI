@@ -1,19 +1,16 @@
 <ion-menu persistent="true" [content]="content" type="overlay">
     <ion-header class="black_menu">
-        <button>
-        </button>
     </ion-header>
     <ion-content class="black_menu">
         <ion-list class="login-menu">
-            <button ion-item (click)="pushPage('UpgradeCredentialPage')">
+            <button *ngIf="isLogged!=null;" ion-item (click)="pushPage('UpgradeCredentialPage')" menuClose>
                 <div item-start><img src="assets/images/hdpi/ico-01.png"></div>Add Medium Credential
             </button>
-            <button ion-item (click)="openURL('https://www.in2.es/blockchain2/')"><!--https://www.in2.es/blockchain2/-->
-
+            <button ion-item (click)="openURL('https://www.in2.es/blockchain2/')" >
                 <div item-start><img src="assets/images/hdpi/ico-04.png"></div>Information of interest
             </button>
-            <button ion-item (click)="openURL('https://www.in2.es/blockchain2/wallet-privacy-policy/')"><!--https://www.in2.es/blockchain2/wallet-privacy-policy/-->
-                <div item-start><img src="assets/images/hdpi/ico-06.png"></div>Legal notice
+            <button ion-item (click)="openURL('https://www.in2.es/blockchain2/wallet-privacy-policy/')">
+                <div item-start><img src="assets/images/hdpi/ico-06.png" menuClose></div>Legal notice
             </button>
             <button ion-item (click)="exitApp()">
                 <div item-start><img src="assets/images/hdpi/ico-07.png"></div>Exit
@@ -30,7 +27,6 @@
         </ion-title>
     </div>
     <button class="btn-side-bar" #content ion-button menuToggle clear icon-start>
-        <!--        <ion-icon src="assets/images/hdpi/Header-iconW.png"></ion-icon>-->
         <img clas="img-button-icon" src="assets/images/hdpi/Header-iconW.png"/>
     </button>
 </ion-navbar>
