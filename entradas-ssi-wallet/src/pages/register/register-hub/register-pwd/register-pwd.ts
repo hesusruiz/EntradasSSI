@@ -22,6 +22,7 @@ export class RegisterPwdPage {
     private doPasswordsMatch: boolean = true;
     private isPasswordRegex: boolean =true;
 
+
     constructor(public navCtrl: NavController, public navParams: NavParams) {
     }
 
@@ -41,12 +42,12 @@ export class RegisterPwdPage {
         this.doPasswordsMatch = true;
         this.isPasswordValid = true;
         if (this.pwd === this.pwd2) {
-            // if (this.pwd.search(/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+-]).{6,}/) >= 0) {
+            if (this.pwd.search(/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[\w~@#$%^&*+=`|{}:;!.?"()\[\]-].{5,}/) >= 0) {
                 return true;
-            // } else {
-            //     this.isPasswordValid = false;
-            //     return false;
-            // }
+            } else {
+                this.isPasswordValid = false;
+                return false;
+            }
         } else {
             this.doPasswordsMatch = false;
             return false;
