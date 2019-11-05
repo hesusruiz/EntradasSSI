@@ -124,6 +124,7 @@ export class ScanQrInfoPage {
                 }
             }
         }
+        this.navCtrl.push(ScannerErrorPage);
     }
 
 }
