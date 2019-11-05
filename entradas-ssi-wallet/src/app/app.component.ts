@@ -39,7 +39,7 @@ export class MyApp {
                     console.log('already registered');
                 } else {
                     console.log('probably the first time');
-                    this.nav.push(RegisterPrivacyConditionsPage);
+                    this.rootPage= RegisterPrivacyConditionsPage;
                 }
             });
 
