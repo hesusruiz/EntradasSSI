@@ -21,9 +21,7 @@
             </div>
         </ion-row>
         <ion-row style="margin-top: 25px; display: flex; justify-content: space-around;">
-            <button ion-button (click)="openScanner()">Scan
-<!--                    [disabled]="mailAccepted==null || mailAccepted==undefined"-->
-
+            <button ion-button (click)="openScanner()" [disabled]="mailAccepted==null || mailAccepted==undefined">Scan
                 <img style="height: 10px;width:10px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
             </button>
         </ion-row>
