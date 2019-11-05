@@ -63,8 +63,11 @@ export class MyApp {
                 this.searchJSON(match);
 
                 console.log('DEEPLINK Activado');
+                if(this.value!='localhost') {
                 localStorage.setItem('urlVal', this.value);
                 localStorage.setItem('credentialDates', this.getCurrentDate());
+                }
+
 
             }, nomatch => {
                 console.error('Got a deeplink that didn\'t match', nomatch);

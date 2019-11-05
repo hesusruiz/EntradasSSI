@@ -5,6 +5,7 @@ import {ToastService} from '../../../services/toast-service';
 import {TabsService} from '../../../services/tabs-service';
 import {OptionsComponent} from './options/options';
 import {IdentitySecuredStorageService, SessionSecuredStorageService} from '../../../services/securedStorage.service';
+import {Storage} from "@ionic/storage";
 
 @IonicPage()
 @Component({
@@ -33,11 +34,14 @@ export class Activity {
 
     private readonly CREDENTIAL_TYPE = "credentials";
 
-    constructor(public sessionSecuredStorageService: SessionSecuredStorageService, private navParams: NavParams, private navCtrl:NavController
+    constructor(public sessionSecuredStorageService: SessionSecuredStorageService, private navParams: NavParams, private navCtrl:NavController, private storageSql: Storage
     ) {}
 
     ionViewDidEnter() {
-        this.ticketId = localStorage.getItem('_SS_ticketId');
+        this.storageSql.get('ticketId').then((val) => {
+            this.ticketId = val;
+        });
+
         this.type = this.CREDENTIAL_TYPE;
         this.datesPresented = [];
         this.datesPresented = localStorage.getItem('presentationDates') !== null ? JSON.parse(localStorage.getItem('presentationDates')) : [];
