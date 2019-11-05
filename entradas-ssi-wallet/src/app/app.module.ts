@@ -45,6 +45,7 @@ import { Deeplinks } from '@ionic-native/deeplinks';
 import {Activity} from "../pages/tabsPage/activity/activity";
 import {ActivityModule} from "../pages/tabsPage/activity/activity.module";
 import {IonicStorageModule} from "@ionic/storage";
+import {IsLoggedService} from "../services/isLogged-service";
 
 
 @NgModule({
@@ -129,7 +130,8 @@ import {IonicStorageModule} from "@ionic/storage";
         KeyGeneratorService,
         CredentialProvider,
         Deeplinks,
-        Storage
+        Storage,
+        IsLoggedService
     ]
 })
 export class AppModule {}

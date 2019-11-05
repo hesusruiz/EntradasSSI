@@ -5,6 +5,8 @@ import { SessionSecuredStorageService } from '../../services/securedStorage.serv
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 import { WalkthroughPage } from '../walkthrough/walkthrough';
 import {RegisterPrivacyConditionsPage} from "../register/register-hub/register-privacy-conditions/register-privacy-conditions";
+import {Storage} from "@ionic/storage";
+import {IsLoggedService} from "../../services/isLogged-service";
 
 @Component({
     selector: 'page-home',
@@ -21,13 +23,15 @@ export class HomePage implements OnInit {
         public navCtrl: NavController,
         private sessionSecuredStorageService: SessionSecuredStorageService,
         private faio: FingerprintAIO,
-        public alertCtrl: AlertController
+        public alertCtrl: AlertController,
+        private storageSQL: Storage,
+        private isLoggedService:IsLoggedService
     ) { }
 
     async ngOnInit(): Promise<void> {
         // Is session registered
         this.setLoginParams();
-        return this.sessionSecuredStorageService.isRegistered().then(
+        return this.storageSQL.get('SqlCreated').then(
             (result) => {
                 this.isRegistered = true;
                 this.login.data.isRegistered = true;
@@ -39,31 +43,7 @@ export class HomePage implements OnInit {
             }
         )
 
-        // Test
-        /* this.alastriaPublicKeyRegistry.getAccountInfo().then(
-            async (succ: any) => {
-                console.log('Test ok!', succ);
-                // const publicKeyInit = 'Hola currito, soy una clave publica!';
-                const publicKeyInit = keypair();
-                console.log(publicKeyInit);
 
-                let status = await this.alastriaPublicKeyRegistry.registryStatus(succ.fromAccount);
-                const publicKey = this.alastriaPublicKeyRegistry.toUtf8(status)
-                console.log('Status: ', publicKey);
-
-                if (!this.alastriaPublicKeyRegistry.isStatusDefined(status)) {
-                    let result = await this.alastriaPublicKeyRegistry.registrySet(publicKeyInit.public, succ.fromAccount);
-                    console.log('Status: ', result);
-                } else {
-                    let statusObj = await this.alastriaPublicKeyRegistry.registryStatusObject(succ.fromAccount, publicKey);
-                    console.log('Status obj: ', statusObj);
-                }
-
-            },
-            err => {
-                console.error('Test error!', err);
-            }
-        ); */
     }
 
     showAlert(title: string, message: string) {
@@ -76,15 +56,17 @@ export class HomePage implements OnInit {
     }
 
     onLogin(params: any) {
-        if (this.isRegistered) {
-            this.sessionSecuredStorageService.getUsername().then(
+        if (this.storageSQL.get('SqlCreated')) {
+            this.storageSQL.get('SqlCreated').then(
                 (result) => {
-                    params.username = result;
+                    params.username = this.sessionSecuredStorageService.getUsername();
+                    console.log('params username', params.username, params.password);
                     this.sessionSecuredStorageService.checkPassword(params.username, params.password).then(
                         (res) => {
                             if (res) {
+                                this.isLoggedService.subject.next(true);
                                 this.isLoged = true;
-
+                                this.storageSQL.set('isLogged',true);
                                 this.navCtrl.setRoot(TabsPage);
                             }
                             else {
