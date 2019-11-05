@@ -61,13 +61,9 @@ export class ScanQrInfoPage {
            }, (errorResponse: HttpErrorResponse) => {
              console.error(errorResponse);
            });
-
-
       }, (errorResponse: HttpErrorResponse) => {
           console.log(errorResponse);
         });
-
-
     }
 
     searchKID(data: any) {
@@ -78,12 +74,11 @@ export class ScanQrInfoPage {
             } else {
                 if (k == 'jwt') {
                     console.log('valor dentro del searchKID: ' + data[k]);
-
                 }
             }
-
         }
     }
+
 
     ionViewDidEnter() {
         this.mailAccepted=localStorage.getItem('urlVal');
