@@ -24,44 +24,43 @@ export class MyApp {
     rootPage: any = HomePage;
     platform: any;
     userProfile = UserProfilePage;
-    value:string;
-    isLogged:string=null;
+    value: string;
+    isLogged: string = null;
 
-    constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks, private storage:Storage,
-                ) {
+    constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks, private storage: Storage,
+    ) {
         platform.ready().then(() => {
-            this.platform=platform;
-            this.isLogged=localStorage.getItem('userLogged');
-            localStorage.setItem('credentialDates',this.getCurrentDate());
+            this.platform = platform;
+            this.isLogged = localStorage.getItem('userLogged');
+            localStorage.setItem('credentialDates', this.getCurrentDate());
 
             storage.get('first_time').then((val) => {
                 if (val !== null) {
                     console.log('already registered');
                 } else {
                     console.log('probably the first time');
-                    this.rootPage= RegisterPrivacyConditionsPage;
+                    this.rootPage = RegisterPrivacyConditionsPage;
                 }
             });
 
             this.deepLink.routeWithNavController(this.nav, {
                 '/login': Login
             }).subscribe(match => {
-                this.isLogged=localStorage.getItem('userLogged');
+                this.isLogged = localStorage.getItem('userLogged');
 
-               this.searchJSON(match);
+                this.searchJSON(match);
 
-               if(this.value!='localhost') {
-                  // secureStorage.saveURLjwt(this.value);
-                   localStorage.setItem('urlVal', this.value);
-                   localStorage.setItem('credentialDates',this.getCurrentDate());
-               }
+                console.log('DEEPLINK Activado');
+                localStorage.setItem('urlVal', this.value);
+                localStorage.setItem('credentialDates', this.getCurrentDate());
+
             }, nomatch => {
                 console.error('Got a deeplink that didn\'t match', nomatch);
             });
         });
     }
 
-    exitApp(){
+    exitApp() {
         this.platform.exitApp();
     }
 
@@ -72,8 +71,8 @@ export class MyApp {
                 this.searchJSON(data[k]);
             } else {
                 if (k == 'host') {
-                    this.value=data[k];
-                    console.log('valor dentro del searchJSON: '+this.value);
+                    this.value = data[k];
+                    console.log('valor dentro del searchJSON: ' + this.value);
 
                 }
             }
@@ -87,11 +86,11 @@ export class MyApp {
         return date
     }
 
-    openURL(url:string){
-        window.open(url,'_system', 'location=yes');
+    openURL(url: string) {
+        window.open(url, '_system', 'location=yes');
     }
 
-    pushPage(page:string
+    pushPage(page: string
     ) {
         this.nav.push(page);
     }
