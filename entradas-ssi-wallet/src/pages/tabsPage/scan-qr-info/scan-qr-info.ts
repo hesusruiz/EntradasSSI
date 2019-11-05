@@ -86,6 +86,12 @@ export class ScanQrInfoPage {
 
     openScanner() {
         this.scanner.scan().then(barcodeData => {
+            if(barcodeData.cancelled){
+                this.navCtrl.pop().then( val =>{
+                    console.log(val);
+                });
+            }
+
             if (!barcodeData) {
                 alert('Error: Contacte con el service provider.')
             } else {
