@@ -41,22 +41,15 @@ export class MyApp {
                   // secureStorage.saveURLjwt(this.value);
                    localStorage.setItem('urlVal', this.value);
                }
-
-
             }, nomatch => {
                 console.error('Got a deeplink that didn\'t match', nomatch);
             });
-
-
         });
-
-
     }
 
     exitApp(){
         this.platform.exitApp();
     }
-
 
     searchJSON(data: any) {
 
