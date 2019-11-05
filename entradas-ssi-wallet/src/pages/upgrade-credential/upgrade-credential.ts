@@ -21,11 +21,12 @@ export class UpgradeCredentialPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UpgradeCredentialPage');
+
   }
 
 
   goBack(){
-    this.navCtrl.popAll().then( data =>{
+    this.navCtrl.pop().then( data =>{
       console.log("OK",data)
     });
   }
