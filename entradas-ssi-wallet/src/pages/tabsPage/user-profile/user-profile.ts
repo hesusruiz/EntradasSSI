@@ -56,15 +56,12 @@ export class UserProfilePage {
 
     }
 
-    getCurrentDate(): void {
-        let today = new Date();
-        let date = today.getDate() + '.' + (today.getMonth() + 1) + '.' + today.getFullYear();
-        this.createdDate = JSON.stringify(date.toString());
-    }
+
 
     ionViewDidEnter() {
         console.log('ionViewDidLoad UserProfilePage');
         this.mailAccepted=localStorage.getItem('urlVal');
+        this.createdDate=localStorage.getItem('credentialDates');
     }
 
 }

@@ -9,6 +9,7 @@ import {CredentialRequestProvider} from "../../../../providers/credential-reques
 import {KeyGeneratorService} from "../../../../services/KeyGenerator.service";
 import {CredentialProvider} from "../../../../providers/credential/credential";
 import {Base64} from 'js-base64';
+import {Storage} from "@ionic/storage";
 
 
 @Component({
@@ -42,7 +43,8 @@ export class RegisterForm {
                 public sessionSecuredStorageService: SessionSecuredStorageService,
                 public identitySecuredStorageService: IdentitySecuredStorageService,
                 public alertCtrl: AlertController, private scanner: BarcodeScanner, public navParams: NavParams,
-                public credentialRequest: CredentialRequestProvider, private keyGenerator: KeyGeneratorService) {
+                public credentialRequest: CredentialRequestProvider, private keyGenerator: KeyGeneratorService,
+                private storage:Storage) {
 
         this.password = navParams.get('pwd');
 
@@ -93,6 +95,7 @@ export class RegisterForm {
                                     }
 
                                     /* Redirecciono a la pagina principal */
+                                    storage.set('first_time', 'done');
                                     this.navCtrl.setRoot(HomePage);
                                 }
                             )

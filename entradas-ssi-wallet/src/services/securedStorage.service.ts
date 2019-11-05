@@ -279,10 +279,7 @@ export class SessionSecuredStorageService {
                 this.getUsername().then(
                     (res) => {
                         const isRegistered = res !== null;
-                        // if (isRegistered) {
-                        //     reject('El usuario ya esta registrado');
-                        // }
-                        // else {
+
                         this.securedStorageObject.set('username', username).then(
                             (result) => {
                                 this.securedStorageObject.set('password', password).then(
@@ -298,19 +295,8 @@ export class SessionSecuredStorageService {
                                             }
                                         )
                                     })
-                                // ).catch(
-                                //     (error) => {
-                                //         reject();
-                                //     }
-                                // );
                             })
 
-                        // ).catch(
-                        //     (error) => {
-                        //         reject();
-                        //     }
-                        // );
-                        //}
                     }
                 );
             }
