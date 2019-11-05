@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {SecureStorage, SecureStorageObject} from '@ionic-native/secure-storage';
 import {Platform} from 'ionic-angular';
 import {CredentialProvider} from "../providers/credential/credential";
+import {Storage} from "@ionic/storage";
 
 @Injectable()
 export class IdentitySecuredStorageService {
@@ -155,9 +156,11 @@ export class SessionSecuredStorageService {
     securedStorageObject: SecureStorageObject;
     promiseState: Promise<any>;
 
+
     constructor(
         private securedStorage: SecureStorage,
-        private platform: Platform
+        private platform: Platform,
+        private storageSQLite:Storage
     ) {
         this.platform.ready().then(() => {
             this.initSecureStorage();
@@ -168,6 +171,7 @@ export class SessionSecuredStorageService {
     private initSecureStorage() {
         this.securedStorage.create('sessionSecureStorage').then(
             (securedStorageObject) => {
+                this.storageSQLite.set('SqlCreated','yes');
                 this.securedStorageObject = securedStorageObject;
             }
         );
@@ -176,7 +180,7 @@ export class SessionSecuredStorageService {
     async isRegistered() {
         return new Promise(
             (resolve, reject) => {
-                if (!this.securedStorageObject) {
+                if (!this.storageSQLite.get('SqlCreated')) {
                     this.securedStorage.create('sessionSecureStorage').then(
                         (securedStorageObject) => {
                             this.securedStorageObject = securedStorageObject;
@@ -206,69 +210,34 @@ export class SessionSecuredStorageService {
         )
     }
 
-    getUsername(): Promise<any> {
-        return this.securedStorageObject.keys().then(
-            (str) => {
-                if (str.length > 0 && str.indexOf('username') > -1) {
-                    return this.securedStorageObject.get('username');
-                } else {
-                    return null;
-                }
-            },
-        ).catch(
-            (error) => {
-                console.log('Falla al comprobar las keys', error);
-            }
-        );
+    getUsername() {
+        return this.storageSQLite.get('username');
     }
 
     getEmail(): Promise<any> {
-        return this.securedStorageObject.keys().then(
-            (str) => {
-                if (str.length > 0 && str.indexOf('email') > -1) {
-                    return this.securedStorageObject.get('email');
-                } else {
-                    return null;
-                }
-            },
-        ).catch(
-            (error) => {
-                console.log('Falla al comprobar las keys', error);
-            }
-        );
+        return this.storageSQLite.get('email');
+
     }
 
     getTicketId(): Promise<any> {
-        return this.securedStorageObject.keys().then(
-            (str) => {
-                if (str.length > 0 && str.indexOf('ticketId') > -1) {
-                    return this.securedStorageObject.get('ticketId');
-                } else {
-                    return null;
-                }
-            },
-        ).catch(
-            (error) => {
-                console.log('Falla al comprobar las keys', error);
-            }
-        );
+        return this.storageSQLite.get('ticketId');
+
     }
 
     saveUserData(data: string[]){
-        this.securedStorageObject.set('userData', JSON.stringify(data));
+        this.storageSQLite.set('userData', JSON.stringify(data));
     }
 
     async checkPassword(username: string, password: string) {
-        const usernameSto = await this.securedStorageObject.get('username');
-        const passwordSto = await this.securedStorageObject.get('password');
+        const passwordSto = await this.storageSQLite.get('password');
 
-        return username === usernameSto && password === passwordSto;
+        return password === passwordSto;
     }
 
     saveCredential(id:string,credential: CredentialProvider): Promise<any> {
         return new Promise(
             (resolve, reject)=>{
-                this.securedStorageObject.set('credential'+id,JSON.stringify(credential));
+                this.storageSQLite.set('credential'+id,JSON.stringify(credential));
             }
         )
     }
@@ -280,14 +249,14 @@ export class SessionSecuredStorageService {
                     (res) => {
                         const isRegistered = res !== null;
 
-                        this.securedStorageObject.set('username', username).then(
+                        this.storageSQLite.set('username', username).then(
                             (result) => {
-                                this.securedStorageObject.set('password', password).then(
+                                this.storageSQLite.set('password', password).then(
                                     (result) => {
                                         //  resolve();
-                                        this.securedStorageObject.set('email', email).then(
+                                        this.storageSQLite.set('email', email).then(
                                             (result) => {
-                                                this.securedStorageObject.set('ticketId', ticketId).then(
+                                                this.storageSQLite.set('ticketId', ticketId).then(
                                                     (result) => {
                                                         resolve();
                                                     }
