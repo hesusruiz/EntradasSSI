@@ -95,6 +95,9 @@ export class ScanQrInfoPage {
                 let dataQR = jwt.decode(barcodeData.text);
                 this.searchJSON(dataQR);
                 //console.log(wantedRq);
+                if(localStorage.getItem('provider')===null){
+                    this.navCtrl.push(ScannerErrorPage);
+                }
 
             }
         }).catch(err => {
