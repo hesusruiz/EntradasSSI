@@ -6,6 +6,7 @@ import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 import { WalkthroughPage } from '../walkthrough/walkthrough';
 import {RegisterPrivacyConditionsPage} from "../register/register-hub/register-privacy-conditions/register-privacy-conditions";
 import {Storage} from "@ionic/storage";
+import {IsLoggedService} from "../../services/isLogged-service";
 
 @Component({
     selector: 'page-home',
@@ -23,7 +24,8 @@ export class HomePage implements OnInit {
         private sessionSecuredStorageService: SessionSecuredStorageService,
         private faio: FingerprintAIO,
         public alertCtrl: AlertController,
-        private storageSQL: Storage
+        private storageSQL: Storage,
+        private isLoggedService:IsLoggedService
     ) { }
 
     async ngOnInit(): Promise<void> {
@@ -62,7 +64,9 @@ export class HomePage implements OnInit {
                     this.sessionSecuredStorageService.checkPassword(params.username, params.password).then(
                         (res) => {
                             if (res) {
+                                this.isLoggedService.subject.next(true);
                                 this.isLoged = true;
+                                this.storageSQL.set('isLogged',true);
                                 this.navCtrl.setRoot(TabsPage);
                             }
                             else {

@@ -12,6 +12,7 @@ import {SecureStorage} from "@ionic-native/secure-storage";
 import {SessionSecuredStorageService} from "../services/securedStorage.service";
 import {Storage} from "@ionic/storage";
 import {RegisterPrivacyConditionsPage} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions";
+import {IsLoggedService} from "../services/isLogged-service";
 
 @Component({
     templateUrl: 'app.html'
@@ -25,15 +26,26 @@ export class MyApp {
     platform: any;
     userProfile = UserProfilePage;
     value: string;
-    isLogged: string = null;
+    isLogged: any;
 
-    constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, app: App, private inAppBrowser: InAppBrowser, private deepLink: Deeplinks, private storage: Storage,
+    constructor(platform: Platform,
+                statusBar: StatusBar,
+                splashScreen: SplashScreen,
+                app: App,
+                private inAppBrowser: InAppBrowser,
+                private deepLink: Deeplinks,
+                private storage: Storage,
+                private isLoggedService:IsLoggedService
     ) {
+
         platform.ready().then(() => {
             this.platform = platform;
-            this.isLogged = localStorage.getItem('userLogged');
+            isLoggedService.subject.subscribe(
+                (res) => {
+                    this.isLogged = res;
+                }
+            );
             localStorage.setItem('credentialDates', this.getCurrentDate());
-
             storage.get('first_time').then((val) => {
                 if (val !== null) {
                     console.log('already registered');
