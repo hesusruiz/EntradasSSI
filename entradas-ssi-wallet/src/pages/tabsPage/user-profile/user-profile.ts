@@ -38,7 +38,11 @@ export class UserProfilePage {
             (result) => {
                 this.username = result.split(" ");
                 this.name = this.username[0];
-                this.surname = this.username[1] + " " + this.username[2];
+                if(this.username[2]===null || this.username[2]===undefined){
+                    this.surname = this.username[1];
+                }else {
+                    this.surname = this.username[1] + " " + this.username[2];
+                }
             }
         );
 

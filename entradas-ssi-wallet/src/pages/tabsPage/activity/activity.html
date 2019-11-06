@@ -5,7 +5,7 @@
         </div>
         <div *ngIf="credencialesEntregadas.length>0">
             <h3 style="margin: 15px;" text-center="">Presented credentials</h3>
-            <ion-card *ngFor="let cred of credencialesEntregadas; let i = index">
+            <ion-card *ngFor="let cred of credencialesEntregadas; let i = index" class="backgroundImg">
                 <div class="title-cards">
                     <h3 class="txt-color">TICKET ID: </h3>
                     <img style="height: 18px; width: 18px" src="assets/images/hdpi/ico-question-circle.png">
