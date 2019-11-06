@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ae7b800-fabf-49b4-9478-c33cae87ea28" name="Default Changelist" comment="ADD: images + texts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/app/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/components/tabs/tabs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/home/home.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-form/register-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/register/register-hub/register-form/register-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/entradas-ssi-wallet/src/pages/tabsPage/scan-qr-info/scan-qr-info.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

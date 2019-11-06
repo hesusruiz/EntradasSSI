@@ -35,8 +35,7 @@
     box-shadow: none !important;" required type="email"
                                pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required
                                [(ngModel)]="email"></ion-input>
-                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">"Formato
-                        incorrecto de email"
+                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">Incorrect mail format
                     </ion-label>
                 </div>
             </ion-row>
@@ -46,10 +45,6 @@
                     <ion-input style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
     box-shadow: none !important;" required type="text"
                                required [(ngModel)]="ticketId"></ion-input>
-                    <!--                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">-->
-                    <!--                        Formato-->
-                    <!--                        incorrecto de email-->
-                    <!--                    </ion-label>-->
                 </div>
             </ion-row>
             <ion-row style="display: flex; justify-content: space-around; margin-top: 20px;">

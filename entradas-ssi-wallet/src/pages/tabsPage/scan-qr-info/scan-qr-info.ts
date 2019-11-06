@@ -30,6 +30,8 @@ export class ScanQrInfoPage {
     reSplitted:any;
     backendId:string='did_back_end';
     mailAccepted: string;
+    found=false;
+
 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, private scanner: BarcodeScanner, private credentialRequestProvider: CredentialRequestProvider,
@@ -99,12 +101,11 @@ export class ScanQrInfoPage {
 
                 let jwt = require("jsonwebtoken");
                 let dataQR = jwt.decode(barcodeData.text);
+                this.found=false;
                 this.searchJSON(dataQR);
-                //console.log(wantedRq);
-                if(localStorage.getItem('nothingfound')){
-                    this.navCtrl.push(ScannerErrorPage);
+                if(!this.found){
+                  this.navCtrl.push(ScannerErrorPage);
                 }
-
             }
         }).catch(err => {
             console.log('Error', err);
@@ -113,7 +114,6 @@ export class ScanQrInfoPage {
     }
 
     searchJSON(data: any) {
-        let found=false;
         for (let k in data) {
             if (typeof data[k] == "object" && data[k] !== null) {
                 this.searchJSON(data[k]);
@@ -128,14 +128,11 @@ export class ScanQrInfoPage {
                     localStorage.setItem('provider',JSON.stringify(provider));
                 }
                 if (k == 'field_name') {
-                    found = true;
+                    this.found = true;
                     console.log(data[k]);
                     this.navCtrl.push(ServiceproviderrequestPage, {wantedRq: data[k]});
                 }
             }
-        }
-        if(found) {
-            localStorage.setItem('nothingfound', 'nada');
         }
     }
 
