@@ -113,6 +113,10 @@ export class ShowIdentityPage {
         this.navCtrl.popAll();
     }
 
+    goBack(){
+        this.navCtrl.pop();
+    }
+
     getCurrentDate(): void {
         let today = new Date();
         let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
