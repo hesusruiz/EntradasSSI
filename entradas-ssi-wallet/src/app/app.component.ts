@@ -69,7 +69,6 @@ export class MyApp {
                 localStorage.setItem('urlVal', this.value);
                 localStorage.setItem('credentialDates', this.getCurrentDate());
 
-                this.nav.setRoot(TabsPage);
                 }
 
 
