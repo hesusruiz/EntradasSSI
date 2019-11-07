@@ -10,6 +10,7 @@ import {KeyGeneratorService} from "../../../../services/KeyGenerator.service";
 import {CredentialProvider} from "../../../../providers/credential/credential";
 import {Base64} from 'js-base64';
 import {Storage} from "@ionic/storage";
+import {TabsPage} from "../../../tabsPage/tabsPage";
 
 
 @Component({
@@ -96,7 +97,7 @@ export class RegisterForm {
 
                                     /* Redirecciono a la pagina principal */
                                     storage.set('first_time', 'done');
-                                    this.navCtrl.setRoot(HomePage);
+                                    this.navCtrl.setRoot(TabsPage);
                                 }
                             )
                             .catch(

@@ -13,6 +13,7 @@ import {SessionSecuredStorageService} from "../services/securedStorage.service";
 import {Storage} from "@ionic/storage";
 import {RegisterPrivacyConditionsPage} from "../pages/register/register-hub/register-privacy-conditions/register-privacy-conditions";
 import {IsLoggedService} from "../services/isLogged-service";
+import {TabsPage} from "../pages/tabsPage/tabsPage";
 
 @Component({
     templateUrl: 'app.html'
@@ -35,7 +36,8 @@ export class MyApp {
                 private inAppBrowser: InAppBrowser,
                 private deepLink: Deeplinks,
                 private storage: Storage,
-                private isLoggedService:IsLoggedService
+                private isLoggedService:IsLoggedService,
+                private navCtr: NavController
     ) {
 
         platform.ready().then(() => {
@@ -66,6 +68,8 @@ export class MyApp {
                 if(this.value!='localhost') {
                 localStorage.setItem('urlVal', this.value);
                 localStorage.setItem('credentialDates', this.getCurrentDate());
+
+                navCtr.setRoot(TabsPage);
                 }
 
 
