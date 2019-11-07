@@ -130,10 +130,11 @@ export class ShowIdentityPage {
             } else {
                 currentDateArray = [];
             }
+            currentDateArray.unshift(dateplustime);
+            console.log('currentDAteARRAY=', currentDateArray);
+            this.localStoragy.set('presentationDates', currentDateArray);
         },(error)=>{},);
-        currentDateArray.unshift(dateplustime);
-        console.log('currentDAteARRAY=', currentDateArray);
-        this.localStoragy.set('presentationDates', JSON.stringify(currentDateArray));
+
     }
 
 }

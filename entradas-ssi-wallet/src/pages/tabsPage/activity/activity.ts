@@ -46,7 +46,7 @@ export class Activity {
         this.datesPresented = [];
         this.datesPresented = this.storageSql.get('presentationDates').then(value => {
             if (value != null) {
-                this.datesPresented = JSON.parse(value);
+                this.datesPresented = value;
             } else {
                 this.datesPresented = [];
             }
