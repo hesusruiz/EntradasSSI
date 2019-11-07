@@ -79,10 +79,6 @@ export class MyApp {
         });
     }
 
-    exitApp() {
-        this.platform.exitApp();
-    }
-
     searchJSON(data: any) {
 
         for (let k in data) {
