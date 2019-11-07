@@ -3,6 +3,11 @@
         <h2 style="margin: 15px;">Credentials</h2>
         <div *ngIf="mailAccepted==null || mailAccepted==undefined">
             <h4 style="margin-top: 80px" text-center="">Check your email to receive your credentials!</h4>
+
+            <ion-row style="margin-top: 25px; display: flex; justify-content: space-around;">
+                <button ion-button (click)="refreshPage()">Refresh Credentials
+                </button>
+            </ion-row>
         </div>
         <div *ngIf="mailAccepted">
             <ion-card class="backgroundImg">

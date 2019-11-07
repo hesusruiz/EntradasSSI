@@ -4,6 +4,7 @@ import {SessionSecuredStorageService} from "../../../services/securedStorage.ser
 import {TabsService} from "../../../services/tabs-service";
 import {ToastService} from "../../../services/toast-service";
 import {User} from "../../../models/User";
+import {window} from "rxjs/operators";
 
 
 /**
@@ -34,6 +35,15 @@ export class UserProfilePage {
 
 
 
+    }
+
+
+
+    ionViewDidEnter() {
+        console.log('ionViewDidLoad UserProfilePage');
+        this.mailAccepted=localStorage.getItem('urlVal');
+        this.createdDate=localStorage.getItem('credentialDates');
+
         this.sessionSecuredStorageService.getUsername().then(
             (result) => {
                 this.username = result.split(" ");
@@ -57,15 +67,11 @@ export class UserProfilePage {
                 this.ticketId = result;
             }
         );
-
     }
 
-
-
-    ionViewDidEnter() {
-        console.log('ionViewDidLoad UserProfilePage');
-        this.mailAccepted=localStorage.getItem('urlVal');
-        this.createdDate=localStorage.getItem('credentialDates');
+    refreshPage() {
+        console.log('refresh page');
+        this.navCtrl.setRoot(this.navCtrl.getActive().component);
     }
 
 }
