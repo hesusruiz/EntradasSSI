@@ -70,12 +70,12 @@ export class HomePage implements OnInit {
                                 this.navCtrl.setRoot(TabsPage);
                             }
                             else {
-                                this.showAlert('Credenciales erroneas', 'Las credenciales introducidas no son correctas');
+                                this.showAlert('Wrong credentials', 'The introduced password is not valid!');
                             }
                         }
                     ).catch(
                         (err) => {
-                            this.showAlert('Error al comprobar credenciales', 'Ha habido un error al comprobar las credenciales');
+                            this.showAlert('Error with the credentials', 'An error has occurred while trying to match passwords, please try again!');
                         }
                     );
                 }
