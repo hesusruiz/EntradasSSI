@@ -122,9 +122,18 @@ export class ShowIdentityPage {
         let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
         let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         let dateplustime = time.toString() + '·' + date.toString();
-        let currentDateArray: Array<string> = localStorage.getItem('presentationDates') != null ? JSON.parse(localStorage.getItem('presentationDates')) : [];
+        let currentDateArray: Array<string>=[];
+        this.localStoragy.get('presentationDates').then(value => {
+            if (value != null) {
+                currentDateArray = value;
+                console.log('currentarray before unshift: ', currentDateArray);
+            } else {
+                currentDateArray = [];
+            }
+        },(error)=>{},);
         currentDateArray.unshift(dateplustime);
-        localStorage.setItem('presentationDates', JSON.stringify(currentDateArray));
+        console.log('currentDAteARRAY=', currentDateArray);
+        this.localStoragy.set('presentationDates', JSON.stringify(currentDateArray));
     }
 
 }

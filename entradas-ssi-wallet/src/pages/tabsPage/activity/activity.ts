@@ -44,7 +44,13 @@ export class Activity {
 
         this.type = this.CREDENTIAL_TYPE;
         this.datesPresented = [];
-        this.datesPresented = localStorage.getItem('presentationDates') !== null ? JSON.parse(localStorage.getItem('presentationDates')) : [];
+        this.datesPresented = this.storageSql.get('presentationDates').then(value => {
+            if (value != null) {
+                this.datesPresented = JSON.parse(value);
+            } else {
+                this.datesPresented = [];
+            }
+        },(error)=>{},);
         console.log("informacion de fechas --> ", this.datesPresented);
         this.credencialesEntregadas = [];
         this.credencialesEntregadas = localStorage.getItem('provider') !== null ? JSON.parse(localStorage.getItem('provider')) : [];
