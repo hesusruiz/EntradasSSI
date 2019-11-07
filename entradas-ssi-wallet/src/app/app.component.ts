@@ -37,7 +37,7 @@ export class MyApp {
                 private deepLink: Deeplinks,
                 private storage: Storage,
                 private isLoggedService:IsLoggedService,
-                private navCtr: NavController
+
     ) {
 
         platform.ready().then(() => {
@@ -69,7 +69,7 @@ export class MyApp {
                 localStorage.setItem('urlVal', this.value);
                 localStorage.setItem('credentialDates', this.getCurrentDate());
 
-                navCtr.setRoot(TabsPage);
+                this.nav.setRoot(TabsPage);
                 }
 
 
