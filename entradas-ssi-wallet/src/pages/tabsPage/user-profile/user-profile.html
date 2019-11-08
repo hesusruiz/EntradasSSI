@@ -4,8 +4,10 @@
         <div *ngIf="mailAccepted==null || mailAccepted==undefined">
             <h4 style="margin-top: 80px" text-center="">Check your email to receive your credentials!</h4>
 
-            <ion-row style="margin-top: 25px; display: flex; justify-content: space-around;">
-                <button ion-button (click)="refreshPage()">Refresh Credentials
+            <h5 style="margin-top: 40px; color: #505050" text-center>If you already received your credentials via email use the refresh button</h5>
+
+            <ion-row style="margin-top: 40px; display: flex; justify-content: space-around;">
+                <button ion-button (click)="refreshPage()">Refresh Page
                 </button>
             </ion-row>
         </div>
