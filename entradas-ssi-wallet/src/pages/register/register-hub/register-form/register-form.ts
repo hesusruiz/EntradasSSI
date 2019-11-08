@@ -34,7 +34,9 @@ export class RegisterForm {
     // public password_correct: string;
 
     private isEmailValid: boolean = true;
-    //  private isUsernameValid: boolean = true;
+    private isNameValid: boolean = true;
+    private isSurnameValid: boolean = true;
+    private isTicketidValid: boolean = true;
     // private isPasswordValid: boolean = true;
 
     private regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -170,28 +172,14 @@ export class RegisterForm {
     }
 
     validate(): boolean {
-        this.isEmailValid = true;
-        //this.isUsernameValid = true;
-        // this.isPasswordValid = true;
-        //
-        // // if (!this.username || this.username.length == 0) {
-        // //     this.isUsernameValid = false;
-        // // }
-        //
-        // if (!this.password || this.password.length == 0) {
-        //     this.isPasswordValid = false;
-        // }
-        //
-        // if (!this.password || this.password.length == 0) {
-        //     this.isPasswordValid = false;
-        // }
 
+        this.isNameValid  = !(this.name === null || this.name === undefined || this.name === '' );
+        this.isSurnameValid  = !(this.surnames === null || this.surnames === undefined || this.surnames === '' );
+        this.isTicketidValid  = !(this.ticketId === null || this.ticketId === undefined || this.ticketId === '' );
         this.isEmailValid = this.regex.test(this.email);
 
-        return this.isEmailValid ;
-            // this.isPasswordValid ;
-            // &&
-            // this.isUsernameValid;
+        return (this.isEmailValid && this.isNameValid && this.isSurnameValid && this.isTicketidValid);
+
     }
 }
 

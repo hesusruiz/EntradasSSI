@@ -17,14 +17,14 @@
                 <div style="background-color: #f0f0f5ff; width: 100%">
                     <ion-label style="margin-left: 4px;">NAME</ion-label>
                     <ion-input style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
-    box-shadow: none !important;" required type="text" [(ngModel)]="name"></ion-input>
+    box-shadow: none !important;"  type="text" [(ngModel)]="name"></ion-input>
                 </div>
             </ion-row>
             <ion-row>
                 <div style="background-color: #f0f0f5ff;width: 100%">
                     <ion-label style="margin-left: 4px;">SURNAME</ion-label>
                     <ion-input style="border-radius: 10px; border-style: solid;border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
-    box-shadow: none !important;" required type="text"
+    box-shadow: none !important;"  type="text"
                                [(ngModel)]="surnames"></ion-input>
                 </div>
             </ion-row>
@@ -32,10 +32,10 @@
                 <div style="background-color: #f0f0f5ff;width: 100%">
                     <ion-label style="margin-left: 4px;">EMAIL</ion-label>
                     <ion-input  style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
-    box-shadow: none !important;" required type="email"
-                               pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required
+    box-shadow: none !important;" type="email"
+                               pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
                                [(ngModel)]="email"></ion-input>
-                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid">Incorrect mail format
+                    <ion-label style="font-size: 16px;" error-field color="primary" *ngIf="!isEmailValid && (email!= null || email != undefined)">Incorrect mail format
                     </ion-label>
                 </div>
             </ion-row>
@@ -43,13 +43,14 @@
                 <div style="background-color: #f0f0f5ff;width: 100%">
                     <ion-label style="margin-left: 4px;">TICKET ID</ion-label>
                     <ion-input style="border-radius: 10px; border-style: solid; border-color: transparent; border-spacing: 54px; background-color: #bdbbd1ff;   border-bottom-color: transparent !important;
-    box-shadow: none !important;" required type="text"
-                               required [(ngModel)]="ticketId"></ion-input>
+    box-shadow: none !important;"  type="text"
+                                [(ngModel)]="ticketId"></ion-input>
                 </div>
             </ion-row>
             <ion-row style="display: flex; justify-content: space-around; margin-top: 20px;">
                 <button ion-button
-                        (click)="onEvent('onRegister')">Create & request credentials
+                        (click)="onEvent('onRegister')"
+                        [disabled]="!validate()">Create & request credentials
                     <img style="height: 15px;margin-left: 10px;" src="assets/images/hdpi/ico-chevron-right.png">
                 </button>
             </ion-row>
