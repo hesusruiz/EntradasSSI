@@ -11,6 +11,7 @@ import {CredentialProvider} from "../../../../providers/credential/credential";
 import {Base64} from 'js-base64';
 import {Storage} from "@ionic/storage";
 import {TabsPage} from "../../../tabsPage/tabsPage";
+import {IsLoggedService} from "../../../../services/isLogged-service";
 
 
 @Component({
@@ -47,7 +48,7 @@ export class RegisterForm {
                 public identitySecuredStorageService: IdentitySecuredStorageService,
                 public alertCtrl: AlertController, private scanner: BarcodeScanner, public navParams: NavParams,
                 public credentialRequest: CredentialRequestProvider, private keyGenerator: KeyGeneratorService,
-                private storage:Storage) {
+                private storage:Storage, private isLoggedService:IsLoggedService) {
 
         this.password = navParams.get('pwd');
 
@@ -99,6 +100,7 @@ export class RegisterForm {
 
                                     /* Redirecciono a la pagina principal */
                                     storage.set('first_time', 'done');
+                                    this.isLoggedService.subject.next(true);
                                     this.navCtrl.setRoot(TabsPage);
                                 }
                             )
